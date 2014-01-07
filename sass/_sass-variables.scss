@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
 $headingColor: #010101;
 $textColor: lighten($headingColor, 10%);
 $borderColor: rgba(100,100,100,.1);
@@ -14,12 +18,34 @@ $white: #ffffff;
 $linkColor: rgb(0,0,200);
 $decodedBrown: rgb(40,36,25);
 
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
 
 $defaultStack: "DIN Next",Helvetica,Arial, sans-serif;
+$boldStack: "DIN Next-500","DIN Next",Helvetica,Arial, sans-serif;
 $lineHeight: (1.45)em;
 $baseSize: 0.5em;
 $spacingSize: 1.5em;
 $headingPadding: 1px;
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+$mobile:		new-breakpoint(max-width 480px 4);
+$phablet:		new-breakpoint(max-width 780px 4);
+$tablet: 		new-breakpoint(max-width 960px 12);
+$tablet-only: 	new-breakpoint(min-width 480px max-width 960px 12);
+
+/* ==========================================================================
+   Grid Settings
+   ========================================================================== */
+   
+$max-width: 960px;
+$grid-columns: 12;
+
+$base-font-size: 16px;
 
 
  

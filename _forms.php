@@ -23,16 +23,16 @@
 			<fieldset>
 				<legend>Legend</legend>
 				<p><small class="caption">Required fields are marked <abbr title="Required">*</abbr></small></p>
-				<?php include('_patterns/form-input.text.html'); ?>
-				<?php include('_patterns/form-input.password.html'); ?>
-				<?php include('_patterns/form-input.email.html'); ?>
-				<?php include('_patterns/form-input.url.html'); ?>
-				<?php include('_patterns/form-select.html'); ?>
-				<?php include('_patterns/form-options.checkboxes.html'); ?>
-				<?php include('_patterns/form-options.radios.html'); ?>
-				<?php include('_patterns/form-textarea.html'); ?>
-				<?php include('_patterns/form-input.checkbox.html'); ?>
-				<?php include('_patterns/form-buttongroup.html'); ?>
+				<?php include('patterns/form-input.text.html'); ?>
+				<?php include('patterns/form-input.password.html'); ?>
+				<?php include('patterns/form-input.email.html'); ?>
+				<?php include('patterns/form-input.url.html'); ?>
+				<?php include('patterns/form-select.html'); ?>
+				<?php include('patterns/form-options.checkboxes.html'); ?>
+				<?php include('patterns/form-options.radios.html'); ?>
+				<?php include('patterns/form-textarea.html'); ?>
+				<?php include('patterns/form-input.checkbox.html'); ?>
+				<?php include('patterns/form-buttongroup.html'); ?>
 			</fieldset>
 		</div><!--/container-->
 	</main><!--@main-->
