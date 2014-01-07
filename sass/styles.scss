@@ -1,10 +1,14 @@
 @charset "UTF-8";
 
+@import 'bourbon';
+@import 'neat';
+
 @import 'normalize';
 @import 'sass-variables';
 @import 'din-family';
 @import 'patterns';
-
+@import 'typography';
+@import 'forms-lists';
 /* ============================================================
 	Site specific styles
 ============================================================ */
@@ -15,7 +19,8 @@ header[role="banner"] {
 	color: $headingColor;
 	background-color: $decodedYellow;
 	box-shadow: inset 0 -2px rgba(0,0,0,0.25), inset 0 2px rgba(0,0,0,0.1);
-	margin: 0;
+	
+	@include outer-container;
 	padding-top: 4em; /* 64px */
 	}
 	header[role="banner"] .headline,
@@ -25,9 +30,16 @@ header[role="banner"] {
 	}
 main[role="main"] {
 	background-color: $white;
-	padding: 1em 0;
+	@include outer-container;
 }
+
+
 footer[role="contentinfo"] {
 	box-shadow: inset 0 2px $decodedLightGrey;
 	margin-top: 0;
+	@include outer-container;
+}
+
+.container{
+	@include span-columns(12);
 }
