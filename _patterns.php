@@ -65,7 +65,7 @@
 
 <?php
 	$files = array();
-	$patterns_dir = "_patterns";
+	$patterns_dir = "patterns";
 	$handle = opendir($patterns_dir);
 	while (false !== ($file = readdir($handle))):
 		if(stristr($file,'.html')):

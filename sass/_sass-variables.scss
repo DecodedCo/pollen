@@ -1,0 +1,25 @@
+$headingColor: #010101;
+$textColor: lighten($headingColor, 10%);
+$borderColor: rgba(100,100,100,.1);
+
+$decodedYellow: rgb(251,248,0);
+$decodedYellowRGBA: rgba(251,248,0,.8);
+$decodedGrey: rgb(150,150,150);
+$darkYellow: rgba(201,181,0,1);
+$decodedLightGrey: lighten($borderColor,20%);
+$decodedLightGreyOpq: rgb(245,245,245);
+
+$white: #ffffff;
+
+$linkColor: rgb(0,0,200);
+$decodedBrown: rgb(40,36,25);
+
+
+$defaultStack: "DIN Next",Helvetica,Arial, sans-serif;
+$lineHeight: (1.45)em;
+$baseSize: 0.5em;
+$spacingSize: 1.5em;
+$headingPadding: 1px;
+
+
+ 
