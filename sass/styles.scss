@@ -1,3 +1,8 @@
+/*! ===========================================================
+	Decoded Styleguide // by Jonas Haefele 2014
+============================================================ */
+
+
 @charset "UTF-8";
 
 @import 'bourbon';
@@ -8,7 +13,9 @@
 @import 'din-family';
 @import 'patterns';
 @import 'typography';
-@import 'forms-lists';
+@import 'forms';
+@import 'navigation';
+
 /* ============================================================
 	Site specific styles
 ============================================================ */

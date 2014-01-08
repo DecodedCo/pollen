@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* ===========================================================
+	Decoded Styleguide // by Jonas Haefele 2014
+============================================================ */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -100,7 +103,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-h1 {
+h1, .headline {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -345,6 +348,9 @@ table {
   border-spacing: 0; }
 
 /* ==========================================================================
+	Decoded Styleguide // by Jonas Haefele 2014
+============================================================================= */
+/* ==========================================================================
    Colors
    ========================================================================== */
 /* ==========================================================================
@@ -391,7 +397,7 @@ table {
 	Helpers
 ============================================================ */
 /* Font Smoothing */
-.font-smoothing, body, pre, select, input, textarea, text, h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
+.font-smoothing, body, pre, select, input, textarea, text, h1, .headline, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -406,11 +412,6 @@ table {
   overflow: hidden;
   position: absolute; }
 
-/* Bullet-less list */
-.no-bullets li {
-  list-style: none;
-  margin-left: 0; }
-
 /* ============================================================
 	Highlight/Marks
 ============================================================ */
@@ -419,44 +420,6 @@ table {
 
 .mark {
   background-color: rgba(251, 248, 0, 0.4); }
-
-/* ============================================================
-	Text
-============================================================ */
-.headline {
-  color: #333;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
-  font-size: 2.5em;
-  /* 40px */
-  line-height: 1;
-  /* 40px */
-  margin: 0.4em 0 0;
-  /* 16px 0 0 */ }
-
-@media screen and (min-width: 30em) {
-  .headline {
-    font-size: 4em;
-    /* 64px */
-    margin: 0.25em 0 0;
-    /* 16px 0 0 */ } }
-.lede {
-  color: #666;
-  font-weight: 300;
-  font-size: 1.25em;
-  /* 20px */
-  line-height: 1.2;
-  /* 24px */
-  margin: 0.6667em 0 1em;
-  /* 16px 0 24px */ }
-
-.caption {
-  color: #888;
-  font-size: 0.75em;
-  /* 12px */
-  line-height: 1.25;
-  /* 16px */
-  margin: 0.6667em 0;
-  /* 8px 0 */ }
 
 /* ============================================================
 	Image
@@ -563,24 +526,6 @@ img.pull-right {
 
 .details summary::-webkit-details-marker {
   margin-left: -1em; }
-
-/* ============================================================
-	Link
-============================================================ */
-/* External */
-a[rel="external"] {
-  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%;
-  background-size: 12px;
-  padding-right: 1em; }
-
-/* Tag */
-a[rel="tag"] {
-  font-size: 0.75em;
-  /* 12px */
-  line-height: 1.3334;
-  /* 16px */
-  text-transform: lowercase;
-  border: 0; }
 
 /* ============================================================
 	Tooltip
@@ -887,113 +832,8 @@ ul.stats li:last-child {
 
 /* 11px/20px */
 /* ============================================================
-	Navigation
+	Decoded Styleguide // by Jonas Haefele 2014
 ============================================================ */
-[class$="nav"] li {
-  margin: 0;
-  padding: 0;
-  display: inline; }
-
-[class$="nav"] a {
-  border: 0;
-  border-right: 1px solid rgba(151, 151, 151, 0.1);
-  font-family: "DIN Next", Helvetica, Arial, sans-serif;
-  padding: 0.5em 0.75em;
-  /* 8px 12px */
-  display: inline-block; }
-
-[class$="nav"] li:last-child a {
-  border-right: 0; }
-
-[class$="nav"] li a:hover {
-  background-color: rgba(151, 151, 151, 0.1);
-  border-bottom: none; }
-
-[class$="nav"] li a.is-active {
-  background-color: #fbf800;
-  color: #1b1b1b;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
-  border-bottom: none; }
-
-/* Vertical */
-.vertical-nav li {
-  margin: 0;
-  display: block; }
-
-.vertical-nav a {
-  border: 0;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.1);
-  display: block; }
-  .vertical-nav a:hover {
-    border: 0;
-    border-bottom: 1px solid rgba(151, 151, 151, 0.1) !important; }
-  .vertical-nav a.is-active {
-    background-color: rgba(151, 151, 151, 0.1);
-    position: relative;
-    border-bottom: 1px solid transparent !important; }
-  .vertical-nav a.is-active:after {
-    content: "";
-    font-size: 1em;
-    /* 16px */
-    border: solid;
-    border-color: transparent #fbf800;
-    border-width: 1.25em 0 1.25em 1.25em;
-    /* 16px 0 16px 16px */
-    display: block;
-    position: absolute;
-    right: -1.25em;
-    /* -16px */
-    top: 0; }
-
-/* Tabbed */
-.tabbed-nav {
-  border-top: 0;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.1);
-  padding: 0;
-  margin-left: 1em; }
-  .tabbed-nav a.is-active {
-    background-color: #fff !important;
-    margin-bottom: -1px;
-    border: 1px solid rgba(151, 151, 151, 0.1);
-    border-bottom-color: #fff;
-    border-radius: 0.25em 0.25em 0 0;
-    /* 4px 4px 0 0 */ }
-  .tabbed-nav ul {
-    margin: 0; }
-
-/* Pagination */
-.page-nav {
-  font-size: 0; }
-  .page-nav li a {
-    font-size: 16px;
-    font-size: 1rem;
-    padding: 0.5em 1em;
-    /* 8px 16px */
-    border-bottom: 1px solid transparent !important; }
-    .page-nav li a[rel="prev"], .page-nav li a[rel="next"] {
-      border: 0; }
-      .page-nav li a[rel="prev"]:hover, .page-nav li a[rel="next"]:hover {
-        background-color: transparent; }
-
-/* Breadcrumb */
-.breadcrumb-nav {
-  color: #ccc;
-  font-size: 0.75em;
-  /* 12px */
-  line-height: 1.3334;
-  /* 16px */
-  margin-top: 0;
-  border: 0 none; }
-
-.breadcrumb-nav a,
-.breadcrumb-nav strong {
-  padding: 0 0.5em;
-  /* 8px */
-  border: 0; }
-
-.breadcrumb-nav a:first-child {
-  padding-left: 0; }
-
 /* Decoded Global Typography  */
 /* ==========================================================================
    Base
@@ -1013,10 +853,10 @@ html {
 /* ==========================================================================
    Headings
    ========================================================================== */
-h1, h2, h3, h4, h5, h6 {
+h1, .headline, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
-h1 {
+h1, .headline {
   text-decoration: none;
   font-size: 2.2em;
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
@@ -1103,6 +943,31 @@ h5 {
 h6 {
   font-size: 1em; }
 
+.headline {
+  margin: 0em 0em 0.4em;
+  padding: 0em 0.3em;
+  background: #fbf800;
+  background: rgba(251, 248, 0, 0.9);
+  border-bottom: none;
+  display: inline-block; }
+
+.breadcrumb .headline {
+  background: none;
+  padding: 0em; }
+
+.lede {
+  color: #969696;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: 0.6667em 0 1em; }
+
+.caption {
+  color: #969696;
+  font-size: 0.75em;
+  line-height: 1.25;
+  margin: 0.6667em 0; }
+
 /* Extra heading */
 /*
 .course-name{
@@ -1130,22 +995,6 @@ h6 {
     text-align: left;
     margin: 0em 0em 1em 0em;
     font-family: $boldStack;
-}
-
-.headline {
-    font-size: 2.2em;
-    margin: 0em 0em 0.4em;
-    padding: 0em 0.3em;
-    background: rgb(254, 248, 0);
-    background: rgba(254, 248, 0, 0.9);
-    border-bottom: none;
-    display: inline-block;
-}
-
-.breadcrumb .headline {
-	background: none;
-	padding: 0em;
-
 }
 
 .course-name {
@@ -1256,7 +1105,7 @@ a.opps {
   color: green;
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif; }
 
-h1 a, h2 a, h3 a {
+h1 a, .headline a, h2 a, h3 a {
   color: #010101;
   text-decoration: none;
   border-bottom: none; }
@@ -1267,6 +1116,21 @@ p a, li a {
 
 p a:hover, li a:hover {
   border-bottom: 1px solid black; }
+
+/* External */
+a[rel="external"] {
+  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%;
+  background-size: 12px;
+  padding-right: 1em; }
+
+/* Tag */
+a[rel="tag"] {
+  font-size: 0.75em;
+  /* 12px */
+  line-height: 1.3334;
+  /* 16px */
+  text-transform: lowercase;
+  border: 0; }
 
 /* ==========================================================================
    Images & Video
@@ -1360,6 +1224,24 @@ hr {
   display: block !important;
   margin: 1em auto;
   clear: both; }
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+dt {
+  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  padding: 0;
+  color: #a0a0a0; }
+
+dd {
+  font-family: "DIN Next", Helvetica, Arial, sans-serif;
+  text-indent: 0;
+  margin: 0; }
+
+/* Bullet-less list */
+.no-bullets li {
+  list-style: none;
+  margin-left: 0; }
 
 /***** Mobile (portrait) *****/
 /*
@@ -1542,18 +1424,120 @@ label.check + .caption,
 .input + .caption {
   display: block; }
 
-/* ==========================================================================
-   Lists
-   ========================================================================== */
-dt {
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
-  padding: 0;
-  color: #a0a0a0; }
+/* ============================================================
+	Decoded Styleguide // by Jonas Haefele 2014
+============================================================ */
+/* ============================================================
+	Navigation
+============================================================ */
+[class$="nav"] {
+  font-size: 0;
+  /* whitespace in inline-block lists http://www.broken-links.com/2013/03/25/removing-the-whitespace-from-inline-block-elements/ */ }
+  [class$="nav"] li {
+    font-size: 16px;
+    /* see above */
+    font-size: 1rem;
+    /* see above */
+    margin: 0;
+    padding: 0;
+    display: inline; }
 
-dd {
+[class$="nav"] a {
+  border: 0;
+  border-right: 1px solid rgba(151, 151, 151, 0.1);
   font-family: "DIN Next", Helvetica, Arial, sans-serif;
-  text-indent: 0;
-  margin: 0; }
+  padding: 0.5em 0.75em;
+  /* 8px 12px */
+  display: inline-block; }
+
+[class$="nav"] li:last-child a {
+  border-right: 0; }
+
+[class$="nav"] li a:hover {
+  background-color: rgba(151, 151, 151, 0.1);
+  border-bottom: none; }
+
+[class$="nav"] li a.is-active {
+  background-color: #fbf800;
+  color: #1b1b1b;
+  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  border-bottom: none; }
+
+/* Vertical */
+.vertical-nav li {
+  margin: 0;
+  display: block; }
+
+.vertical-nav a {
+  border: 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.1);
+  display: block; }
+  .vertical-nav a:hover {
+    border: 0;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.1) !important; }
+  .vertical-nav a.is-active {
+    background-color: rgba(151, 151, 151, 0.1);
+    position: relative;
+    border-bottom: 1px solid transparent !important; }
+  .vertical-nav a.is-active:after {
+    content: "";
+    font-size: 1em;
+    /* 16px */
+    border: solid;
+    border-color: transparent #fbf800;
+    border-width: 1.25em 0 1.25em 1.25em;
+    /* 16px 0 16px 16px */
+    display: block;
+    position: absolute;
+    right: -1.25em;
+    /* -16px */
+    top: 0; }
+
+/* Tabbed */
+.tabbed-nav {
+  border-top: 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.1);
+  padding: 0;
+  margin-left: 1em; }
+  .tabbed-nav a.is-active {
+    background-color: #fff !important;
+    margin-bottom: -1px;
+    border: 1px solid rgba(151, 151, 151, 0.1);
+    border-bottom-color: #fff;
+    border-radius: 0.25em 0.25em 0 0;
+    /* 4px 4px 0 0 */ }
+  .tabbed-nav ul {
+    margin: 0; }
+
+/* Pagination */
+.page-nav li a {
+  padding: 0.5em 1em;
+  /* 8px 16px */
+  border-bottom: 1px solid transparent !important; }
+  .page-nav li a[rel="prev"], .page-nav li a[rel="next"] {
+    border: 0; }
+    .page-nav li a[rel="prev"]:hover, .page-nav li a[rel="next"]:hover {
+      background-color: transparent; }
+
+/* Breadcrumb */
+.breadcrumb-nav {
+  color: #ccc;
+  font-size: 0.75em;
+  /* 12px */
+  line-height: 1.3334;
+  /* 16px */
+  margin-top: 0;
+  border: 0 none; }
+
+.breadcrumb-nav a,
+.breadcrumb-nav strong {
+  padding: 0 0.5em;
+  /* 8px */
+  border: 0;
+  border-bottom: 1px solid transparent; }
+
+.breadcrumb-nav a:first-child {
+  padding-left: 0; }
 
 /* ============================================================
 	Site specific styles

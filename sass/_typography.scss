@@ -1,3 +1,7 @@
+/* ============================================================
+	Decoded Styleguide // by Jonas Haefele 2014
+============================================================ */
+
 /*! Decoded Global Typography  */
 
 /* ==========================================================================
@@ -130,6 +134,36 @@ h6 {
     font-size: 1em;
 }
 
+
+.headline {
+	@extend h1;
+	margin: 0em 0em 0.4em;
+    padding: 0em 0.3em;
+    background: $decodedYellow;
+    background: rgba($decodedYellow, 0.9);
+    border-bottom: none;
+    display: inline-block;
+}
+.breadcrumb .headline {
+	background: none;
+	padding: 0em;
+}
+
+.lede {
+	color: $decodedGrey;
+	font-weight: 300;
+	font-size: 1.25em; 
+	line-height: 1.2;
+	margin: 0.6667em 0 1em; 
+}
+.caption {
+	color: $decodedGrey;
+	font-size: 0.75em; 
+	line-height: 1.25; 
+	margin: 0.6667em 0; 
+}
+
+
 /* Extra heading */
 /*
 .course-name{
@@ -157,22 +191,6 @@ h6 {
     text-align: left;
     margin: 0em 0em 1em 0em;
     font-family: $boldStack;
-}
-
-.headline {
-    font-size: 2.2em;
-    margin: 0em 0em 0.4em;
-    padding: 0em 0.3em;
-    background: rgb(254, 248, 0);
-    background: rgba(254, 248, 0, 0.9);
-    border-bottom: none;
-    display: inline-block;
-}
-
-.breadcrumb .headline {
-	background: none;
-	padding: 0em;
-
 }
 
 .course-name {
@@ -321,6 +339,22 @@ p a:hover, li a:hover {
     border-bottom: 1px solid black;
 }
 
+
+/* External */
+a[rel="external"] {
+	background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%;
+	background-size: 12px;
+	padding-right: 1em;
+}
+
+/* Tag */
+a[rel="tag"] {
+	font-size: 0.75em; /* 12px */
+	line-height: 1.3334; /* 16px */
+	text-transform: lowercase;
+	border: 0;
+}
+
 /* ==========================================================================
    Images & Video
    ========================================================================== */
@@ -428,6 +462,33 @@ hr {
     display: block !important;
     margin: 1em auto;
     clear: both;
+}
+
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+   
+dl {
+	
+	}
+dt {
+    font-family: $boldStack;
+	padding: 0;
+    color: rgb(160,160,160);
+    //text-transform: lowercase;
+}
+dd {
+	font-family: $defaultStack;
+	text-indent: 0;
+	margin: 0;
+}
+
+
+/* Bullet-less list */
+.no-bullets li {
+	list-style: none;
+	margin-left: 0;
 }
 
 
