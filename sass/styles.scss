@@ -12,6 +12,15 @@
 /* ============================================================
 	Site specific styles
 ============================================================ */
+
+/* apply a natural box layout model to all elements 
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
+ * read comments about img with a 1px border might get unnecessary scaled */
+ 
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+ 
 body {
 	background-color: $white;
 }
