@@ -23,7 +23,7 @@
 
 body {
 	background-color: $white;
-	padding-top: 4em;
+
 }
 header[role="banner"] {
 	}
@@ -33,7 +33,10 @@ main[role="main"] {
 	@include outer-container;
 }
 
-
+article{
+	padding-top: 4em;
+	@include span-columns(12);
+}
 footer[role="contentinfo"] {
 	box-shadow: inset 0 2px $decodedLightGrey;
 	margin-top: 0;
