@@ -171,21 +171,3 @@ label.check + .caption,
 .input + .caption {
 	display: block;
 }
-
-/* ==========================================================================
-   Lists
-   ========================================================================== */
-dl {
-	
-	}
-dt {
-    font-family: $boldStack;
-	padding: 0;
-    color: rgb(160,160,160);
-    //text-transform: lowercase;
-}
-dd {
-	font-family: $defaultStack;
-	text-indent: 0;
-	margin: 0;
-}

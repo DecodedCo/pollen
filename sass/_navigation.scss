@@ -1,0 +1,124 @@
+/* ============================================================
+	Decoded Styleguide // by Jonas Haefele 2014
+============================================================ */
+
+/* ============================================================
+	Navigation
+============================================================ */
+[class$="nav"] {
+	font-size: 0; /* whitespace in inline-block lists http://www.broken-links.com/2013/03/25/removing-the-whitespace-from-inline-block-elements/ */
+	li {
+		font-size: $base-font-size; /* see above */
+		font-size: 1rem;			/* see above */
+		margin: 0;
+		padding: 0;
+		display: inline;
+	}
+}
+[class$="nav"] a {
+	border: 0;
+	border-right: 1px solid $decodedLightGrey;
+	font-family: $defaultStack;
+	padding: 0.5em 0.75em; /* 8px 12px */
+	display: inline-block;
+}
+[class$="nav"] li:last-child a {
+	border-right: 0;
+	}
+	[class$="nav"] li a:hover {
+		background-color: $decodedLightGrey;
+		border-bottom: none;
+	}
+	[class$="nav"] li a.is-active {
+		background-color: $decodedYellow;
+		color: $textColor;
+		font-family: $boldStack;
+		border-bottom: none;
+	}
+
+/* Vertical */
+.vertical-nav li {
+	margin: 0;
+	display: block;
+}
+.vertical-nav a {
+	border: 0;
+	border-bottom: 1px solid $decodedLightGrey;
+	display: block;
+	
+	&:hover{
+		border: 0;
+		border-bottom: 1px solid $decodedLightGrey !important;
+	}
+
+	&.is-active {
+		background-color: $decodedLightGrey;
+		position: relative;
+		border-bottom: 1px solid transparent !important;
+	}
+	&.is-active:after {
+		content: "";
+		font-size: 1em; /* 16px */
+		border: solid;
+		border-color: transparent $decodedYellow;
+		border-width: 1.25em 0 1.25em 1.25em; /* 16px 0 16px 16px */
+		display: block;
+		position:absolute;
+		right: -1.25em; /* -16px */
+		top: 0;
+	}
+}
+/* Tabbed */
+.tabbed-nav {
+	border-top: 0;
+	border-bottom: 1px solid $decodedLightGrey;
+	padding: 0;
+	margin-left: 1em;
+	a.is-active {
+		background-color: #fff !important;
+		margin-bottom: -1px;
+		border: 1px solid $decodedLightGrey;
+		border-bottom-color: #fff;
+		border-radius: 0.25em 0.25em 0 0; /* 4px 4px 0 0 */
+	}
+	ul{
+		margin: 0;
+	}
+}
+
+/* Pagination */
+.page-nav{
+	li{
+		a {
+			padding: 0.5em 1em; /* 8px 16px */
+			border-bottom: 1px solid transparent !important;
+			&.is-active {
+			}
+			&[rel="prev"],
+			&[rel="next"] {
+				border: 0;
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+	}	
+}
+
+/* Breadcrumb */
+.breadcrumb-nav {
+	color: #ccc;
+	font-size: 0.75em; /* 12px */
+	line-height: 1.3334; /* 16px */
+	margin-top: 0;
+	border: 0 none;
+}
+.breadcrumb-nav a,
+.breadcrumb-nav strong {
+	padding: 0 0.5em; /* 8px */
+	border: 0;
+	border-bottom: 1px solid transparent;
+}
+.breadcrumb-nav a:first-child {
+	padding-left: 0;
+}

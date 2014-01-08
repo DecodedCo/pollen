@@ -20,13 +20,6 @@
 	position: absolute;
 }
 
-/* Bullet-less list */
-.no-bullets li {
-	list-style: none;
-	margin-left: 0;
-}
-
-
 /* ============================================================
 	Highlight/Marks
 ============================================================ */
@@ -35,37 +28,6 @@
 }
 .mark {
 	background-color: rgba($decodedYellow, 0.4);
-}
-
-
-/* ============================================================
-	Text
-============================================================ */
-.headline {
-	color: #333;
-	font-family: $boldStack;
-	font-size: 2.5em; /* 40px */
-	line-height: 1; /* 40px */
-	margin: 0.4em 0 0; /* 16px 0 0 */
-}
-@media screen and (min-width: 30em) {
-	.headline {
-		font-size: 4em; /* 64px */
-		margin: 0.25em 0 0; /* 16px 0 0 */
-	}
-}
-.lede {
-	color: #666;
-	font-weight: 300;
-	font-size: 1.25em; /* 20px */
-	line-height: 1.2; /* 24px */
-	margin: 0.6667em 0 1em; /* 16px 0 24px */
-}
-.caption {
-	color: #888;
-	font-size: 0.75em; /* 12px */
-	line-height: 1.25; /* 16px */
-	margin: 0.6667em 0; /* 8px 0 */
 }
 
 
@@ -188,26 +150,6 @@ img.pull-right {
 	.details summary::-webkit-details-marker {
 		margin-left: -1em;
 	}
-
-
-/* ============================================================
-	Link
-============================================================ */
-/* External */
-a[rel="external"] {
-	background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%;
-	background-size: 12px;
-	padding-right: 1em;
-}
-
-/* Tag */
-a[rel="tag"] {
-	font-size: 0.75em; /* 12px */
-	line-height: 1.3334; /* 16px */
-	text-transform: lowercase;
-	border: 0;
-}
-
 
 /* ============================================================
 	Tooltip
@@ -460,123 +402,3 @@ dl.metadata dd {
 .tags [data-rank="3"] { font-size: 0.8750em; line-height: 1.4286; } /* 14px/20px */
 .tags [data-rank="2"] { font-size: 0.7500em; line-height: 1.6667; } /* 12px/20px */
 .tags [data-rank="1"] { font-size: 0.6875em; line-height: 1.8181; } /* 11px/20px */
-
-
-/* ============================================================
-	Navigation
-============================================================ */
-[class$="nav"] li {
-	margin: 0;
-	padding: 0;
-	display: inline;
-}
-[class$="nav"] a {
-	border: 0;
-	border-right: 1px solid $decodedLightGrey;
-	font-family: $defaultStack;
-	padding: 0.5em 0.75em; /* 8px 12px */
-	display: inline-block;
-}
-[class$="nav"] li:last-child a {
-	border-right: 0;
-	}
-	[class$="nav"] li a:hover {
-		background-color: $decodedLightGrey;
-		border-bottom: none;
-	}
-	[class$="nav"] li a.is-active {
-		background-color: $decodedYellow;
-		color: $textColor;
-		font-family: $boldStack;
-		border-bottom: none;
-	}
-
-/* Vertical */
-.vertical-nav li {
-	margin: 0;
-	display: block;
-}
-.vertical-nav a {
-	border: 0;
-	border-bottom: 1px solid $decodedLightGrey;
-	display: block;
-	
-	&:hover{
-		border: 0;
-		border-bottom: 1px solid $decodedLightGrey !important;
-	}
-
-	&.is-active {
-		background-color: $decodedLightGrey;
-		position: relative;
-		border-bottom: 1px solid transparent !important;
-	}
-	&.is-active:after {
-		content: "";
-		font-size: 1em; /* 16px */
-		border: solid;
-		border-color: transparent $decodedYellow;
-		border-width: 1.25em 0 1.25em 1.25em; /* 16px 0 16px 16px */
-		display: block;
-		position:absolute;
-		right: -1.25em; /* -16px */
-		top: 0;
-	}
-}
-/* Tabbed */
-.tabbed-nav {
-	border-top: 0;
-	border-bottom: 1px solid $decodedLightGrey;
-	padding: 0;
-	margin-left: 1em;
-	a.is-active {
-		background-color: #fff !important;
-		margin-bottom: -1px;
-		border: 1px solid $decodedLightGrey;
-		border-bottom-color: #fff;
-		border-radius: 0.25em 0.25em 0 0; /* 4px 4px 0 0 */
-	}
-	ul{
-		margin: 0;
-	}
-}
-
-/* Pagination */
-.page-nav{
-	font-size: 0;
-	li{
-		a {
-			font-size: $base-font-size;
-			font-size: 1rem;
-			padding: 0.5em 1em; /* 8px 16px */
-			border-bottom: 1px solid transparent !important;
-			&.is-active {
-			}
-			&[rel="prev"],
-			&[rel="next"] {
-				border: 0;
-				&:hover {
-					background-color: transparent;
-				}
-			}
-	
-		}
-	}	
-}
-
-/* Breadcrumb */
-.breadcrumb-nav {
-	color: #ccc;
-	font-size: 0.75em; /* 12px */
-	line-height: 1.3334; /* 16px */
-	margin-top: 0;
-	border: 0 none;
-}
-.breadcrumb-nav a,
-.breadcrumb-nav strong {
-	padding: 0 0.5em; /* 8px */
-	border: 0;
-}
-.breadcrumb-nav a:first-child {
-	padding-left: 0;
-}
