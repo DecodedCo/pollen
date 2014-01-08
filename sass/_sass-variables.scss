@@ -36,7 +36,7 @@ $headingPadding: 1px;
 $mobile:		new-breakpoint(max-width 480px 4);
 $phablet:		new-breakpoint(max-width 780px 4);
 $tablet: 		new-breakpoint(max-width 960px 12);
-$tablet-only: 	new-breakpoint(min-width 480px max-width 960px 12);
+$tabletOnly: 	new-breakpoint(min-width 480px max-width 960px 12);
 
 /* ==========================================================================
    Grid Settings
@@ -47,5 +47,10 @@ $grid-columns: 12;
 
 $base-font-size: 16px;
 
+/* ==========================================================================
+   Various
+   ========================================================================== */
+
+$borderRadius: 0.25em;
 
  
