@@ -4,13 +4,17 @@
    Forms
    ========================================================================== */
 
-input[type="text"] {
+input {
     padding: 0.35em 0.5em;
+    border-radius: $borderRadius;
+    border: 1px solid $decodedLightGrey;
 }
 
 textarea {
     width: 100%;
     padding: 0.5em 0.5em;
+    border-radius: $borderRadius;
+    border: 1px solid $decodedLightGrey;
 }
 
 input[type="submit"], input[type="button"], button, .button, .primary-button {
@@ -84,7 +88,8 @@ input[type="submit"], input[type="submit"].primary-button{
 }
 /* Combined search field */
 
-input[type="search"] + .button {
+input[type="search"] + .button,
+input[type="search"] + input[type="submit"] {
 	box-shadow: none;
 	background: transparent url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNIDE2IDE0LjYgTCAxMC45IDkuNSBDIDExLjYgOC41IDEyIDcuMyAxMiA2IEMgMTIgMi43IDkuMyAwIDYgMCBDIDIuNyAwIDAgMi43IDAgNiBDIDAgOS4zIDIuNyAxMiA2IDEyIEMgNy4zIDEyIDguNSAxMS42IDkuNSAxMC45IEwgMTQuNiAxNiBMIDE2IDE0LjYgWk0gMiA2IEMgMiAzLjggMy44IDIgNiAyIEMgOC4yIDIgMTAgMy44IDEwIDYgQyAxMCA4LjIgOC4yIDEwIDYgMTAgQyAzLjggMTAgMiA4LjIgMiA2IFoiIGZpbGw9IiM5OTkiLz48L3N2Zz4=) no-repeat 50% 55%;
 	border-color: transparent;
@@ -140,9 +145,11 @@ fieldset.options legend {
 
 fieldset.options {
 	clear: left;
+	padding: 0 1em;
 }
 fieldset.options ul {
 	margin: 0;
+	padding: 0;
 }
 fieldset.options li {
 	list-style: none;

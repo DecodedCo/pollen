@@ -5,7 +5,7 @@
    ========================================================================== */
 
 body {
-    font: 16px / $lineHeight;
+    font: $base-font-size / $lineHeight;
     color: $textColor;
     font-size: 110%;
 }
@@ -282,20 +282,20 @@ a {
     font-style: normal;
     color: $textColor;
     text-decoration: none;
-    text-decoration: none;
-    border-bottom: none;
+    border-bottom: 1px solid transparent;
 }
 
 a:hover {
     text-decoration: none;
-    color: darken($textColor, 30%);
-    border-bottom: none;
+    border-bottom: 1px solid $textColor;
 }
 
-a.button {
+a.button,
+a.primary-button {
     cursor: pointer;
     margin-bottom: 1em;
     margin-right: 0.3em;
+    border-bottom: none;
 }
 
 a.button:hover {

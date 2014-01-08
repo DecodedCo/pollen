@@ -31,10 +31,10 @@
 	Highlight/Marks
 ============================================================ */
 .highlight {
-	background-color: #eee;
+	background-color: $decodedYellow;
 }
 .mark {
-	background-color: #fff9d9;
+	background-color: rgba($decodedYellow, 0.4);
 }
 
 
@@ -43,7 +43,7 @@
 ============================================================ */
 .headline {
 	color: #333;
-	font-weight: 700;
+	font-family: $boldStack;
 	font-size: 2.5em; /* 40px */
 	line-height: 1; /* 40px */
 	margin: 0.4em 0 0; /* 16px 0 0 */
@@ -76,7 +76,7 @@
 	border-radius: 100%;
 }
 .framed {
-	box-shadow: 0 2px 2px #e9e9e9;
+	box-shadow: 0 2px 2px $decodedLightGrey;
 	border: 1px solid #ccc;
 	padding: 0.25em;
 	display:inline-block;
@@ -122,42 +122,52 @@ img.pull-right {
 
 /* Module */
 [class*="module"] {
-	border: 0;
+	border: 1px solid $decodedLightGrey;
+	border-top: 1em solid $decodedYellow;
 	padding: 2%;
 	display: block;
-	}
-	[class*="module"]:before,
-	[class*="module"]:after {
+	
+	&:before,
+	&:after {
 		content: " ";
 		display: table;
 	}
-	[class*="module"]:after {
+	&:after {
 		clear: both;
 	}
-[class*="module"] > *:last-child {
-	margin-bottom: 0;
-}
-[class*="module"] .h {
-	color: inherit;
-	font-weight: 700;
-	font-size: 1.25em; /* 20px */
-	line-height: 1.2; /* 24px */
+	
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+	& .h {
+		color: inherit;
+		font-family: $boldStack;
+		font-size: 1.25em; /* 20px */
+		line-height: 1.2; /* 24px */
 	/*margin-top: 0;*/
+	}
+	
+	&.highlight,
+	&.mark{
+		border: 0;
+	}
+	
 }
+
 
 /* Module > Notification */
 [class$="notice"] {
-	background-color: #fff9d9;
-	border-left: 0.25em solid #ed8; /* 4px */
-	border-radius: 0 0.25em 0.25em 0; /* 0 4px 4px 0 */
+	background-color: $decodedLightGrey;
+	border: 0;
+	border-top: 0.25em solid $decodedGrey; /* 4px */
 }
 .success-notice {
 	background-color: #f0f6e9;
-	border-left-color: #b3d98c;
+	border-top-color: #b3d98c;
 }
 .failure-notice {
 	background-color: #fcecec;
-	border-left-color: #dd6969;
+	border-top-color: #dd6969;
 }
 
 /* Module > Details */
@@ -166,14 +176,14 @@ img.pull-right {
 }
 .details summary {
 	color: $decodedGrey;
-	font-weight: 700;
+	font-family: $boldStack;
 	display: inline;
 	}
 	.details summary:hover {
-		color: #52d;
+		color: $textColor;
 	}
 	.details summary:active {
-		color: #d25;
+		color: $textColor;
 	}
 	.details summary::-webkit-details-marker {
 		margin-left: -1em;
@@ -243,18 +253,21 @@ a[rel="tag"] {
 .articles {
 	overflow: hidden;
 	}
-	.articles a {
+	.articles > li > a {
 		display: block;
+		border-bottom: none;
+		&:hover {
+			background-color: rgba($decodedLightGrey, 0.1);
+			border-bottom: none;
+		}
+		&:active {
+			background-color: rgba($decodedLightGrey, 0.05);
+			border-bottom: none;
+		}
 	}
-	.articles a:hover {
-		background-color: rgba(85,34,221,0.05);
-	}
-	.articles a:active {
-		background-color: rgba(221,34,85,0.05);
-	}
-.articles li {
+	.articles li {
 	list-style: none;
-	margin-left: 0;
+	margin: 0 0 1em 0;
 	}
 .articles .h {
 	margin-top: 0;
@@ -308,7 +321,7 @@ dl.metadata dt {
 dl.metadata dd {
 	color: #888;
 	margin-left: 0;
-	border-bottom: 1px solid #e9e9e9;
+	border-bottom: 1px solid $decodedLightGrey;
 	padding-bottom: 0.5em;
 }
 @media screen and (min-width: 40em) {
@@ -343,7 +356,7 @@ dl.metadata dd {
 	.progress li:before {
 		content: "";
 		font-size: 1em; /* 16px */
-		font-weight: 700;
+		font-family: $boldStack;
 		border: solid;
 		border-color: #f6f6f6 transparent;
 		border-width: 1.25em 0 1.25em 1.25em; /* 20px 0 20px 20px */
@@ -370,33 +383,32 @@ dl.metadata dd {
 		top: 0;
 	}
 .progress li.completed {
-	background-color: #e9e9e9;
+	background-color: $decodedLightGrey;
 	}
 	.progress li.completed:hover {
-		background-color: #e9e9e9;
+		background-color: $decodedLightGrey;
 	}
 	.progress li.completed:before {
-		border-color: #e9e9e9 transparent;
+		border-color: $decodedLightGrey transparent;
 	}
 	.progress li.completed:hover:before {
-		border-color: #e9e9e9 transparent;
+		border-color: $decodedLightGrey transparent;
 	}
 	.progress li.completed:after {
-		border-color: transparent #e9e9e9;
+		border-color: transparent $decodedLightGrey;
 	}
 	.progress li.completed:hover:after {
-		border-color: transparent #e9e9e9;
+		border-color: transparent $decodedLightGrey;
 	}
 .progress li.is-active {
-	color: #fff;
-	font-weight: 700;
-	background-color: $decodedGrey;
+	font-family: $boldStack;
+	background-color: $decodedYellow;
 	}
 	.progress li.is-active:before {
-		border-color: $decodedGrey transparent;
+		border-color: $decodedYellow transparent;
 	}
 	.progress li.is-active:after {
-		border-color: transparent $decodedGrey;
+		border-color: transparent $decodedYellow;
 	}
 .progress li a,
 .progress li a:hover {
@@ -412,7 +424,7 @@ dl.metadata dd {
 	list-style: none;
 	margin: 0 0.75em 0 0; /* 0 12px 0 0 */
 	padding: 0 0.75em 0 0; /* 0 12px 0 0 */
-	border-right: 1px solid #e9e9e9;
+	border-right: 1px solid $decodedLightGrey;
 	float: left;
 	}
 	ul.stats li:last-child {
@@ -421,7 +433,7 @@ dl.metadata dd {
 		border: none;
 	}
 .stats a {
-	font-weight: 700;
+	font-family: $boldStack;
 	font-size: 1.125em; /* 18px */
 	line-height: 1.3334; /* 24px */
 	border: 0 none;
@@ -455,11 +467,13 @@ dl.metadata dd {
 ============================================================ */
 [class$="nav"] li {
 	margin: 0;
+	padding: 0;
 	display: inline;
 }
 [class$="nav"] a {
 	border: 0;
-	border-right: 1px solid #e9e9e9;
+	border-right: 1px solid $decodedLightGrey;
+	font-family: $defaultStack;
 	padding: 0.5em 0.75em; /* 8px 12px */
 	display: inline-block;
 }
@@ -467,11 +481,14 @@ dl.metadata dd {
 	border-right: 0;
 	}
 	[class$="nav"] li a:hover {
-		background-color: #f6f6f6;
+		background-color: $decodedLightGrey;
+		border-bottom: none;
 	}
 	[class$="nav"] li a.is-active {
-		color: #444;
-		font-weight: 700;
+		background-color: $decodedYellow;
+		color: $textColor;
+		font-family: $boldStack;
+		border-bottom: none;
 	}
 
 /* Vertical */
@@ -480,56 +497,72 @@ dl.metadata dd {
 	display: block;
 }
 .vertical-nav a {
-	border-right: 0;
-	border-bottom: 1px solid #e9e9e9;
+	border: 0;
+	border-bottom: 1px solid $decodedLightGrey;
 	display: block;
+	
+	&:hover{
+		border: 0;
+		border-bottom: 1px solid $decodedLightGrey !important;
 	}
-	.vertical-nav a.is-active {
-		background-color: #e9e9e9;
+
+	&.is-active {
+		background-color: $decodedLightGrey;
 		position: relative;
+		border-bottom: 1px solid transparent !important;
 	}
-	.vertical-nav a.is-active:after {
+	&.is-active:after {
 		content: "";
 		font-size: 1em; /* 16px */
 		border: solid;
-		border-color: transparent #e9e9e9;
+		border-color: transparent $decodedYellow;
 		border-width: 1.25em 0 1.25em 1.25em; /* 16px 0 16px 16px */
 		display: block;
 		position:absolute;
 		right: -1.25em; /* -16px */
 		top: 0;
 	}
-
+}
 /* Tabbed */
 .tabbed-nav {
 	border-top: 0;
-	border-bottom: 1px solid #e9e9e9;
+	border-bottom: 1px solid $decodedLightGrey;
 	padding: 0;
 	margin-left: 1em;
-}
-.tabbed-nav a.is-active {
-	background-color: #fff;
-	margin-bottom: -1px;
-	border: 1px solid #e9e9e9;
-	border-bottom-color: #fff;
-	border-radius: 0.25em 0.25em 0 0; /* 4px 4px 0 0 */
+	a.is-active {
+		background-color: #fff !important;
+		margin-bottom: -1px;
+		border: 1px solid $decodedLightGrey;
+		border-bottom-color: #fff;
+		border-radius: 0.25em 0.25em 0 0; /* 4px 4px 0 0 */
+	}
+	ul{
+		margin: 0;
+	}
 }
 
 /* Pagination */
-.page-nav a {
-	padding: 0.5em 1em; /* 8px 16px */
-	}
-	.page-nav a.is-active {
-		background-color: #e9e9e9;
-	}
-	.page-nav a[rel="prev"],
-	.page-nav a[rel="next"] {
-		border: 0;
+.page-nav{
+	font-size: 0;
+	li{
+		a {
+			font-size: $base-font-size;
+			font-size: 1rem;
+			padding: 0.5em 1em; /* 8px 16px */
+			border-bottom: 1px solid transparent !important;
+			&.is-active {
+			}
+			&[rel="prev"],
+			&[rel="next"] {
+				border: 0;
+				&:hover {
+					background-color: transparent;
+				}
+			}
+	
 		}
-		.page-nav a[rel="prev"]:hover,
-		.page-nav a[rel="next"]:hover {
-			background-color: transparent;
-		}
+	}	
+}
 
 /* Breadcrumb */
 .breadcrumb-nav {
@@ -547,5 +580,3 @@ dl.metadata dd {
 .breadcrumb-nav a:first-child {
 	padding-left: 0;
 }
-
-
