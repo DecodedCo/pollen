@@ -33,9 +33,9 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
 }
 
-h1 {
+h1, .alpha {
     text-decoration: none;
-    font-size: 2.2em;
+    font-size: #{$alpha}em;
     font-family: $boldStack;
     margin: 0em auto 0.6em auto;
     line-height: 1.2;
@@ -44,11 +44,11 @@ h1 {
 
 /* Heading 2 */
 
-h2 {
+h2, .beta {
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: #{$beta}em;
     font-family: $boldStack;
-    margin: 0em auto 0.6em auto;
+    margin: 1em auto 0.6em auto;
     line-height: 1.2;
     color: #010101;
 }
@@ -61,6 +61,7 @@ h2 a:hover {
     border-bottom: 1px solid transparent;
 }
 
+/*
 h2#maintitle, .de-look {
 	letter-spacing: 5px;
     font-weight: normal;
@@ -80,11 +81,12 @@ h2.article-name {
     font-family: "DIN Next";
     text-transform: uppercase;
 }
+*/
 
 h2 + h3 {
     font-weight: normal;
     display: block;
-    line-height: 1.2em;
+    line-height: #{$gamma}em;
     color: $decodedGrey;
     font-family: $defaultStack;
     text-transform: uppercase;
@@ -98,9 +100,9 @@ h2.article-name + h3 {
 */
 /* Heading 3 */
 
-h3 {
+h3, .gamma {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: #{$gamma}em;
     font-family: "DIN Next";
     text-transform: none;
     margin: 1.5em auto 0.6em auto;
@@ -108,7 +110,7 @@ h3 {
     color: #010101;
 }
 
-h4 {
+h4, .delta {
     font-family: $boldStack;
     font-weight: normal;
     margin: 0em auto;
@@ -124,13 +126,13 @@ h4.course-name {
     text-transform: none;
 }
 
-h5 {
-    font-size: 0.875em;
+h5, .epsilon {
+    font-size: #{$epsilon}em;
     margin: 1.5em 0em 1em;
-    font-weight: 600;
+    font-family: $boldStack;
 }
 
-h6 {
+h6, .zeta {
     font-size: 1em;
 }
 
@@ -197,6 +199,8 @@ h6 {
     letter-spacing: 0px;
 }
  */
+ 
+ 
 /* ==========================================================================
    Smaller text elements
    ========================================================================== */
@@ -235,22 +239,19 @@ strong i, strong cite, strong em, strong dfn {
     font-weight: inherit;
 }
 
-caption {
-    color: #666;
-    font-size: 0.9333em;
-    line-height: 1.1429;
-    caption-side: bottom;
-    padding: 1.1429em 0 0.5714em;
-    text-align: left;
-}
-
-ul.widget-bullet {
-    padding-left: 1.1em;
-}
+pre {
+	margin-left: 1.5em; /* 24px */
+	white-space:  pre-wrap;
+	}
+	pre code,
+	pre samp {
+		line-height: 1.5;
+	}
 
 blockquote {
     position: relative;
     display: block;
+   	line-height: 1.5; /* 32px */
     padding: 0em;
     font-style: italic;
     font-size: 1em;
@@ -275,6 +276,45 @@ blockquote:before {
     color: rgba(100, 100, 100, 0.2);
     text-rendering: auto;
 }
+
+/* Grouping > Lists */
+ol {
+	list-style-type: decimal;
+	padding: 0;
+}
+ul {
+	list-style-type: circle;
+	padding: 0;
+	}
+	ul li li {
+		list-style-type: square;
+	}
+dt {
+	font-size: 1em; /* 16px */
+	font-weight: 700;
+	line-height: 1.5; /* 24px */
+}
+dd, li {
+	margin-left: 1.5em; /* 24px */
+	}
+	dd > *, li > * {
+		margin-top: 0;
+	}
+
+caption {
+    color: #666;
+    font-size: 0.9333em;
+    line-height: 1.1429;
+    caption-side: bottom;
+    padding: 1.1429em 0 0.5714em;
+    text-align: left;
+}
+
+ul.widget-bullet {
+    padding-left: 1.1em;
+}
+
+
 strong {
     font-family: $boldStack;
     font-weight: normal;
@@ -364,6 +404,18 @@ figure.banner {
 
 figure.wide img {
     width: 100%;
+}
+
+/* Grouping > Figures */
+figcaption {
+	color: #999;
+	font-size: #{$epsilon}em; 
+	line-height: $gamma;
+	padding: #{$zeta}em 0;
+	clear: left;
+}
+blockquote + figcaption::before {
+	content: "\2014";
 }
 
 .video-wrapper {

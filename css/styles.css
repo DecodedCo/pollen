@@ -347,6 +347,286 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* browser inconsistencies v2.1.3 */
+/* ============================================================
+	Decoded Styleguide // by Jonas Haefele 2014
+============================================================ */
+/* Adapted from https://github.com/paulrobertlloyd/barebones */
+/* ============================================================
+	Viewport
+============================================================ */
+@-ms-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
+/* ============================================================
+	Box sizing
+============================================================ */
+/* apply a natural box layout model to all elements 
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
+ * read comments about img with a 1px border might get unnecessary scaled */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* ============================================================
+	Sectioning
+============================================================ */
+body {
+  color: #444;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  /* 16px */
+  line-height: 1;
+  /* 16px */
+  text-rendering: optimizeLegibility;
+  margin: 0 auto; }
+
+nav ul {
+  margin: 0;
+  list-style: none; }
+
+/* ============================================================
+	Text-level semantics
+============================================================ */
+a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(34, 85, 221, 0.1); }
+
+a:focus {
+  outline: 1px solid rgba(34, 85, 221, 0.3); }
+
+a:hover {
+  border-bottom-color: rgba(85, 34, 221, 0.2); }
+
+a:link, a:visited, a:hover {
+  transition: all 0.2s ease; }
+
+a:active {
+  border-bottom: 1px solid rgba(221, 34, 85, 0.25);
+  transition: none; }
+
+code, samp {
+  font-family: 'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace;
+  font-size: 1em;
+  /* 16px */
+  line-height: 90%; }
+
+code {
+  color: #b03; }
+
+code .comment {
+  color: #999; }
+
+samp {
+  background-color: #f9f9f9;
+  padding: 0.25em; }
+
+kbd {
+  color: #666;
+  font-family: inherit;
+  font-size: 87.5%;
+  line-height: 90%;
+  background-color: #f9f9f9;
+  margin: 0 0.25em;
+  /* 0 4px */
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+  padding: 0.3334em 0.5em;
+  box-shadow: inset 0 1px 0 #fff; }
+
+sub {
+  font-size: smaller;
+  line-height: 90%;
+  vertical-align: sub; }
+
+sup {
+  font-size: smaller;
+  line-height: 90%;
+  vertical-align: super; }
+
+/* ============================================================
+	Edits
+============================================================ */
+mark, ins {
+  background-color: #fff9d9;
+  line-height: 90%;
+  padding: 0 0.125em;
+  /* 0 2px */ }
+
+ins {
+  background-color: #e9e9e9; }
+
+del, s {
+  line-height: 90%;
+  text-decoration: line-through; }
+
+/* ============================================================
+	Embedded content
+============================================================ */
+img {
+  border: 0;
+  max-width: 100%; }
+
+/* ============================================================
+	Tabular data
+============================================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption {
+  caption-side: bottom;
+  color: #999;
+  font-size: 0.75em;
+  /* 12px */
+  line-height: 1.3334;
+  /* 16px */
+  text-align: left;
+  margin: 1em 0;
+  /* 12px 0 */ }
+
+td, th {
+  text-align: left;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 0.375em 2em 0.375em 0;
+  /* 6px 32px 6px 0 */
+  vertical-align: top; }
+
+th {
+  font-weight: 700;
+  padding-bottom: 0.5em;
+  /* 8px */ }
+
+thead th {
+  border-bottom: 2px solid #ddd; }
+
+/* ============================================================
+	Forms
+============================================================ */
+fieldset {
+  border: 0;
+  padding: 0; }
+
+legend {
+  margin: 0; }
+
+label {
+  cursor: pointer; }
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: 0; }
+
+button,
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  line-height: normal;
+  width: auto;
+  cursor: pointer; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.25em; }
+
+input[type="search"] {
+  -webkit-appearance: none; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+[disabled] {
+  cursor: default; }
+
+/* Placeholder */
+::-webkit-input-placeholder {
+  color: #999; }
+
+:focus::-webkit-input-placeholder {
+  color: #ccc; }
+
+:-moz-placeholder {
+  color: #999; }
+
+:focus:-moz-placeholder {
+  color: #ccc; }
+
+:-ms-input-placeholder {
+  color: #999; }
+
+:focus:-ms-input-placeholder {
+  color: #ccc; }
+
+/* ============================================================
+	Interactive
+============================================================ */
+summary {
+  border: 0;
+  outline: 0;
+  cursor: pointer; }
+
+/* ============================================================
+	Print styles
+============================================================ */
+@media print {
+  @page {
+    margin: 0.5cm; }
+
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    box-shadow: none; }
+
+  p, h1, .headline, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h1, .headline, h2, h3, h4 {
+    page-break-after: avoid; }
+
+  blockquote {
+    border-left: 4px solid #ccc;
+    padding: 0 1em;
+    page-break-inside: avoid; }
+
+  a, a:visited {
+    color: #000 !important;
+    border-bottom: 1px dotted #999;
+    padding-left: 0 !important; }
+
+  thead {
+    display: table-header-group; }
+
+  tr, img {
+    page-break-inside: avoid; }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  textarea {
+    border-bottom: 1px solid #999;
+    box-shadow: none; } }
+/* oppinionated default and further resets that normalize doesn't catch*/
 /* ==========================================================================
 	Decoded Styleguide // by Jonas Haefele 2014
 ============================================================================= */
@@ -365,6 +645,7 @@ table {
 /* ==========================================================================
    Various
    ========================================================================== */
+/* colors, modular scale, grid settings... */
 @font-face {
   font-family: "DIN Next-500";
   font-weight: 500;
@@ -393,6 +674,7 @@ table {
   src: url("../fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix");
   src: url("../fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix") format("eot"), url("../fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff") format("woff"), url("../fonts/3516f91d-ac48-42cd-acfe-1be691152cc4.ttf") format("truetype"), url("../fonts/d1b1e866-a411-42ba-8f75-72bf28e23694.svg#d1b1e866-a411-42ba-8f75-72bf28e23694") format("svg"); }
 
+/* decoded font */
 /* ============================================================
 	Helpers
 ============================================================ */
@@ -416,10 +698,10 @@ table {
 	Highlight/Marks
 ============================================================ */
 .highlight {
-  background-color: #fbf800; }
+  background-color: #fef800; }
 
 .mark {
-  background-color: rgba(251, 248, 0, 0.4); }
+  background-color: rgba(254, 248, 0, 0.4); }
 
 /* ============================================================
 	Image
@@ -473,7 +755,7 @@ img.pull-right {
 /* Module */
 [class*="module"] {
   border: 1px solid rgba(151, 151, 151, 0.1);
-  border-top: 1em solid #fbf800;
+  border-top: 1em solid #fef800;
   padding: 2%;
   display: block; }
   [class*="module"]:before, [class*="module"]:after {
@@ -745,13 +1027,13 @@ dl.metadata dd {
 
 .progress li.is-active {
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
-  background-color: #fbf800; }
+  background-color: #fef800; }
 
 .progress li.is-active:before {
-  border-color: #fbf800 transparent; }
+  border-color: #fef800 transparent; }
 
 .progress li.is-active:after {
-  border-color: transparent #fbf800; }
+  border-color: transparent #fef800; }
 
 .progress li a,
 .progress li a:hover {
@@ -831,6 +1113,7 @@ ul.stats li:last-child {
   line-height: 1.8181; }
 
 /* 11px/20px */
+/* legacy patterns from https://github.com/paulrobertlloyd/barebones */
 /* ============================================================
 	Decoded Styleguide // by Jonas Haefele 2014
 ============================================================ */
@@ -856,20 +1139,20 @@ html {
 h1, .headline, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
-h1, .headline {
+h1, .headline, .alpha {
   text-decoration: none;
-  font-size: 2.2em;
+  font-size: 1.97em;
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
   margin: 0em auto 0.6em auto;
   line-height: 1.2;
   color: #010101; }
 
 /* Heading 2 */
-h2 {
+h2, .beta {
   text-decoration: none;
-  font-size: 1.8em;
+  font-size: 1.618em;
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
-  margin: 0em auto 0.6em auto;
+  margin: 1em auto 0.6em auto;
   line-height: 1.2;
   color: #010101; }
 
@@ -879,27 +1162,31 @@ header h2 {
 h2 a:hover {
   border-bottom: 1px solid transparent; }
 
+/*
 h2#maintitle, .de-look {
-  letter-spacing: 5px;
-  font-weight: normal;
-  font-family: "DIN Next", Helvetica, Arial, sans-serif;
-  text-transform: uppercase; }
+	letter-spacing: 5px;
+    font-weight: normal;
+    font-family: $defaultStack;
+    text-transform: uppercase;
+}
 
 .de-look {
-  font-size: 1.8em; }
+	font-size: 1.8em;
+}
 
 h2.article-name {
-  text-align: left;
-  top: 0em;
-  margin-top: 0em;
-  letter-spacing: 2px;
-  font-family: "DIN Next";
-  text-transform: uppercase; }
-
+    text-align: left;
+    top: 0em;
+    margin-top: 0em;
+    letter-spacing: 2px;
+    font-family: "DIN Next";
+    text-transform: uppercase;
+}
+*/
 h2 + h3 {
   font-weight: normal;
   display: block;
-  line-height: 1.2em;
+  line-height: 1.217em;
   color: #969696;
   font-family: "DIN Next", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -912,16 +1199,16 @@ h2.article-name + h3 {
 }
 */
 /* Heading 3 */
-h3 {
+h3, .gamma, .navbar .navbar-right h1, .navbar .navbar-right .headline {
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.217em;
   font-family: "DIN Next";
   text-transform: none;
   margin: 1.5em auto 0.6em auto;
   line-height: 1.2;
   color: #010101; }
 
-h4 {
+h4, .delta {
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin: 0em auto;
@@ -935,19 +1222,19 @@ h4 {
 h4.course-name {
   text-transform: none; }
 
-h5 {
-  font-size: 0.875em;
+h5, .epsilon {
+  font-size: 0.752em;
   margin: 1.5em 0em 1em;
-  font-weight: 600; }
+  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif; }
 
-h6 {
+h6, .zeta {
   font-size: 1em; }
 
 .headline {
   margin: 0em 0em 0.4em;
   padding: 0em 0.3em;
-  background: #fbf800;
-  background: rgba(251, 248, 0, 0.9);
+  background: #fef800;
+  background: rgba(254, 248, 0, 0.9);
   border-bottom: none;
   display: inline-block; }
 
@@ -1031,20 +1318,20 @@ i, cite, em, dfn {
 strong i, strong cite, strong em, strong dfn {
   font-weight: inherit; }
 
-caption {
-  color: #666;
-  font-size: 0.9333em;
-  line-height: 1.1429;
-  caption-side: bottom;
-  padding: 1.1429em 0 0.5714em;
-  text-align: left; }
+pre {
+  margin-left: 1.5em;
+  /* 24px */
+  white-space: pre-wrap; }
 
-ul.widget-bullet {
-  padding-left: 1.1em; }
+pre code,
+pre samp {
+  line-height: 1.5; }
 
 blockquote {
   position: relative;
   display: block;
+  line-height: 1.5;
+  /* 32px */
   padding: 0em;
   font-style: italic;
   font-size: 1em;
@@ -1066,6 +1353,43 @@ blockquote:before {
   font-family: "Times";
   color: rgba(100, 100, 100, 0.2);
   text-rendering: auto; }
+
+/* Grouping > Lists */
+ol {
+  list-style-type: decimal;
+  padding: 0; }
+
+ul {
+  list-style-type: circle;
+  padding: 0; }
+
+ul li li {
+  list-style-type: square; }
+
+dt {
+  font-size: 1em;
+  /* 16px */
+  font-weight: 700;
+  line-height: 1.5;
+  /* 24px */ }
+
+dd, li {
+  margin-left: 1.5em;
+  /* 24px */ }
+
+dd > *, li > * {
+  margin-top: 0; }
+
+caption {
+  color: #666;
+  font-size: 0.9333em;
+  line-height: 1.1429;
+  caption-side: bottom;
+  padding: 1.1429em 0 0.5714em;
+  text-align: left; }
+
+ul.widget-bullet {
+  padding-left: 1.1em; }
 
 strong {
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
@@ -1140,6 +1464,17 @@ figure.banner {
 
 figure.wide img {
   width: 100%; }
+
+/* Grouping > Figures */
+figcaption {
+  color: #999;
+  font-size: 0.752em;
+  line-height: 1.217;
+  padding: 0.618em 0;
+  clear: left; }
+
+blockquote + figcaption::before {
+  content: "\2014"; }
 
 .video-wrapper {
   position: relative;
@@ -1286,6 +1621,7 @@ aside.stat, aside.stat span, aside.stat p {
 }
 
 */
+/* typography styles */
 /* Decoded Forms and Lists */
 /* ==========================================================================
    Forms
@@ -1326,13 +1662,13 @@ input[type="submit"], input[type="button"], button, .button, .primary-button {
   font-weight: normal;
   text-transform: uppercase; }
   .primary-button:hover, .primary-button:focus, input[type="button"].primary-button:hover, input[type="button"].primary-button:focus, input[type="submit"].primary-button:hover, input[type="submit"].primary-button:focus {
-    background-color: rgba(251, 248, 0, 0.4) !important; }
+    background-color: rgba(254, 248, 0, 0.4) !important; }
   .primary-button:active, input[type="button"].primary-button:active, input[type="submit"].primary-button:active {
     background-color: white;
-    border: 2px solid #fbf800; }
+    border: 2px solid #fef800; }
 
 input[type="submit"], input[type="submit"].primary-button {
-  background: #fbf800; }
+  background: #fef800; }
 
 /* Combined inputs/buttons */
 .combined {
@@ -1424,11 +1760,12 @@ label.check + .caption,
 .input + .caption {
   display: block; }
 
+/* forms, input, buttons */
 /* ============================================================
 	Decoded Styleguide // by Jonas Haefele 2014
 ============================================================ */
 /* ============================================================
-	Navigation
+	General Navigation Styles
 ============================================================ */
 [class$="nav"] {
   font-size: 0;
@@ -1458,7 +1795,7 @@ label.check + .caption,
   border-bottom: none; }
 
 [class$="nav"] li a.is-active {
-  background-color: #fbf800;
+  background-color: #fef800;
   color: #1b1b1b;
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
   border-bottom: none; }
@@ -1484,7 +1821,7 @@ label.check + .caption,
     font-size: 1em;
     /* 16px */
     border: solid;
-    border-color: transparent #fbf800;
+    border-color: transparent #fef800;
     border-width: 1.25em 0 1.25em 1.25em;
     /* 16px 0 16px 16px */
     display: block;
@@ -1540,39 +1877,70 @@ label.check + .caption,
   padding-left: 0; }
 
 /* ============================================================
+	Decoded Top Navigation Bar with Logo
+============================================================ */
+.navbar {
+  background-color: #fef800;
+  padding: 0 130px 0 20px;
+  border-bottom: 1px solid #e5df00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 50px;
+  z-index: 1030; }
+  @media screen and (max-width: 780px) {
+    .navbar {
+      *zoom: 1;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto; }
+      .navbar:before, .navbar:after {
+        content: " ";
+        display: table; }
+      .navbar:after {
+        clear: both; } }
+  .navbar:after {
+    content: url("../assets/decoded-logo-navbar.png");
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px; }
+  .navbar .navbar-left {
+    float: left;
+    padding: 0; }
+    @media screen and (max-width: 780px) {
+      .navbar .navbar-left {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .navbar .navbar-left:last-child {
+          margin-right: 0; } }
+  .navbar nav li a {
+    padding: 0.8em 0.75em .8em 0.75em; }
+  .navbar .navbar-right {
+    float: right;
+    padding: 1.15em 0 0 0; }
+    @media screen and (max-width: 780px) {
+      .navbar .navbar-right {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%;
+        text-align: right; }
+        .navbar .navbar-right:last-child {
+          margin-right: 0; } }
+    .navbar .navbar-right h1, .navbar .navbar-right .headline {
+      margin: 0; }
+
+/* nav bars, pagination,... */
+/* ============================================================
 	Site specific styles
 ============================================================ */
-/* apply a natural box layout model to all elements 
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
- * read comments about img with a 1px border might get unnecessary scaled */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
 body {
-  background-color: white; }
-
-header[role="banner"] {
-  color: #010101;
-  background-color: #fbf800;
-  box-shadow: inset 0 -2px rgba(0, 0, 0, 0.25), inset 0 2px rgba(0, 0, 0, 0.1);
-  *zoom: 1;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 4em;
-  /* 64px */ }
-  header[role="banner"]:before, header[role="banner"]:after {
-    content: " ";
-    display: table; }
-  header[role="banner"]:after {
-    clear: both; }
-
-header[role="banner"] .headline,
-header[role="banner"] .lede {
-  color: #fff;
-  text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25); }
+  background-color: white;
+  padding-top: 4em; }
 
 main[role="main"] {
   background-color: white;
