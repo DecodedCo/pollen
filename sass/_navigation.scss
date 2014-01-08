@@ -3,7 +3,7 @@
 ============================================================ */
 
 /* ============================================================
-	Navigation
+	General Navigation Styles
 ============================================================ */
 [class$="nav"] {
 	font-size: 0; /* whitespace in inline-block lists http://www.broken-links.com/2013/03/25/removing-the-whitespace-from-inline-block-elements/ */
@@ -121,4 +121,56 @@
 }
 .breadcrumb-nav a:first-child {
 	padding-left: 0;
+}
+
+/* ============================================================
+	Decoded Top Navigation Bar with Logo
+============================================================ */
+.navbar{
+	background-color: $decodedYellow;
+	padding: 0 130px 0 20px;
+	border-bottom: 1px solid darken($decodedYellow, 5%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	min-height: 50px;
+	z-index: 1030;
+	@include media($phablet) {
+		@include outer-container();
+	}
+	
+	&:after {
+	    content: url('../assets/decoded-logo-navbar.png');
+	    display: block;
+	    position: absolute;
+	    top: 10px;
+	    right: 20px;
+	}
+	
+	.navbar-left{
+		float: left;
+		padding: 0;
+		@include media($phablet) {
+			@include span-columns(4);
+		}
+	}
+	nav li a {
+		padding: 0.8em 0.75em .8em 0.75em;
+	}
+	.navbar-right{
+		float: right;
+		padding: 1.15em 0 0 0;
+		
+		@include media($phablet) {
+			@include span-columns(4);
+			text-align: right;
+		}
+		
+		h1{
+			@extend .gamma;
+			margin: 0;
+		}
+	}
+	
 }

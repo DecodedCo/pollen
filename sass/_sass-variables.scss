@@ -10,8 +10,8 @@ $headingColor: #010101;
 $textColor: lighten($headingColor, 10%);
 $borderColor: rgba(100,100,100,.1);
 
-$decodedYellow: rgb(251,248,0);
-$decodedYellowRGBA: rgba(251,248,0,.8);
+$decodedYellow: rgb(254,248,0);
+$decodedYellowRGBA: rgba(254,248,0,.8);
 $decodedGrey: rgb(150,150,150);
 $darkYellow: rgba(201,181,0,1);
 $decodedLightGrey: lighten($borderColor,20%);
@@ -56,5 +56,15 @@ $base-font-size: 16px;
    ========================================================================== */
 
 $borderRadius: 0.25em;
+
+$alpha:		1.97;
+$beta:		1.618;	
+$gamma:		1.217;
+$delta:		1;
+$epsilon:	0.752;
+$zeta:		0.618;
+
+$mega:		2.618;
+$giga:		3.187;
 
  
