@@ -11,6 +11,7 @@ body {
 }
 
 body,pre,select,input,textarea,text {
+	@extend .font-smoothing;
     font-family: $defaultStack;
     color: $textColor;
 }
@@ -24,6 +25,7 @@ html {
    ========================================================================== */
 
 h1,h2,h3,h4,h5,h6 {
+	@extend .font-smoothing;
     font-weight: normal;
 }
 
@@ -188,6 +190,7 @@ p, li {
 }
 
 p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
+	@extend .font-smoothing;
     font-size: 0.925em;
     line-height: $lineHeight;
     font-weight: normal;
@@ -290,16 +293,12 @@ a:hover {
 }
 
 a.button {
-    float: right;
     cursor: pointer;
-    padding: 0 0 0em;
     margin-bottom: 1em;
     margin-right: 0.3em;
-    border-bottom: 1px solid transparent;
 }
 
 a.button:hover {
-    border-bottom: 1px solid black;
 }
 
 a.opps {
