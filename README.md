@@ -14,10 +14,6 @@ An initial directory setup, style guide and pattern primer. Intended as a starti
 
 Lovingly crafted by Paul Robert Lloyd (<http://paulrobertlloyd.com/>).
 
-### Notes
-
-Adding ?debug=true to the end of URL will show a 8px baseline grid. If you like that sort of thing.
-
 ### Licence
 
 This work is available under the MIT license: <http://paulrobertlloyd.mit-license.org/>
