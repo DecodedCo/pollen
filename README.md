@@ -1,4 +1,5 @@
-#Decoded Styleguide
+# Polllen
+## Decoded Base Styles and Patterns
 
 By Jonas Haefele at Decoded.co // 2014
 
