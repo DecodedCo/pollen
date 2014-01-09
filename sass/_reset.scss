@@ -1,12 +1,12 @@
-/* ============================================================
-	Decoded Styleguide // by Jonas Haefele 2014
-============================================================ */
-
-/*! Adapted from https://github.com/paulrobertlloyd/barebones */
-
-/* ============================================================
-	Viewport
-============================================================ */
+    /* ============================================================
+    	Decoded Styleguide // by Jonas Haefele 2014
+    ============================================================ */
+    
+    /*! Adapted from https://github.com/paulrobertlloyd/barebones */
+    
+    /* 
+    	Viewport
+    ============================================================ */
 @-ms-viewport {
 	width: device-width;
 }
@@ -14,29 +14,29 @@
 	width: device-width;
 }
 
-/* ============================================================
-	Box sizing
-============================================================ */
-/* apply a natural box layout model to all elements 
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
- * read comments about img with a 1px border might get unnecessary scaled */
+    /* 
+    	Box sizing
+    ============================================================ */
+    /* apply a natural box layout model to all elements 
+     * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
+     * read comments about img with a 1px border might get unnecessary scaled */
  
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
  
 
-/* ============================================================
-	Helpers
-============================================================ */
-
-/* Font Smoothing */
+    /* 
+    	Helpers
+    ============================================================ */
+    
+    /* Font Smoothing */
 .font-smoothing {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Visibly hidden */
+    /* Visibly hidden */
 .hidden {
 	border: 0;
 	padding: 0;
@@ -48,9 +48,9 @@
 	position: absolute;
 }
 
-/* ============================================================
-	Sectioning
-============================================================ */
+    /* 
+    	Sectioning
+    ============================================================ */
 body {
 	color: #444;
 	font-family: sans-serif;
@@ -66,9 +66,9 @@ nav ul {
 	list-style: none;
 }
 
-/* ============================================================
-	Text-level semantics
-============================================================ */
+    /* 
+    	Text-level semantics
+    ============================================================ */
 a {
 	text-decoration: none;
 	border-bottom: 1px solid rgba(34,85,221,0.1);
@@ -125,9 +125,9 @@ sup {
 }
 
 
-/* ============================================================
-	Edits
-============================================================ */
+    /* 
+    	Edits
+    ============================================================ */
 mark, ins {
 	background-color: #fff9d9;
 	line-height: 90%;
@@ -142,18 +142,18 @@ del, s {
 }
 
 
-/* ============================================================
-	Embedded content
-============================================================ */
+    /* 
+    	Embedded content
+    ============================================================ */
 img {
 	border: 0;
 	max-width: 100%;
 }
 
 
-/* ============================================================
-	Tabular data
-============================================================ */
+    /*
+    	Tabular data
+    ============================================================ */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -181,9 +181,9 @@ thead th {
 }
 
 
-/* ============================================================
-	Forms
-============================================================ */
+    /* 
+    	Forms
+    ============================================================ */
 fieldset {
 	border: 0;
 	padding: 0;
@@ -255,19 +255,19 @@ input[type='search']::-webkit-search-decoration {
 	}
 
 
-/* ============================================================
-	Interactive
-============================================================ */
+    /* 
+    	Interactive
+    ============================================================ */
 summary {
 	border: 0;
 	outline: 0;
 	cursor: pointer;
 }
 
-
-/* ============================================================
-	Print styles
-============================================================ */
+    
+    /* 
+    	Print styles
+    ============================================================ */
 @media print {
 	@page {
 		margin: 0.5cm;

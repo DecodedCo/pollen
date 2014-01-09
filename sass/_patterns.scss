@@ -1,6 +1,6 @@
-/* ============================================================
-	Highlight/Marks
-============================================================ */
+    /* 
+    	Highlight/Marks
+    ============================================================ */
 .highlight {
 	background-color: $decodedYellow;
 }
@@ -9,8 +9,8 @@
 }
 
 
-/* ============================================================
-	Image
+/* 
+	Images
 ============================================================ */
 .circular, .img-circle { /* .img-circle for backwards compatibility */
 	border-radius: 100%;
@@ -26,10 +26,14 @@
 	}
 
 
-/* ============================================================
+/* 
 	Layout
 ============================================================ */
+
+/* # Align Block level Elements like images */
+
 /* Pull left */
+
 .pull-left {
 	float: left;
 }
@@ -38,6 +42,7 @@ img.pull-left {
 }
 
 /* Pull right */
+
 .pull-right {
 	float: right;
 }
@@ -45,7 +50,8 @@ img.pull-right {
 	margin: 0 0 0.5em 1em; /* 0 0 8px 16px */
 }
 
-/* Module */
+/* ## Modules */
+
 [class*="module"] {
 	border: 1px solid $decodedLightGrey;
 	border-top: 1em solid $decodedYellow;
@@ -80,7 +86,7 @@ img.pull-right {
 }
 
 
-/* Module > Notification */
+/* ### Module > Notification */
 [class$="notice"] {
 	background-color: $decodedLightGrey;
 	border: 0;
@@ -95,7 +101,7 @@ img.pull-right {
 	border-top-color: #dd6969;
 }
 
-/* Module > Details */
+/* ### Module > Details */
 .details details {
 	margin-left: 1.5em;
 }
@@ -114,47 +120,50 @@ img.pull-right {
 		margin-left: -1em;
 	}
 
-/* ============================================================
+/* 
 	Tooltip
 ============================================================ */
+
 .tip {
 	position: relative;
 	}
 	.tip:hover:after {
 		content: attr(data-tip);
 		color: #fff;
-		font-size: 0.75em; /* 12px */
-		line-height: 1.3334em; /* 16px */
+		font-size: 0.75em; 
+		line-height: 1.3334em; 
 		text-align: left;
 		background-color: #666;
-		border-radius: 0.3334em; /* 4px */
-		padding: 0.6667em; /* 8px */
-		width: 16.5em; /* 200px */
+		border-radius: 0.3334em; 
+		padding: 0.6667em; 
+		width: 16.5em; 
 		opacity: 0.9;
 		display: block;
 		position: absolute;
 		left: 0;
-		bottom: 2em; /* 24px */
+		bottom: 2em;
 		z-index: 98;
 	}
 	.tip:hover:before {
 		content: "";
 		border: solid;
 		border-color: #666 transparent;
-		border-width: 0.5em 0.5em 0 0.5em; /* 6px 6px 0 6px */
+		border-width: 0.5em 0.5em 0 0.5em; 
 		opacity: 0.9;
 		display: block;
-		left: 1em; /* 12px */
-		bottom: 1em; /* 12px */
+		left: 1em; 
+		bottom: 1em; 
 		position: absolute;
 		z-index: 99;
 	}
 
 
-/* ============================================================
-	List-style layout patterns
+/* 
+    List-style layout patterns
 ============================================================ */
-/* Articles */
+
+/* ## Articles */
+
 .articles {
 	overflow: hidden;
 	}
@@ -182,30 +191,31 @@ img.pull-right {
 }
 .articles .caption {
 	color: #888;
-	margin-top: 0.6667em; /* 8px */
+	margin-top: 0.6667em; 
 }
 .articles article img {
 	margin-bottom: 0;
 	width: 25%;
 }
 
-/* Code block */
+/* ## Code block */
+
 .code {
 	font-family:'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace;
-	font-size: 0.75em; /* 12px */
-	line-height: 1.6667; /* 20px */
+	font-size: 0.75em; 
+	line-height: 1.6667; 
 }
 ol.code {
 	color: #888;
-	margin: 1.3334em 0 1.3334em 3em; /* 16px 0 16px 36px */
-	line-height: 2; /* 24px */
+	margin: 1.3334em 0 1.3334em 3em; 
+	line-height: 2; 
 }
 ol.code li {
 	list-style: decimal-leading-zero;
 	background: #f6f6f6;
 	margin: 0 0 -1px 0;
 	border-top: 1px solid #fff;
-	padding: 0 0.5em; /* 0 8px */
+	padding: 0 0.5em; 
 	}
 	ol.code li.tab1 { padding-left: 4ex; }
 	ol.code li.tab2 { padding-left: 8ex; }
@@ -213,7 +223,7 @@ ol.code li {
 	ol.code li.tab4 { padding-left: 16ex; }
 	ol.code li.tab5 { padding-left: 20ex; }
 
-/* Metadata */
+/* ## Metadata */
 dl.metadata {
 	font-size: 0.75em;
 	line-height: 1.3334;
@@ -248,27 +258,27 @@ dl.metadata dd {
 	}
 }
 
-/* Progress indicator */
+/* ## Progress indicator */
 .progress li {
 	list-style: none;
-	line-height: 2; /* 32px */
+	line-height: 2; 
 	background-color: #f6f6f6;
-	margin: 0 1.25em 0.5em 0; /* 0 20px 8px 0 */
-	padding: 0.25em 0.25em 0.25em 0.5em; /* 4px 4px 4px 8px */
+	margin: 0 1.25em 0.5em 0; 
+	padding: 0.25em 0.25em 0.25em 0.5em; 
 	position: relative;
 	display: inline-block;
 	}
 	.progress li:before {
 		content: "";
-		font-size: 1em; /* 16px */
+		font-size: 1em; 
 		font-family: $boldStack;
 		border: solid;
 		border-color: #f6f6f6 transparent;
-		border-width: 1.25em 0 1.25em 1.25em; /* 20px 0 20px 20px */
+		border-width: 1.25em 0 1.25em 1.25em; 
 		display: block;
 		position: absolute;
 		top: 0;
-		left: -1.25em; /* -20px */
+		left: -1.25em; 
 	}
 	.progress li:first-child {
 		padding-left: 0.75em;
@@ -278,13 +288,13 @@ dl.metadata dd {
 	}
 	.progress li:after {
 		content: "";
-		font-size: 1em; /* 16px */
+		font-size: 1em; 
 		border: solid;
 		border-color: transparent #f6f6f6;
-		border-width: 1.25em 0 1.25em 1.25em; /* 20px 0 20px 20px */
+		border-width: 1.25em 0 1.25em 1.25em; 
 		display: block;
 		position: absolute;
-		right: -1.25em; /* -20px */
+		right: -1.25em; 
 		top: 0;
 	}
 .progress li.completed {
@@ -321,14 +331,14 @@ dl.metadata dd {
 	display: block;
 }
 
-/* Stats */
+/* ## Stats */
 .stats {
 	overflow: hidden;
 }
 .stats li {
 	list-style: none;
-	margin: 0 0.75em 0 0; /* 0 12px 0 0 */
-	padding: 0 0.75em 0 0; /* 0 12px 0 0 */
+	margin: 0 0.75em 0 0; 
+	padding: 0 0.75em 0 0;
 	border-right: 1px solid $decodedLightGrey;
 	float: left;
 	}
@@ -339,29 +349,29 @@ dl.metadata dd {
 	}
 .stats a {
 	font-family: $boldStack;
-	font-size: 1.125em; /* 18px */
-	line-height: 1.3334; /* 24px */
+	font-size: 1.125em; 
+	line-height: 1.3334;
 	border: 0 none;
 	display: block;
 	float: left;
 }
 .stats span {
 	font-weight: 400;
-	font-size: 0.6667em; /* 12px */
-	line-height: 1.3334; /* 16px */
+	font-size: 0.6667em;
+	line-height: 1.3334;
 	display: block;
 }
 
-/* Tag cloud */
+/* ## Tag cloud */
 .tags li {
 	list-style: none;
 	margin: 0 0.3334em 0 0;
 	display: inline;
 	white-space: nowrap;
 }
-.tags [data-rank="6"] { font-size: 1.2500em; line-height: 1.0000; } /* 20px/20px */
-.tags [data-rank="5"] { font-size: 1.1250em; line-height: 1.1111; } /* 18px/20px */
-.tags [data-rank="4"] { font-size: 1.0000em; line-height: 1.2500; } /* 16px/20px */
-.tags [data-rank="3"] { font-size: 0.8750em; line-height: 1.4286; } /* 14px/20px */
-.tags [data-rank="2"] { font-size: 0.7500em; line-height: 1.6667; } /* 12px/20px */
-.tags [data-rank="1"] { font-size: 0.6875em; line-height: 1.8181; } /* 11px/20px */
+.tags [data-rank="6"] { font-size: 1.2500em; line-height: 1.0000; } 
+.tags [data-rank="5"] { font-size: 1.1250em; line-height: 1.1111; } 
+.tags [data-rank="4"] { font-size: 1.0000em; line-height: 1.2500; } 
+.tags [data-rank="3"] { font-size: 0.8750em; line-height: 1.4286; } 
+.tags [data-rank="2"] { font-size: 0.7500em; line-height: 1.6667; } 
+.tags [data-rank="1"] { font-size: 0.6875em; line-height: 1.8181; } 
