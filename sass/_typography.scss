@@ -1,12 +1,10 @@
-    /* ============================================================
-    	Decoded Styleguide // by Jonas Haefele 2014
+  /* ============================================================
+  	Decoded Styleguide // by Jonas Haefele 2014
     ============================================================ */
 
-    /*! Decoded Global Typography  */
-
-    /* 
-          Base
-    ========================================================================== */
+  /* 
+  Decoded Global Typography
+  ========================================================================== */
 
 body {
     font: $base-font-size / $lineHeight;
@@ -25,8 +23,36 @@ html {
 }
 
 /* 
-    Headings
-========================================================================== */
+Headings
+========================================================================== 
+
+```
+<h1 class='headline'>Headline</h1>
+  <p class='lede'>The main headline is styled with the <code>.headline</code> class. Add a <code>.lede</code> class to format a leading paragraph.</p>
+  
+<h1>First Level Header</h1>
+	<p class='lede'>Basic markup and typographic styles</p>
+	<p>Add a <code>.alpha</code> class to an element to override styles with <code>h1</code> properties</p>
+
+<h2>Sections <a href='#'>Linked</a></h2>
+  <p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p>
+  <p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.</p>
+  <p>Add a <code>.beta</code> class to an element to override styles with <code>h2</code> properties</p>
+
+<h3>Third-Level Header <a href='#'>Linked</a></h3>
+  <p>The header above is an <code>h3</code> element, which may be used for any form of page-level header which falls below the <code>h2</code> header in a document hierarchy.</p>
+  <p>Add a <code>.gamma</code> class to an element to override styles with <code>h3</code> properties</p>
+
+<h4>Fourth-Level Header <a href='#'>Linked</a></h4>
+  <p>The header above is an <code>h4</code> element, which may be used for any form of page-level header which falls below the <code>h3</code> header in a document hierarchy.</p>
+  <p>Add a <code>.delta</code> class to an element to override styles with <code>h4</code> properties</p>
+
+<h5>Fifth-Level Header <a href='#'>Linked</a></h5>
+  <p>The header above is an <code>h5</code> element, which may be used for any form of page-level header which falls below the <code>h4</code> header in a document hierarchy.</p>
+  <p>Add a <code>.epsilon</code> class to an element to override styles with <code>h5</code> properties</p>
+
+```
+*/
 
 h1,h2,h3,h4,h5,h6 {
 	@extend .font-smoothing;
@@ -42,7 +68,7 @@ h1, .alpha {
     color: #010101;
 }
 
-/* Heading 2 */
+  /* Heading 2 */
 
 h2, .beta {
     text-decoration: none;
@@ -135,12 +161,12 @@ h6, .zeta {
 
 .headline {
 	@extend h1;
-	margin: 0em 0em 0.4em;
-    padding: 0em 0.3em;
-    background: $decodedYellow;
-    background: rgba($decodedYellow, 0.9);
-    border-bottom: none;
-    display: inline-block;
+	margin: 1em 0em 0.4em;
+  padding: 0em 0.3em;
+  background: $decodedYellow;
+  background: rgba($decodedYellow, 0.9);
+  border-bottom: none;
+  display: inline-block;
 }
 .breadcrumb .headline {
 	background: none;
@@ -198,10 +224,14 @@ h6, .zeta {
      
  
 /* 
-    Smaller text elements
+Smaller text elements
 ========================================================================== */
    
-/* ## Paragraphs */
+/* ## Paragraphs 
+``` 
+<p>All paragraphs are wrapped in <code>p</code> tags. Additionally, <code>p</code> elements can be wrapped with a <code>blockquote</code> element <em>if the <code>p</code> element is indeed a quote</em>. Historically, <code>blockquote</code> has been used purely to force indents, but this is now achieved using CSS. Reserve <code>blockquote</code> for quotes.</p>
+```			
+*/
 
 p, li {
     text-align: left;
@@ -241,7 +271,20 @@ strong i, strong cite, strong em, strong dfn {
     font-weight: inherit;
 }
 
-/* ## Pre-formated text */
+/* ## Pre-formated text 
+
+The <code>pre</code> element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title='American Standard Code for Information Interchange'>ASCII</abbr> art. Here&#8217;s an example showing the printable characters of <abbr>ASCII</abbr>:
+
+```
+<pre><samp>&#32; ! ' # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~</samp></pre>
+
+```  
+*/
 pre {
 	margin-left: 1.5em; /* 24px */
 	white-space:  pre-wrap;
@@ -264,7 +307,16 @@ pre {
     opacity: 0.8;
 }
 
-/* ## Quotes */
+/* ## Blockquotes 
+
+The <code>blockquote</code> element represents a section that is being quoted from another source.
+
+```
+<blockquote cite='http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206'>
+	<p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
+</blockquote>
+```
+*/
 blockquote {
     position: relative;
     display: block;
@@ -295,8 +347,67 @@ blockquote:before {
 }
 
 /* 
-    Lists
-========================================================================== */
+Lists
+========================================================================== 
+## Ordered Lists
+
+The <code>ol</code> element denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3&#8230; a,b,c&#8230; i,ii,iii&#8230; and so on). Each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items within the list (as you may have guessed, <code>li</code> stands for list item)
+
+```
+<ol>
+	<li>This is an ordered list.</li>
+	<li>
+		This is the second item, which contains a sub list
+		<ol>
+			<li>This is the sub list, which is also ordered.</li>
+			<li>It has two items.</li>
+		</ol>
+	</li>
+	<li>This is the final item on this list.</li>
+</ol>
+```
+
+##Unordered Lists
+
+```
+<ul>
+	<li>
+		United Kingdom of Great Britain and Northern Ireland:
+		<ul>
+			<li>England</li>
+			<li>Scotland</li>
+			<li>Wales</li>
+			<li>Northern Ireland</li>
+		</ul>
+	</li>
+	<li>Republic of Ireland</li>
+	<li>Isle of Man</li>
+	<li>
+		Channel Islands:
+		<ul>
+			<li>Bailiwick of Guernsey</li>
+			<li>Bailiwick of Jersey</li>
+		</ul>
+	</li>
+</ul>
+```
+
+##Definition Lists
+
+```
+<dl>
+	<dt>This is a term.</dt>
+	<dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
+	<dt>Here is another term.</dt>
+	<dd>And it gets a definition too, which is this line.</dd>
+	<dt>Here is term that shares a definition with the term below.</dt>
+	<dt>Here is a defined term.</dt>
+	<dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+</dl>
+
+
+```
+*/
    
 ol {
 	list-style-type: decimal;
@@ -337,77 +448,17 @@ dd {
 }
 
 
-/* ## Bullet-less list */
+/* ## Bullet-less list 
+Add a .no-bullets class to remove the bullets from a list  
+*/
 .no-bullets li {
 	list-style: none;
 	margin-left: 0;
 }
 
-/* 
-    Hyperlinks
-========================================================================== */
-
-a {
-    font-style: normal;
-    color: $textColor;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-}
-
-a:hover {
-    text-decoration: none;
-    border-bottom: 1px solid $textColor;
-}
-
-a.button,
-a.primary-button {
-    cursor: pointer;
-    margin-bottom: 1em;
-    margin-right: 0.3em;
-    border-bottom: none;
-}
-
-a.button:hover {
-}
-
-a.opps {
-    color: green;
-    font-family: $boldStack;
-}
-
-h1 a, h2 a, h3 a {
-    color: $headingColor;
-    text-decoration: none;
-    border-bottom: none;
-}
-
-p a, li a {
-    color: $headingColor;
-    font-family: $boldStack;
-}
-
-p a:hover, li a:hover {
-    border-bottom: 1px solid black;
-}
-
-
-/* ## External Links */
-a[rel="external"] {
-	background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%;
-	background-size: 12px;
-	padding-right: 1em;
-}
-
-/* Tag */
-a[rel="tag"] {
-	font-size: 0.75em; /* 12px */
-	line-height: 1.3334; /* 16px */
-	text-transform: lowercase;
-	border: 0;
-}
 
 /*
-    Images & Video
+Images & Video
 ========================================================================== */
 figure.banner {
     position: relative;
@@ -449,7 +500,7 @@ blockquote + figcaption::before {
 }
 
 /* 
-    Table
+Table
 ========================================================================== */
 
 table {
@@ -512,7 +563,7 @@ td, th {
 
 
 /* 
-    Other
+Other
 ========================================================================== */
 
 hr {

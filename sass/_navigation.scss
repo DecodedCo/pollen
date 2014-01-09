@@ -1,10 +1,10 @@
-    /* ============================================================
-    	Decoded Styleguide // by Jonas Haefele 2014
-       ============================================================ */
+  /* ============================================================
+  	Decoded Styleguide // by Jonas Haefele 2014
+    ============================================================ */
 
 /* 
-	General Navigation Styles
-============================================================ */
+General Navigation Styles
+========================================================================== */
 [class$='nav'] {
 	font-size: 0; /* whitespace in inline-block lists http://www.broken-links.com/2013/03/25/removing-the-whitespace-from-inline-block-elements/ */
 	li {
@@ -124,8 +124,8 @@
 }
 
 /*
-	Decoded Top Navigation Bar with Logo
-============================================================ */
+Decoded Top Navigation Bar with Logo
+========================================================================== */
 .navbar{
 	background-color: $decodedYellow;
 	padding: 0 130px 0 20px;
