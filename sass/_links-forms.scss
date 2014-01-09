@@ -1,10 +1,72 @@
-  /* ==========================================================================
+    /* ============================================================
     	Decoded Styleguide // by Jonas Haefele 2014
-   ============================================================================= */
+    ============================================================ */
     
+/* 
+Hyperlinks and Buttons
+========================================================================== */
+
+a {
+    font-style: normal;
+    color: $textColor;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid $textColor;
+}
+
+a.button,
+a.primary-button {
+    cursor: pointer;
+    margin-bottom: 1em;
+    margin-right: 0.3em;
+    border-bottom: none;
+}
+
+a.button:hover {
+}
+
+a.opps {
+    color: green;
+    font-family: $boldStack;
+}
+
+h1 a, h2 a, h3 a {
+    color: $headingColor;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+p a, li a {
+    color: $headingColor;
+    font-family: $boldStack;
+}
+
+p a:hover, li a:hover {
+    border-bottom: 1px solid black;
+}
+
+
+/* ## External Links */
+a[rel="external"] {
+	background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%;
+	background-size: 12px;
+	padding-right: 1em;
+}
+
+/* Tag */
+a[rel="tag"] {
+	font-size: 0.75em; /* 12px */
+	line-height: 1.3334; /* 16px */
+	text-transform: lowercase;
+	border: 0;
+}
 
 /* 
-   Forms
+Forms
 ========================================================================== */
 
 input {
