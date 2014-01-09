@@ -1763,7 +1763,16 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 /* 
 Hyperlinks and Buttons
-========================================================================== */
+=====================================================================
+
+## Links
+
+```
+<p>
+  <a href="#">Normal Link</a>
+</p>
+```
+*/
 a {
   font-style: normal;
   color: #1b1b1b;
@@ -1797,7 +1806,14 @@ p a, li a {
 p a:hover, li a:hover {
   border-bottom: 1px solid black; }
 
-/* ## External Links */
+/* 
+## External Links 
+```
+<p>
+  <a href="#" rel="external">External link</a>
+</p>
+```
+*/
 a[rel="external"] {
   background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%;
   background-size: 12px;
@@ -1814,18 +1830,66 @@ a[rel="tag"] {
 
 /* 
 Forms
-========================================================================== */
+========================================================================== 
+
+## Input Fields
+```
+<p>
+	<label for="text">Text Input <abbr title="Required">*</abbr></label>
+	<input id="text" class="input" type="text" required/>
+	<small class="caption">Note about this field</small>
+</p>
+<p>
+	<label for="email">Email Address <abbr title="Required">*</abbr></label>
+	<input id="email" class="input" type="email" placeholder="you@example.com" required/>
+	<small class="caption">Note about this field</small>
+</p>
+<p>
+	<label for="password">Password <abbr title="Required">*</abbr></label>
+	<input id="password" class="input" type="password" required/>
+	<small class="caption">Note about this field</small>
+</p>
+<p>
+	<label for="url">Web Address <abbr title="Required">*</abbr></label>
+	<input id="url" class="input" type="url" placeholder="http://example.com" required/>
+	<small class="caption">Note about this field</small>
+</p>
+```
+*/
 input {
   padding: 0.35em 0.5em;
   border-radius: 0.25em;
   border: 1px solid rgba(151, 151, 151, 0.1); }
 
+/* 
+## Text Area 
+  
+```
+<p>
+	<label for="textarea">Textarea <abbr title="Required">*</abbr></label>
+	<textarea id="textarea" class="input" rows="8" cols="32" required></textarea>
+	<small class="caption">Note about this field</small>
+</p>
+``` 
+*/
 textarea {
   width: 100%;
   padding: 0.5em 0.5em;
   border-radius: 0.25em;
   border: 1px solid rgba(151, 151, 151, 0.1); }
 
+/* 
+## Buttons 
+
+Add class `.button` to links to style them as buttons.
+
+```
+<button>Button</button>
+<input type="button" value="Input button"/>
+<input type="submit" value="Submit button"/>
+
+```
+*/
 input[type='submit'], input[type='button'], button, .button, .primary-button {
   margin: 0em 1em 0 0;
   width: 100%;
@@ -1844,7 +1908,14 @@ input[type='submit'], input[type='button'], button, .button, .primary-button {
   input[type='submit']:hover, input[type='button']:hover, button:hover, .button:hover, .primary-button:hover {
     background-color: rgba(151, 151, 151, 0.1); }
 
-/* Button > Primary */
+/* 
+## Primary Button
+```  
+<button class="primary-button">Primary button</button>
+<input type="button" class="primary-button" value="Primary input button"/>
+<input type="submit" class="primary-button" value="Primary submit button"/>
+```
+*/
 .primary-button, input[type='button'].primary-button, input[type='submit'].primary-button {
   background: rgba(151, 151, 151, 0.1);
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
@@ -1859,7 +1930,31 @@ input[type='submit'], input[type='button'], button, .button, .primary-button {
 input[type='submit'], input[type='submit'].primary-button {
   background: #fef800; }
 
-/* Combined inputs/buttons */
+/* 
+##Button Group  
+```
+<div class="button-group">
+	<input type="submit" class="primary-button" value="Post comment"/>
+	<input type="button" value="Preview"/>
+	<a href="#">Cancel</a>
+</div>
+```  
+*/
+.button-group {
+  padding: 0.75em 0;
+  overflow: hidden; }
+
+/* 
+##Combined inputs/buttons 
+  
+```
+<div class="button-group combined">
+	<input type="button" value="First button"/>
+	<input type="button" value="Middle button"/>
+	<input type="button" value="Last button"/>
+</div>
+```  
+*/
 .combined {
   display: block;
   padding-bottom: 1px; }
@@ -1878,7 +1973,15 @@ input[type='submit'], input[type='submit'].primary-button {
   .combined [class$='button']:last-of-type {
     border-radius: 0 0.25em 0.25em 0; }
 
-/* Combined search field */
+/* 
+## Combined search field 
+
+```
+<p>
+  <input type="search" class="input" placeholder="Search" /><input type="submit" value="Go" />
+</p>
+```
+*/
 input[type='search'] + .button,
 input[type='search'] + input[type='submit'] {
   box-shadow: none;
@@ -1889,12 +1992,15 @@ input[type='search'] + input[type='submit'] {
   text-indent: 2em;
   margin-left: -2em; }
 
-/* Button Group */
-.button-group {
-  padding: 0.75em 0;
-  overflow: hidden; }
-
-/* Single checkboxes */
+/* 
+## Single checkboxes 
+```
+<p>
+	<label for="checkbox" class="check"><input id="checkbox" type="checkbox" class="checkbox" required/>Single checkbox</label>
+	<small class="caption">Note about this field</small>
+<p>
+```
+*/
 label.check {
   font-weight: 400;
   margin: 0;
@@ -1924,7 +2030,54 @@ fieldset.options legend {
   margin: 0;
   padding: 0.375em 0; }
 
-/* Options list */
+/* 
+## Options list 
+```
+<fieldset class="options">
+	<legend>Checkbox <abbr title="Required">*</abbr></legend>
+	<ul>
+		<li>
+			<label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"/>Choice A</label>
+			<small class="caption">Note about these option</small>
+		</li>
+		<li>
+			<label for="checkbox2" class="check"><input id="checkbox2" name="checkbox" type="checkbox"/>Choice B</label>
+			<small class="caption">Note about these option</small>
+		</li>
+		<li>
+			<label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox"/>Choice C</label>
+			<small class="caption">Note about these option</small>
+		</li>
+	</ul>
+</fieldset>
+
+<fieldset class="options">
+	<legend>Radio <abbr title="Required">*</abbr></legend>
+	<ul>
+		<li>
+			<label for="radio1" class="check"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"/>Option 1</label>
+		</li>
+		<li>
+			<label for="radio2" class="check"><input id="radio2" name="radio" type="radio" class="radio"/>Option 2</label>
+		</li>
+		<li>
+			<label for="radio3" class="check"><input id="radio3" name="radio" type="radio" class="radio"/>Option 3</label>
+		</li>
+	</ul>
+	<small class="caption">Note about these options</small>
+</fieldset>
+```  
+*/
+/* 
+## Fieldsets, Required Text and Captions
+
+```
+<fieldset>
+	<legend>Legend</legend>
+	<p><small class="caption">Required fields are marked <abbr title="Required">*</abbr></small></p>
+</fieldset>
+```
+*/
 fieldset.options {
   clear: left;
   padding: 0 1em; }
@@ -1937,14 +2090,12 @@ fieldset.options li {
   list-style: none;
   margin-left: 0; }
 
-/* Required text */
 abbr[title='Required'] {
   color: #a00;
   font-size: 1.25em;
   font-weight: 400;
   border: 0; }
 
-/* Field caption */
 label.check + .caption,
 .input + .caption {
   display: block; }
