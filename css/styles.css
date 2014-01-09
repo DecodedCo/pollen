@@ -1,7 +1,7 @@
 @charset "UTF-8";
     /* ===========================================================
-	Decoded Styleguide // by Jonas Haefele 2014
-    ============================================================ */
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -646,21 +646,33 @@ summary {
     border-bottom: 1px solid #999;
     box-shadow: none; } }
 /* oppinionated defaults and further resets that normalize doesn't catch */
-/* ==========================================================================
-  	Decoded Styleguide // by Jonas Haefele 2014
- ============================================================================= */
-/* ==========================================================================
-       Colors
-   ========================================================================== */
-/* ==========================================================================
-   Fonts
-   ========================================================================== */
-/* ==========================================================================
-   Grid Settings for Neat
-   ========================================================================== */
-/* ==========================================================================
-   Breakpoints
-   ========================================================================== */
+    /* ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+/* 
+Colors
+========================================================================== 
+
+Use color variables where ever possible.
+
+*/
+/* 
+Fonts
+========================================================================== 
+
+Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
+
+*/
+/* 
+Grid Settings for Neat
+========================================================================== 
+
+[Examples of how to use the Grid System](http://neat.bourbon.io/examples/)
+
+Use `@include outer-container;` on elements that should contain grid items
+
+Then use `@include span-columns(12);` to declare how many grid columns an item should span.
+*/
 /* ==========================================================================
    Various
    ========================================================================== */
@@ -1065,9 +1077,9 @@ ul.stats li:last-child {
   line-height: 1.8181; }
 
 /* lists, images, modules/boxes: legacy patterns from https://github.com/paulrobertlloyd/barebones */
-/* ============================================================
-	Decoded Styleguide // by Jonas Haefele 2014
-  ============================================================ */
+    /* ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
 /* 
 Decoded Global Typography
 ========================================================================== */
@@ -1304,7 +1316,7 @@ strong i, strong cite, strong em, strong dfn {
 
 /* ## Pre-formated text 
 
-The <code>pre</code> element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title='American Standard Code for Information Interchange'>ASCII</abbr> art. Here&#8217;s an example showing the printable characters of <abbr>ASCII</abbr>:
+The `pre` element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title='American Standard Code for Information Interchange'>ASCII</abbr> art. Here&#8217;s an example showing the printable characters of <abbr>ASCII</abbr>:
 
 ```
 <pre><samp>&#32; ! ' # $ % &amp; ' ( ) * + , - . /
@@ -1338,7 +1350,7 @@ pre samp {
 
 /* ## Blockquotes 
 
-The <code>blockquote</code> element represents a section that is being quoted from another source.
+The `blockquote` element represents a section that is being quoted from another source.
 
 ```
 <blockquote cite='http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206'>
@@ -1378,7 +1390,7 @@ Lists
 ========================================================================== 
 ## Ordered Lists
 
-The <code>ol</code> element denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3&#8230; a,b,c&#8230; i,ii,iii&#8230; and so on). Each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items within the list (as you may have guessed, <code>li</code> stands for list item)
+The `ol` element denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3&#8230; a,b,c&#8230; i,ii,iii&#8230; and so on). Each item requires a surrounding `&lt;li&gt;` and `&lt;/li&gt;` tag, to denote individual items within the list (as you may have guessed, `li` stands for list item)
 
 ```
 <ol>
@@ -1479,14 +1491,38 @@ Add a .no-bullets class to remove the bullets from a list
 
 /*
 Images & Video
-========================================================================== */
+========================================================================== 
+## Figures 
+
+Figures are usually used to refer to images:
+
+```
+<figure>
+	<img src='http://lorempixel.com/680/400/abstract' width='680px' height='400px' alt='Example image'/>
+	<figcaption>
+		This is a placeholder image, with supporting caption.
+	</figcaption>
+</figure>
+```
+
+When you  wish to cite the source of a quote, you should do so using a figure also:
+
+```
+<blockquote cite='http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206'>
+	<p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
+</blockquote>
+<figcaption>
+	Winston Churchill, in <cite><a href='http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206'>a speech to the House of Commons</a></cite>. 11th November 1947
+</figcaption>
+```
+
+*/
 figure.banner {
   position: relative; }
 
 figure.wide img {
   width: 100%; }
 
-/* Grouping > Figures */
 figcaption {
   color: #999;
   font-size: 0.752em;
@@ -1497,6 +1533,7 @@ figcaption {
 blockquote + figcaption::before {
   content: "\2014"; }
 
+/* wrap videos in s `.video-wrapper` class*/
 .video-wrapper {
   position: relative;
   margin: 0 0 15px 0;
@@ -1516,7 +1553,92 @@ blockquote + figcaption::before {
 
 /* 
 Table
-========================================================================== */
+========================================================================== 
+
+Tables should be used when displaying tabular data. The `thead`, `tfoot` and `tbody` elements enable you to group rows within each a table.
+
+If you use these elements, you must use every element. They should appear in this order: `thead`, `tfoot` and `tbody`, so that browsers can render the foot before receiving all the data. You must use these tags within the table element
+			
+```
+<table>
+	<caption>The Very Best Eggnog</caption>
+	<colgroup>
+		<col style='width:50%' />
+		<col style='width:25%' />
+		<col style='width:25%' />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope='col'>Ingredients</th>
+			<th scope='col'>Serves 12</th>
+			<th scope='col'>Serves 24</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Milk</td>
+			<td>1 quart</td>
+			<td>2 quart</td>
+		</tr>
+		<tr>
+			<td>Cinnamon Sticks</td>
+			<td>2</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>Vanilla Bean, Split</td>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>Cloves</td>
+			<td>5</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>Mace</td>
+			<td>10 blades</td>
+			<td>20 blades</td>
+		</tr>
+		<tr>
+			<td>Egg Yolks</td>
+			<td>12</td>
+			<td>24</td>
+		</tr>
+		<tr>
+			<td>Cups Sugar</td>
+			<td>1 &frac12; cups</td>
+			<td>3 cups</td>
+		</tr>
+		<tr>
+			<td>Dark Rum</td>
+			<td>1 &frac12; cups</td>
+			<td>3 cups</td>
+		</tr>
+		<tr>
+			<td>Brandy</td>
+			<td>1 &frac12; cups</td>
+			<td>3 cups</td>
+		</tr>
+		<tr>
+			<td>Vanilla</td>
+			<td>1 tbsp</td>
+			<td>2 tbsp</td>
+		</tr>
+		<tr>
+			<td>Half-and-half or Light Cream</td>
+			<td>1 quart</td>
+			<td>2 quart</td>
+		</tr>
+		<tr>
+			<td>Freshly grated nutmeg to taste</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+```
+*/
 table {
   color: #1b1b1b;
   font-size: 0.9375em;
@@ -1567,7 +1689,7 @@ td, td img {
 td, th {
   border-bottom: none; }
 
-/* 
+  /* 
 Other
 ========================================================================== */
 hr {
@@ -1636,8 +1758,8 @@ aside.stat, aside.stat span, aside.stat p {
 
 */
 /* typography styles */
-/* ============================================================
-	Decoded Styleguide // by Jonas Haefele 2014
+    /* ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 /* 
 Hyperlinks and Buttons
@@ -1828,9 +1950,9 @@ label.check + .caption,
   display: block; }
 
 /* links, buttons, forms, input */
-/* ============================================================
-	Decoded Styleguide // by Jonas Haefele 2014
-  ============================================================ */
+    /* ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
 /* 
 General Navigation Styles
 ========================================================================== */
