@@ -1955,7 +1955,20 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 /* 
 General Navigation Styles
-========================================================================== */
+========================================================================== 
+
+## Basic Navigation 
+
+```
+<nav role="navigation" class="nav">
+	<ul>
+		<li><a href="#">Lorem link</a></li>
+		<li><a href="#">Ipsum link</a></li>
+		<li><a href="#">Dolor link</a></li>
+	</ul>
+</nav><!--/.nav-->
+```
+*/
 [class$='nav'] {
   font-size: 0;
   /* whitespace in inline-block lists http://www.broken-links.com/2013/03/25/removing-the-whitespace-from-inline-block-elements/ */ }
@@ -1988,7 +2001,19 @@ General Navigation Styles
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
   border-bottom: none; }
 
-/* ## Vertical */
+/* ## Vertical 
+  
+```
+<nav role="navigation" class="vertical-nav" style='width:80%;'>
+	<ul>
+		<li><a href="#" class="is-active">Active tab</a></li>
+		<li><a href="#">Lorem tab</a></li>
+		<li><a href="#">Ipsum tab</a></li>
+		<li><a href="#">Dolor tab</a></li>
+	</ul>
+</nav><!--/.vertical-nav-->
+```
+*/
 .vertical-nav li {
   margin: 0;
   display: block; }
@@ -2015,7 +2040,19 @@ General Navigation Styles
     right: -1.25em;
     top: 0; }
 
-/* ## Tabbed */
+/* ## Tabbed 
+
+```
+<nav role="navigation" class="tabbed-nav">
+	<ul>
+		<li><a href="#" class="is-active">Active tab</a></li>
+		<li><a href="#">Lorem tab</a></li>
+		<li><a href="#">Ipsum tab</a></li>
+		<li><a href="#">Dolor tab</a></li>
+	</ul>
+</nav><!--/.tabbed-nav-->
+```
+*/
 .tabbed-nav {
   border-top: 0;
   border-bottom: 1px solid rgba(151, 151, 151, 0.1);
@@ -2030,7 +2067,20 @@ General Navigation Styles
   .tabbed-nav ul {
     margin: 0; }
 
-/* ## Pagination */
+/* ## Pagination 
+  
+```
+<nav role="navigation" class="page-nav">
+	<ul>
+		<li><a href="#" rel="prev">Previous</a></li>
+		<li><a href="#" class="is-active">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ul>
+</nav><!--/.page-nav-->
+```  
+*/
 .page-nav li a {
   padding: 0.5em 1em;
   border-bottom: 1px solid transparent !important; }
@@ -2039,7 +2089,17 @@ General Navigation Styles
     .page-nav li a[rel='prev']:hover, .page-nav li a[rel='next']:hover {
       background-color: transparent; }
 
-/* ## Breadcrumb */
+/* ## Breadcrumb 
+  
+```
+<nav role="navigation" class="breadcrumb-nav">
+	<a href="#">Lorem section</a> /
+	<a href="#">Dolor section</a> /
+	<a href="#">Ipsum section</a> /
+	<strong class="is-active">Current section</strong>
+</nav><!--/.breadcrumb-nav-->
+```
+*/
 .breadcrumb-nav {
   color: #ccc;
   font-size: 0.75em;
@@ -2058,7 +2118,25 @@ General Navigation Styles
 
 /*
 Decoded Top Navigation Bar with Logo
-========================================================================== */
+========================================================================== 
+The Decoded Navbar sticks to the top of the page
+```
+<header role='banner' class='navbar'>
+	<div class='navbar-right'>
+		<h1 class='headline'>Decoded Styleguide</h1>
+	</div>
+	<div class='navbar-left'>
+		<nav role='navigation' class='nav'>
+			<ul>
+				<li><a href='#styleguide'>Styleguide</a></li>
+				<li><a href='#patterns'>Pattern Library</a></li>
+				<li><a href='#forms'>Form Example</a></li>
+			</ul>
+		</nav><!--/.nav-->
+	</div>
+</header><!--/@banner-->
+```
+*/
 .navbar {
   background-color: #fef800;
   padding: 0 130px 0 20px;
