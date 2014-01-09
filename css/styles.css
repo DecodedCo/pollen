@@ -373,6 +373,25 @@ table {
   box-sizing: border-box; }
 
 /* ============================================================
+	Helpers
+============================================================ */
+/* Font Smoothing */
+.font-smoothing, body, pre, select, input, textarea, text, h1, .headline, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Visibly hidden */
+.hidden {
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute; }
+
+/* ============================================================
 	Sectioning
 ============================================================ */
 body {
@@ -529,8 +548,8 @@ textarea {
   outline: 0; }
 
 button,
-input[type="button"],
-input[type="submit"] {
+input[type='button'],
+input[type='submit'] {
   -webkit-appearance: button;
   line-height: normal;
   width: auto;
@@ -541,15 +560,15 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
   margin-right: 0.25em; }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: none; }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 [disabled] {
@@ -618,15 +637,15 @@ summary {
   tr, img {
     page-break-inside: avoid; }
 
-  input[type="text"],
-  input[type="email"],
-  input[type="url"],
-  input[type="password"],
-  input[type="search"],
+  input[type='text'],
+  input[type='email'],
+  input[type='url'],
+  input[type='password'],
+  input[type='search'],
   textarea {
     border-bottom: 1px solid #999;
     box-shadow: none; } }
-/* oppinionated default and further resets that normalize doesn't catch*/
+/* oppinionated defaults and further resets that normalize doesn't catch */
 /* ==========================================================================
 	Decoded Styleguide // by Jonas Haefele 2014
 ============================================================================= */
@@ -637,10 +656,10 @@ summary {
    Fonts
    ========================================================================== */
 /* ==========================================================================
-   Breakpoints
+   Grid Settings for Neat
    ========================================================================== */
 /* ==========================================================================
-   Grid Settings
+   Breakpoints
    ========================================================================== */
 /* ==========================================================================
    Various
@@ -675,25 +694,6 @@ summary {
   src: url("../fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix") format("eot"), url("../fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff") format("woff"), url("../fonts/3516f91d-ac48-42cd-acfe-1be691152cc4.ttf") format("truetype"), url("../fonts/d1b1e866-a411-42ba-8f75-72bf28e23694.svg#d1b1e866-a411-42ba-8f75-72bf28e23694") format("svg"); }
 
 /* decoded font */
-/* ============================================================
-	Helpers
-============================================================ */
-/* Font Smoothing */
-.font-smoothing, body, pre, select, input, textarea, text, h1, .headline, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-/* Visibly hidden */
-.hidden {
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute; }
-
 /* ============================================================
 	Highlight/Marks
 ============================================================ */
@@ -737,20 +737,6 @@ img.pull-left {
 img.pull-right {
   margin: 0 0 0.5em 1em;
   /* 0 0 8px 16px */ }
-
-/* Grid */
-.grid {
-  margin: 0 -1.5em;
-  overflow: hidden; }
-
-.grid-unit {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0 1.5em;
-  width: 100%;
-  display: block;
-  float: left; }
 
 /* Module */
 [class*="module"] {
@@ -854,7 +840,7 @@ img.pull-right {
   z-index: 99; }
 
 /* ============================================================
-	List
+	List-style layout patterns
 ============================================================ */
 /* Articles */
 .articles {
@@ -1113,7 +1099,7 @@ ul.stats li:last-child {
   line-height: 1.8181; }
 
 /* 11px/20px */
-/* legacy patterns from https://github.com/paulrobertlloyd/barebones */
+/* lists, images, modules/boxes: legacy patterns from https://github.com/paulrobertlloyd/barebones */
 /* ============================================================
 	Decoded Styleguide // by Jonas Haefele 2014
 ============================================================ */
@@ -1158,9 +1144,6 @@ h2, .beta {
 
 header h2 {
   letter-spacing: -1px; }
-
-h2 a:hover {
-  border-bottom: 1px solid transparent; }
 
 /*
 h2#maintitle, .de-look {
@@ -1637,7 +1620,7 @@ textarea {
   border-radius: 0.25em;
   border: 1px solid rgba(151, 151, 151, 0.1); }
 
-input[type="submit"], input[type="button"], button, .button, .primary-button {
+input[type='submit'], input[type='button'], button, .button, .primary-button {
   margin: 0em 1em 0 0;
   width: 100%;
   padding: 0.5em 1em 0.4em 1em;
@@ -1652,22 +1635,22 @@ input[type="submit"], input[type="button"], button, .button, .primary-button {
   text-align: center;
   letter-spacing: 1px;
   border-radius: 0.25em; }
-  input[type="submit"]:hover, input[type="button"]:hover, button:hover, .button:hover, .primary-button:hover {
+  input[type='submit']:hover, input[type='button']:hover, button:hover, .button:hover, .primary-button:hover {
     background-color: rgba(151, 151, 151, 0.1); }
 
 /* Button > Primary */
-.primary-button, input[type="button"].primary-button, input[type="submit"].primary-button {
+.primary-button, input[type='button'].primary-button, input[type='submit'].primary-button {
   background: rgba(151, 151, 151, 0.1);
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase; }
-  .primary-button:hover, .primary-button:focus, input[type="button"].primary-button:hover, input[type="button"].primary-button:focus, input[type="submit"].primary-button:hover, input[type="submit"].primary-button:focus {
+  .primary-button:hover, .primary-button:focus, input[type='button'].primary-button:hover, input[type='button'].primary-button:focus, input[type='submit'].primary-button:hover, input[type='submit'].primary-button:focus {
     background-color: rgba(254, 248, 0, 0.4) !important; }
-  .primary-button:active, input[type="button"].primary-button:active, input[type="submit"].primary-button:active {
+  .primary-button:active, input[type='button'].primary-button:active, input[type='submit'].primary-button:active {
     background-color: white;
     border: 2px solid #fef800; }
 
-input[type="submit"], input[type="submit"].primary-button {
+input[type='submit'], input[type='submit'].primary-button {
   background: #fef800; }
 
 /* Combined inputs/buttons */
@@ -1675,23 +1658,23 @@ input[type="submit"], input[type="submit"].primary-button {
   display: block;
   padding-bottom: 1px; }
   .combined input,
-  .combined [class$="button"] {
+  .combined [class$='button'] {
     margin: 0;
     border: 1px solid rgba(151, 151, 151, 0.1);
     border-left-width: 0;
     border-radius: 0;
     float: left; }
   .combined input:first-of-type,
-  .combined [class$="button"]:first-of-type {
+  .combined [class$='button']:first-of-type {
     border-left-width: 1px;
     border-radius: 0.25em 0 0 0.25em; }
   .combined input:last-of-type,
-  .combined [class$="button"]:last-of-type {
+  .combined [class$='button']:last-of-type {
     border-radius: 0 0.25em 0.25em 0; }
 
 /* Combined search field */
-input[type="search"] + .button,
-input[type="search"] + input[type="submit"] {
+input[type='search'] + .button,
+input[type='search'] + input[type='submit'] {
   box-shadow: none;
   background: transparent url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNIDE2IDE0LjYgTCAxMC45IDkuNSBDIDExLjYgOC41IDEyIDcuMyAxMiA2IEMgMTIgMi43IDkuMyAwIDYgMCBDIDIuNyAwIDAgMi43IDAgNiBDIDAgOS4zIDIuNyAxMiA2IDEyIEMgNy4zIDEyIDguNSAxMS42IDkuNSAxMC45IEwgMTQuNiAxNiBMIDE2IDE0LjYgWk0gMiA2IEMgMiAzLjggMy44IDIgNiAyIEMgOC4yIDIgMTAgMy44IDEwIDYgQyAxMCA4LjIgOC4yIDEwIDYgMTAgQyAzLjggMTAgMiA4LjIgMiA2IFoiIGZpbGw9IiM5OTkiLz48L3N2Zz4=) no-repeat 50% 55%;
   border-color: transparent;
@@ -1749,7 +1732,7 @@ fieldset.options li {
   margin-left: 0; }
 
 /* Required text */
-abbr[title="Required"] {
+abbr[title='Required'] {
   color: #a00;
   font-size: 1.25em;
   font-weight: 400;
@@ -1767,10 +1750,10 @@ label.check + .caption,
 /* ============================================================
 	General Navigation Styles
 ============================================================ */
-[class$="nav"] {
+[class$='nav'] {
   font-size: 0;
   /* whitespace in inline-block lists http://www.broken-links.com/2013/03/25/removing-the-whitespace-from-inline-block-elements/ */ }
-  [class$="nav"] li {
+  [class$='nav'] li {
     font-size: 16px;
     /* see above */
     font-size: 1rem;
@@ -1779,7 +1762,7 @@ label.check + .caption,
     padding: 0;
     display: inline; }
 
-[class$="nav"] a {
+[class$='nav'] a {
   border: 0;
   border-right: 1px solid rgba(151, 151, 151, 0.1);
   font-family: "DIN Next", Helvetica, Arial, sans-serif;
@@ -1787,14 +1770,14 @@ label.check + .caption,
   /* 8px 12px */
   display: inline-block; }
 
-[class$="nav"] li:last-child a {
+[class$='nav'] li:last-child a {
   border-right: 0; }
 
-[class$="nav"] li a:hover {
+[class$='nav'] li a:hover {
   background-color: rgba(151, 151, 151, 0.1);
   border-bottom: none; }
 
-[class$="nav"] li a.is-active {
+[class$='nav'] li a.is-active {
   background-color: #fef800;
   color: #1b1b1b;
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
@@ -1817,7 +1800,7 @@ label.check + .caption,
     position: relative;
     border-bottom: 1px solid transparent !important; }
   .vertical-nav a.is-active:after {
-    content: "";
+    content: '';
     font-size: 1em;
     /* 16px */
     border: solid;
@@ -1851,9 +1834,9 @@ label.check + .caption,
   padding: 0.5em 1em;
   /* 8px 16px */
   border-bottom: 1px solid transparent !important; }
-  .page-nav li a[rel="prev"], .page-nav li a[rel="next"] {
+  .page-nav li a[rel='prev'], .page-nav li a[rel='next'] {
     border: 0; }
-    .page-nav li a[rel="prev"]:hover, .page-nav li a[rel="next"]:hover {
+    .page-nav li a[rel='prev']:hover, .page-nav li a[rel='next']:hover {
       background-color: transparent; }
 
 /* Breadcrumb */
@@ -1935,50 +1918,3 @@ label.check + .caption,
       margin: 0; }
 
 /* nav bars, pagination,... */
-/* ============================================================
-	Site specific styles
-============================================================ */
-body {
-  background-color: white; }
-
-main[role="main"] {
-  background-color: white;
-  *zoom: 1;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto; }
-  main[role="main"]:before, main[role="main"]:after {
-    content: " ";
-    display: table; }
-  main[role="main"]:after {
-    clear: both; }
-
-article {
-  padding-top: 4em;
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 100%; }
-  article:last-child {
-    margin-right: 0; }
-
-footer[role="contentinfo"] {
-  box-shadow: inset 0 2px rgba(151, 151, 151, 0.1);
-  margin-top: 0;
-  *zoom: 1;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto; }
-  footer[role="contentinfo"]:before, footer[role="contentinfo"]:after {
-    content: " ";
-    display: table; }
-  footer[role="contentinfo"]:after {
-    clear: both; }
-
-.container {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .container:last-child {
-    margin-right: 0; }
