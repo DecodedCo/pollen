@@ -1,12 +1,12 @@
-/* ============================================================
-	Decoded Styleguide // by Jonas Haefele 2014
-============================================================ */
+    /* ============================================================
+    	Decoded Styleguide // by Jonas Haefele 2014
+    ============================================================ */
 
-/*! Decoded Global Typography  */
+    /*! Decoded Global Typography  */
 
-/* ==========================================================================
-   Base
-   ========================================================================== */
+    /* 
+          Base
+    ========================================================================== */
 
 body {
     font: $base-font-size / $lineHeight;
@@ -24,9 +24,9 @@ html {
     padding-top: 0em;
 }
 
-/* ==========================================================================
-   Headings
-   ========================================================================== */
+/* 
+    Headings
+========================================================================== */
 
 h1,h2,h3,h4,h5,h6 {
 	@extend .font-smoothing;
@@ -57,27 +57,27 @@ header h2 {
     letter-spacing: -1px;
 }
 
-/*
-h2#maintitle, .de-look {
-	letter-spacing: 5px;
-    font-weight: normal;
-    font-family: $defaultStack;
-    text-transform: uppercase;
-}
-
-.de-look {
-	font-size: 1.8em;
-}
-
-h2.article-name {
-    text-align: left;
-    top: 0em;
-    margin-top: 0em;
-    letter-spacing: 2px;
-    font-family: "DIN Next";
-    text-transform: uppercase;
-}
-*/
+    /*
+    h2#maintitle, .de-look {
+    	letter-spacing: 5px;
+        font-weight: normal;
+        font-family: $defaultStack;
+        text-transform: uppercase;
+    }
+    
+    .de-look {
+    	font-size: 1.8em;
+    }
+    
+    h2.article-name {
+        text-align: left;
+        top: 0em;
+        margin-top: 0em;
+        letter-spacing: 2px;
+        font-family: "DIN Next";
+        text-transform: uppercase;
+    }
+    */
 
 h2 + h3 {
     font-weight: normal;
@@ -89,12 +89,12 @@ h2 + h3 {
     letter-spacing: 1px;
     margin-top: -0.6em;
 }
-/*
-h2.article-name + h3 {
-    text-align: left;
-}
-*/
-/* Heading 3 */
+    /*
+    h2.article-name + h3 {
+        text-align: left;
+    }
+    */
+    /* Heading 3 */
 
 h3, .gamma {
     text-decoration: none;
@@ -162,44 +162,46 @@ h6, .zeta {
 }
 
 
-/* Extra heading */
-/*
-.course-name{
-  font-family: $boldStack;
-}
-
-.small-bold {
-  font-family: $boldStack;
-  font-weight: normal;
-  margin: 0em 0em 1em 0em;
-  text-align: left;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  color: #010101;
-  display: block;
-  clear: both;
-  font-size: 1em;
-}
-
-.line-title {
-    letter-spacing: -1px;
-    line-height: 1em;
-    width: 100%;
-    display: block;
-    text-align: left;
-    margin: 0em 0em 1em 0em;
-    font-family: $boldStack;
-}
-
-.course-name {
-    letter-spacing: 0px;
-}
- */
+    /* Extra heading */
+    /*
+    .course-name{
+      font-family: $boldStack;
+    }
+    
+    .small-bold {
+      font-family: $boldStack;
+      font-weight: normal;
+      margin: 0em 0em 1em 0em;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      color: #010101;
+      display: block;
+      clear: both;
+      font-size: 1em;
+    }
+    
+    .line-title {
+        letter-spacing: -1px;
+        line-height: 1em;
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin: 0em 0em 1em 0em;
+        font-family: $boldStack;
+    }
+    
+    .course-name {
+        letter-spacing: 0px;
+    }
+     */
+     
  
- 
-/* ==========================================================================
-   Smaller text elements
-   ========================================================================== */
+/* 
+    Smaller text elements
+========================================================================== */
+   
+/* ## Paragraphs */
 
 p, li {
     text-align: left;
@@ -230,11 +232,16 @@ i, cite, em, dfn {
     font-weight: inherit;
     font-style: italic;
 }
+strong {
+    font-family: $boldStack;
+    font-weight: normal;
+}
 
 strong i, strong cite, strong em, strong dfn {
     font-weight: inherit;
 }
 
+/* ## Pre-formated text */
 pre {
 	margin-left: 1.5em; /* 24px */
 	white-space:  pre-wrap;
@@ -243,7 +250,21 @@ pre {
 	pre samp {
 		line-height: 1.5;
 	}
+	
+    /* ## Ampersands */ 
+.amp {
+    font-family: Palatino, 'Palatino Linotype', 'Baskerville', 'DIN Next';
+    font-style: italic;
+    font-weight: normal;
+}
 
+.course-name .amp {
+    font-family: 'Baskerville', 'DIN Next';
+    padding: 0px 0.15em 0px 0.1em;
+    opacity: 0.8;
+}
+
+/* ## Quotes */
 blockquote {
     position: relative;
     display: block;
@@ -273,7 +294,10 @@ blockquote:before {
     text-rendering: auto;
 }
 
-/* Grouping > Lists */
+/* 
+    Lists
+========================================================================== */
+   
 ol {
 	list-style-type: decimal;
 	padding: 0;
@@ -297,40 +321,31 @@ dd, li {
 		margin-top: 0;
 	}
 
-caption {
-    color: #666;
-    font-size: 0.9333em;
-    line-height: 1.1429;
-    caption-side: bottom;
-    padding: 1.1429em 0 0.5714em;
-    text-align: left;
-}
-
-ul.widget-bullet {
-    padding-left: 1.1em;
-}
-
-
-strong {
+dl {
+	
+	}
+dt {
     font-family: $boldStack;
-    font-weight: normal;
+	padding: 0;
+    color: rgb(160,160,160);
+    //text-transform: lowercase;
+}
+dd {
+	font-family: $defaultStack;
+	text-indent: 0;
+	margin: 0;
 }
 
-.amp {
-    font-family: Palatino, 'Palatino Linotype', 'Baskerville', 'DIN Next';
-    font-style: italic;
-    font-weight: normal;
+
+/* ## Bullet-less list */
+.no-bullets li {
+	list-style: none;
+	margin-left: 0;
 }
 
-.course-name .amp {
-    font-family: 'Baskerville', 'DIN Next';
-    padding: 0px 0.15em 0px 0.1em;
-    opacity: 0.8;
-}
-
-/* ==========================================================================
-   Hyperlinks
-   ========================================================================== */
+/* 
+    Hyperlinks
+========================================================================== */
 
 a {
     font-style: normal;
@@ -376,7 +391,7 @@ p a:hover, li a:hover {
 }
 
 
-/* External */
+/* ## External Links */
 a[rel="external"] {
 	background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%;
 	background-size: 12px;
@@ -391,9 +406,9 @@ a[rel="tag"] {
 	border: 0;
 }
 
-/* ==========================================================================
-   Images & Video
-   ========================================================================== */
+/*
+    Images & Video
+========================================================================== */
 figure.banner {
     position: relative;
 }
@@ -433,9 +448,9 @@ blockquote + figcaption::before {
     height: 100%;
 }
 
-/* ==========================================================================
-   Table
-   ========================================================================== */
+/* 
+    Table
+========================================================================== */
 
 table {
     color: $textColor;
@@ -496,9 +511,9 @@ td, th {
 }
 
 
-/* ==========================================================================
-   Other
-   ========================================================================== */
+/* 
+    Other
+========================================================================== */
 
 hr {
     text-align: center;
@@ -512,76 +527,64 @@ hr {
     clear: both;
 }
 
-
-/* ==========================================================================
-   Lists
-   ========================================================================== */
-   
-dl {
-	
-	}
-dt {
-    font-family: $boldStack;
-	padding: 0;
-    color: rgb(160,160,160);
-    //text-transform: lowercase;
-}
-dd {
-	font-family: $defaultStack;
-	text-indent: 0;
-	margin: 0;
+caption {
+    color: #666;
+    font-size: 0.9333em;
+    line-height: 1.1429;
+    caption-side: bottom;
+    padding: 1.1429em 0 0.5714em;
+    text-align: left;
 }
 
-
-/* Bullet-less list */
-.no-bullets li {
-	list-style: none;
-	margin-left: 0;
+ul.widget-bullet {
+    padding-left: 1.1em;
 }
 
 
 
-/***** Mobile (portrait) *****/
 
-/*
-@media only screen and (max-width: 767px) {
-    .headline {
-        margin-top: 0em;
+
+    /***** Mobile (portrait) *****/
+    
+    /*
+    @media only screen and (max-width: 767px) {
+        .headline {
+            margin-top: 0em;
+        }
+        h2.course-name, h2.article-name {
+            top: 0em;
+            text-align: left;
+        }
+        h2.article-name + h3 {
+            text-align: left;
+        }
+        .quotebig blockquote {
+            padding-left: 1.5em;
+        }
     }
-    h2.course-name, h2.article-name {
-        top: 0em;
-        text-align: left;
+    
+    .art-directed aside {
+        position: relative;
     }
-    h2.article-name + h3 {
-        text-align: left;
+    
+    aside.stat, aside.stat span, aside.stat p {
+        text-align: center;
     }
-    .quotebig blockquote {
-        padding-left: 1.5em;
+    
+    .number {
+        background: rgb(254, 248, 0);
+        background: rgba(251, 248, 0, 0.9);
+        border: solid 1px rgba(251, 248, 0, 0.9);
+        border-radius: 7em;
+        height: 4em;
+        width: 4em;
+        display: block;
+        vertical-align: middle;
+        line-height: 4em;
+        text-align: center;
+        font-size: 2.5em;
+        color: black;
+        margin: 0px auto;
     }
-}
-
-.art-directed aside {
-    position: relative;
-}
-
-aside.stat, aside.stat span, aside.stat p {
-    text-align: center;
-}
-
-.number {
-    background: rgb(254, 248, 0);
-    background: rgba(251, 248, 0, 0.9);
-    border: solid 1px rgba(251, 248, 0, 0.9);
-    border-radius: 7em;
-    height: 4em;
-    width: 4em;
-    display: block;
-    vertical-align: middle;
-    line-height: 4em;
-    text-align: center;
-    font-size: 2.5em;
-    color: black;
-    margin: 0px auto;
-}
-
-*/
+    
+    */

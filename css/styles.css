@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* ===========================================================
+    /* ===========================================================
 	Decoded Styleguide // by Jonas Haefele 2014
-============================================================ */
+    ============================================================ */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -352,7 +352,7 @@ table {
 	Decoded Styleguide // by Jonas Haefele 2014
 ============================================================ */
 /* Adapted from https://github.com/paulrobertlloyd/barebones */
-/* ============================================================
+/* 
 	Viewport
 ============================================================ */
 @-ms-viewport {
@@ -361,7 +361,7 @@ table {
 @viewport {
   width: device-width; }
 
-/* ============================================================
+/* 
 	Box sizing
 ============================================================ */
 /* apply a natural box layout model to all elements 
@@ -372,7 +372,7 @@ table {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* ============================================================
+/* 
 	Helpers
 ============================================================ */
 /* Font Smoothing */
@@ -391,7 +391,7 @@ table {
   overflow: hidden;
   position: absolute; }
 
-/* ============================================================
+/* 
 	Sectioning
 ============================================================ */
 body {
@@ -409,7 +409,7 @@ nav ul {
   margin: 0;
   list-style: none; }
 
-/* ============================================================
+/* 
 	Text-level semantics
 ============================================================ */
 a {
@@ -468,7 +468,7 @@ sup {
   line-height: 90%;
   vertical-align: super; }
 
-/* ============================================================
+/* 
 	Edits
 ============================================================ */
 mark, ins {
@@ -484,14 +484,14 @@ del, s {
   line-height: 90%;
   text-decoration: line-through; }
 
-/* ============================================================
+/* 
 	Embedded content
 ============================================================ */
 img {
   border: 0;
   max-width: 100%; }
 
-/* ============================================================
+/*
 	Tabular data
 ============================================================ */
 table {
@@ -524,7 +524,7 @@ th {
 thead th {
   border-bottom: 2px solid #ddd; }
 
-/* ============================================================
+/* 
 	Forms
 ============================================================ */
 fieldset {
@@ -593,7 +593,7 @@ input[type='search']::-webkit-search-decoration {
 :focus:-ms-input-placeholder {
   color: #ccc; }
 
-/* ============================================================
+/* 
 	Interactive
 ============================================================ */
 summary {
@@ -601,7 +601,7 @@ summary {
   outline: 0;
   cursor: pointer; }
 
-/* ============================================================
+/* 
 	Print styles
 ============================================================ */
 @media print {
@@ -647,10 +647,10 @@ summary {
     box-shadow: none; } }
 /* oppinionated defaults and further resets that normalize doesn't catch */
 /* ==========================================================================
-	Decoded Styleguide // by Jonas Haefele 2014
-============================================================================= */
+  	Decoded Styleguide // by Jonas Haefele 2014
+ ============================================================================= */
 /* ==========================================================================
-   Colors
+       Colors
    ========================================================================== */
 /* ==========================================================================
    Fonts
@@ -694,7 +694,7 @@ summary {
   src: url("../fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix") format("eot"), url("../fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff") format("woff"), url("../fonts/3516f91d-ac48-42cd-acfe-1be691152cc4.ttf") format("truetype"), url("../fonts/d1b1e866-a411-42ba-8f75-72bf28e23694.svg#d1b1e866-a411-42ba-8f75-72bf28e23694") format("svg"); }
 
 /* decoded font */
-/* ============================================================
+/* 
 	Highlight/Marks
 ============================================================ */
 .highlight {
@@ -703,8 +703,8 @@ summary {
 .mark {
   background-color: rgba(254, 248, 0, 0.4); }
 
-/* ============================================================
-	Image
+/* 
+	Images
 ============================================================ */
 .circular, .img-circle {
   /* .img-circle for backwards compatibility */
@@ -719,9 +719,10 @@ summary {
 .framed.circular img {
   border-radius: 100%; }
 
-/* ============================================================
+/* 
 	Layout
 ============================================================ */
+/* # Align Block level Elements like images */
 /* Pull left */
 .pull-left {
   float: left; }
@@ -738,7 +739,7 @@ img.pull-right {
   margin: 0 0 0.5em 1em;
   /* 0 0 8px 16px */ }
 
-/* Module */
+/* ## Modules */
 [class*="module"] {
   border: 1px solid rgba(151, 151, 151, 0.1);
   border-top: 1em solid #fef800;
@@ -762,7 +763,7 @@ img.pull-right {
   [class*="module"].highlight, [class*="module"].mark {
     border: 0; }
 
-/* Module > Notification */
+/* ### Module > Notification */
 [class$="notice"] {
   background-color: rgba(151, 151, 151, 0.1);
   border: 0;
@@ -777,7 +778,7 @@ img.pull-right {
   background-color: #fcecec;
   border-top-color: #dd6969; }
 
-/* Module > Details */
+/* ### Module > Details */
 .details details {
   margin-left: 1.5em; }
 
@@ -795,7 +796,7 @@ img.pull-right {
 .details summary::-webkit-details-marker {
   margin-left: -1em; }
 
-/* ============================================================
+/* 
 	Tooltip
 ============================================================ */
 .tip {
@@ -805,23 +806,17 @@ img.pull-right {
   content: attr(data-tip);
   color: #fff;
   font-size: 0.75em;
-  /* 12px */
   line-height: 1.3334em;
-  /* 16px */
   text-align: left;
   background-color: #666;
   border-radius: 0.3334em;
-  /* 4px */
   padding: 0.6667em;
-  /* 8px */
   width: 16.5em;
-  /* 200px */
   opacity: 0.9;
   display: block;
   position: absolute;
   left: 0;
   bottom: 2em;
-  /* 24px */
   z-index: 98; }
 
 .tip:hover:before {
@@ -829,20 +824,17 @@ img.pull-right {
   border: solid;
   border-color: #666 transparent;
   border-width: 0.5em 0.5em 0 0.5em;
-  /* 6px 6px 0 6px */
   opacity: 0.9;
   display: block;
   left: 1em;
-  /* 12px */
   bottom: 1em;
-  /* 12px */
   position: absolute;
   z-index: 99; }
 
-/* ============================================================
-	List-style layout patterns
+/* 
+    List-style layout patterns
 ============================================================ */
-/* Articles */
+/* ## Articles */
 .articles {
   overflow: hidden; }
 
@@ -868,35 +860,29 @@ img.pull-right {
 
 .articles .caption {
   color: #888;
-  margin-top: 0.6667em;
-  /* 8px */ }
+  margin-top: 0.6667em; }
 
 .articles article img {
   margin-bottom: 0;
   width: 25%; }
 
-/* Code block */
+/* ## Code block */
 .code {
   font-family: 'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace;
   font-size: 0.75em;
-  /* 12px */
-  line-height: 1.6667;
-  /* 20px */ }
+  line-height: 1.6667; }
 
 ol.code {
   color: #888;
   margin: 1.3334em 0 1.3334em 3em;
-  /* 16px 0 16px 36px */
-  line-height: 2;
-  /* 24px */ }
+  line-height: 2; }
 
 ol.code li {
   list-style: decimal-leading-zero;
   background: #f6f6f6;
   margin: 0 0 -1px 0;
   border-top: 1px solid #fff;
-  padding: 0 0.5em;
-  /* 0 8px */ }
+  padding: 0 0.5em; }
 
 ol.code li.tab1 {
   padding-left: 4ex; }
@@ -913,7 +899,7 @@ ol.code li.tab4 {
 ol.code li.tab5 {
   padding-left: 20ex; }
 
-/* Metadata */
+/* ## Metadata */
 dl.metadata {
   font-size: 0.75em;
   line-height: 1.3334;
@@ -945,33 +931,27 @@ dl.metadata dd {
     padding: 0.5em 0 0.5em 25%;
     width: 75%;
     float: right; } }
-/* Progress indicator */
+/* ## Progress indicator */
 .progress li {
   list-style: none;
   line-height: 2;
-  /* 32px */
   background-color: #f6f6f6;
   margin: 0 1.25em 0.5em 0;
-  /* 0 20px 8px 0 */
   padding: 0.25em 0.25em 0.25em 0.5em;
-  /* 4px 4px 4px 8px */
   position: relative;
   display: inline-block; }
 
 .progress li:before {
   content: "";
   font-size: 1em;
-  /* 16px */
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
   border: solid;
   border-color: #f6f6f6 transparent;
   border-width: 1.25em 0 1.25em 1.25em;
-  /* 20px 0 20px 20px */
   display: block;
   position: absolute;
   top: 0;
-  left: -1.25em;
-  /* -20px */ }
+  left: -1.25em; }
 
 .progress li:first-child {
   padding-left: 0.75em; }
@@ -982,15 +962,12 @@ dl.metadata dd {
 .progress li:after {
   content: "";
   font-size: 1em;
-  /* 16px */
   border: solid;
   border-color: transparent #f6f6f6;
   border-width: 1.25em 0 1.25em 1.25em;
-  /* 20px 0 20px 20px */
   display: block;
   position: absolute;
   right: -1.25em;
-  /* -20px */
   top: 0; }
 
 .progress li.completed {
@@ -1026,16 +1003,14 @@ dl.metadata dd {
   border: 0;
   display: block; }
 
-/* Stats */
+/* ## Stats */
 .stats {
   overflow: hidden; }
 
 .stats li {
   list-style: none;
   margin: 0 0.75em 0 0;
-  /* 0 12px 0 0 */
   padding: 0 0.75em 0 0;
-  /* 0 12px 0 0 */
   border-right: 1px solid rgba(151, 151, 151, 0.1);
   float: left; }
 
@@ -1047,9 +1022,7 @@ ul.stats li:last-child {
 .stats a {
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
   font-size: 1.125em;
-  /* 18px */
   line-height: 1.3334;
-  /* 24px */
   border: 0 none;
   display: block;
   float: left; }
@@ -1057,12 +1030,10 @@ ul.stats li:last-child {
 .stats span {
   font-weight: 400;
   font-size: 0.6667em;
-  /* 12px */
   line-height: 1.3334;
-  /* 16px */
   display: block; }
 
-/* Tag cloud */
+/* ## Tag cloud */
 .tags li {
   list-style: none;
   margin: 0 0.3334em 0 0;
@@ -1073,40 +1044,34 @@ ul.stats li:last-child {
   font-size: 1.2500em;
   line-height: 1.0000; }
 
-/* 20px/20px */
 .tags [data-rank="5"] {
   font-size: 1.1250em;
   line-height: 1.1111; }
 
-/* 18px/20px */
 .tags [data-rank="4"] {
   font-size: 1.0000em;
   line-height: 1.2500; }
 
-/* 16px/20px */
 .tags [data-rank="3"] {
   font-size: 0.8750em;
   line-height: 1.4286; }
 
-/* 14px/20px */
 .tags [data-rank="2"] {
   font-size: 0.7500em;
   line-height: 1.6667; }
 
-/* 12px/20px */
 .tags [data-rank="1"] {
   font-size: 0.6875em;
   line-height: 1.8181; }
 
-/* 11px/20px */
 /* lists, images, modules/boxes: legacy patterns from https://github.com/paulrobertlloyd/barebones */
 /* ============================================================
 	Decoded Styleguide // by Jonas Haefele 2014
 ============================================================ */
 /* Decoded Global Typography  */
-/* ==========================================================================
-   Base
-   ========================================================================== */
+/* 
+      Base
+========================================================================== */
 body {
   font: 16px/1.45 em;
   color: #1b1b1b;
@@ -1119,9 +1084,9 @@ body, pre, select, input, textarea, text {
 html {
   padding-top: 0em; }
 
-/* ==========================================================================
-   Headings
-   ========================================================================== */
+/* 
+    Headings
+========================================================================== */
 h1, .headline, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
@@ -1271,9 +1236,10 @@ h6, .zeta {
     letter-spacing: 0px;
 }
  */
-/* ==========================================================================
-   Smaller text elements
-   ========================================================================== */
+/* 
+    Smaller text elements
+========================================================================== */
+/* ## Paragraphs */
 p, li {
   text-align: left;
   font-weight: normal;
@@ -1298,9 +1264,14 @@ i, cite, em, dfn {
   font-weight: inherit;
   font-style: italic; }
 
+strong {
+  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+
 strong i, strong cite, strong em, strong dfn {
   font-weight: inherit; }
 
+/* ## Pre-formated text */
 pre {
   margin-left: 1.5em;
   /* 24px */
@@ -1310,6 +1281,18 @@ pre code,
 pre samp {
   line-height: 1.5; }
 
+/* ## Ampersands */
+.amp {
+  font-family: Palatino, 'Palatino Linotype', 'Baskerville', 'DIN Next';
+  font-style: italic;
+  font-weight: normal; }
+
+.course-name .amp {
+  font-family: 'Baskerville', 'DIN Next';
+  padding: 0px 0.15em 0px 0.1em;
+  opacity: 0.8; }
+
+/* ## Quotes */
 blockquote {
   position: relative;
   display: block;
@@ -1337,7 +1320,9 @@ blockquote:before {
   color: rgba(100, 100, 100, 0.2);
   text-rendering: auto; }
 
-/* Grouping > Lists */
+/* 
+    Lists
+========================================================================== */
 ol {
   list-style-type: decimal;
   padding: 0; }
@@ -1363,34 +1348,24 @@ dd, li {
 dd > *, li > * {
   margin-top: 0; }
 
-caption {
-  color: #666;
-  font-size: 0.9333em;
-  line-height: 1.1429;
-  caption-side: bottom;
-  padding: 1.1429em 0 0.5714em;
-  text-align: left; }
-
-ul.widget-bullet {
-  padding-left: 1.1em; }
-
-strong {
+dt {
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
-  font-weight: normal; }
+  padding: 0;
+  color: #a0a0a0; }
 
-.amp {
-  font-family: Palatino, 'Palatino Linotype', 'Baskerville', 'DIN Next';
-  font-style: italic;
-  font-weight: normal; }
+dd {
+  font-family: "DIN Next", Helvetica, Arial, sans-serif;
+  text-indent: 0;
+  margin: 0; }
 
-.course-name .amp {
-  font-family: 'Baskerville', 'DIN Next';
-  padding: 0px 0.15em 0px 0.1em;
-  opacity: 0.8; }
+/* ## Bullet-less list */
+.no-bullets li {
+  list-style: none;
+  margin-left: 0; }
 
-/* ==========================================================================
-   Hyperlinks
-   ========================================================================== */
+/* 
+    Hyperlinks
+========================================================================== */
 a {
   font-style: normal;
   color: #1b1b1b;
@@ -1424,7 +1399,7 @@ p a, li a {
 p a:hover, li a:hover {
   border-bottom: 1px solid black; }
 
-/* External */
+/* ## External Links */
 a[rel="external"] {
   background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCw0IEw4LDQgTDYsNiBMMiw2IEwyLDE0IEwxMCwxNCBMMTAsMTAuNSBMMTIsOC41IEwxMiwxNiBMMCwxNiBaIE0wLDQiIGZpbGw9InJnYmEoMCwwLDAsMC4zMykiPjwvcGF0aD48cGF0aCBkPSJNNiwwIEwxNiwwIEwxNiwxMCBMMTQsMTAgTDE0LDMuNSBMNy41LDEwIEw2LDguNSBMMTIuNSwyIEw2LDIgWiBNNiwwIiBmaWxsPSJyZ2JhKDAsMCwwLDAuMzMpIj48L3BhdGg+PC9zdmc+) no-repeat right 40%;
   background-size: 12px;
@@ -1439,9 +1414,9 @@ a[rel="tag"] {
   text-transform: lowercase;
   border: 0; }
 
-/* ==========================================================================
-   Images & Video
-   ========================================================================== */
+/*
+    Images & Video
+========================================================================== */
 figure.banner {
   position: relative; }
 
@@ -1476,9 +1451,9 @@ blockquote + figcaption::before {
   width: 100%;
   height: 100%; }
 
-/* ==========================================================================
-   Table
-   ========================================================================== */
+/* 
+    Table
+========================================================================== */
 table {
   color: #1b1b1b;
   font-size: 0.9375em;
@@ -1529,9 +1504,9 @@ td, td img {
 td, th {
   border-bottom: none; }
 
-/* ==========================================================================
-   Other
-   ========================================================================== */
+/* 
+    Other
+========================================================================== */
 hr {
   text-align: center;
   border: 0;
@@ -1543,23 +1518,16 @@ hr {
   margin: 1em auto;
   clear: both; }
 
-/* ==========================================================================
-   Lists
-   ========================================================================== */
-dt {
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
-  padding: 0;
-  color: #a0a0a0; }
+caption {
+  color: #666;
+  font-size: 0.9333em;
+  line-height: 1.1429;
+  caption-side: bottom;
+  padding: 1.1429em 0 0.5714em;
+  text-align: left; }
 
-dd {
-  font-family: "DIN Next", Helvetica, Arial, sans-serif;
-  text-indent: 0;
-  margin: 0; }
-
-/* Bullet-less list */
-.no-bullets li {
-  list-style: none;
-  margin-left: 0; }
+ul.widget-bullet {
+  padding-left: 1.1em; }
 
 /***** Mobile (portrait) *****/
 /*
@@ -1605,10 +1573,12 @@ aside.stat, aside.stat span, aside.stat p {
 
 */
 /* typography styles */
-/* Decoded Forms and Lists */
 /* ==========================================================================
+  	Decoded Styleguide // by Jonas Haefele 2014
+ ============================================================================= */
+/* 
    Forms
-   ========================================================================== */
+========================================================================== */
 input {
   padding: 0.35em 0.5em;
   border-radius: 0.25em;
@@ -1746,8 +1716,8 @@ label.check + .caption,
 /* forms, input, buttons */
 /* ============================================================
 	Decoded Styleguide // by Jonas Haefele 2014
-============================================================ */
-/* ============================================================
+   ============================================================ */
+/* 
 	General Navigation Styles
 ============================================================ */
 [class$='nav'] {
@@ -1767,7 +1737,6 @@ label.check + .caption,
   border-right: 1px solid rgba(151, 151, 151, 0.1);
   font-family: "DIN Next", Helvetica, Arial, sans-serif;
   padding: 0.5em 0.75em;
-  /* 8px 12px */
   display: inline-block; }
 
 [class$='nav'] li:last-child a {
@@ -1783,7 +1752,7 @@ label.check + .caption,
   font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
   border-bottom: none; }
 
-/* Vertical */
+/* ## Vertical */
 .vertical-nav li {
   margin: 0;
   display: block; }
@@ -1802,18 +1771,15 @@ label.check + .caption,
   .vertical-nav a.is-active:after {
     content: '';
     font-size: 1em;
-    /* 16px */
     border: solid;
     border-color: transparent #fef800;
     border-width: 1.25em 0 1.25em 1.25em;
-    /* 16px 0 16px 16px */
     display: block;
     position: absolute;
     right: -1.25em;
-    /* -16px */
     top: 0; }
 
-/* Tabbed */
+/* ## Tabbed */
 .tabbed-nav {
   border-top: 0;
   border-bottom: 1px solid rgba(151, 151, 151, 0.1);
@@ -1824,42 +1790,37 @@ label.check + .caption,
     margin-bottom: -1px;
     border: 1px solid rgba(151, 151, 151, 0.1);
     border-bottom-color: #fff;
-    border-radius: 0.25em 0.25em 0 0;
-    /* 4px 4px 0 0 */ }
+    border-radius: 0.25em 0.25em 0 0; }
   .tabbed-nav ul {
     margin: 0; }
 
-/* Pagination */
+/* ## Pagination */
 .page-nav li a {
   padding: 0.5em 1em;
-  /* 8px 16px */
   border-bottom: 1px solid transparent !important; }
   .page-nav li a[rel='prev'], .page-nav li a[rel='next'] {
     border: 0; }
     .page-nav li a[rel='prev']:hover, .page-nav li a[rel='next']:hover {
       background-color: transparent; }
 
-/* Breadcrumb */
+/* ## Breadcrumb */
 .breadcrumb-nav {
   color: #ccc;
   font-size: 0.75em;
-  /* 12px */
   line-height: 1.3334;
-  /* 16px */
   margin-top: 0;
   border: 0 none; }
 
 .breadcrumb-nav a,
 .breadcrumb-nav strong {
   padding: 0 0.5em;
-  /* 8px */
   border: 0;
   border-bottom: 1px solid transparent; }
 
 .breadcrumb-nav a:first-child {
   padding-left: 0; }
 
-/* ============================================================
+/*
 	Decoded Top Navigation Bar with Logo
 ============================================================ */
 .navbar {
