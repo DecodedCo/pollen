@@ -1,26 +1,4 @@
 /* ============================================================
-	Helpers
-============================================================ */
-
-/* Font Smoothing */
-.font-smoothing {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* Visibly hidden */
-.hidden {
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	position: absolute;
-}
-
-/* ============================================================
 	Highlight/Marks
 ============================================================ */
 .highlight {
@@ -65,21 +43,6 @@ img.pull-left {
 }
 img.pull-right {
 	margin: 0 0 0.5em 1em; /* 0 0 8px 16px */
-}
-
-/* Grid */
-.grid {
-	margin: 0 -1.5em;
-	overflow: hidden;
-}
-.grid-unit {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0 1.5em;
-	width: 100%;
-	display: block;
-	float: left;
 }
 
 /* Module */
@@ -189,7 +152,7 @@ img.pull-right {
 
 
 /* ============================================================
-	List
+	List-style layout patterns
 ============================================================ */
 /* Articles */
 .articles {

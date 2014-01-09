@@ -5,7 +5,7 @@
 /* ============================================================
 	General Navigation Styles
 ============================================================ */
-[class$="nav"] {
+[class$='nav'] {
 	font-size: 0; /* whitespace in inline-block lists http://www.broken-links.com/2013/03/25/removing-the-whitespace-from-inline-block-elements/ */
 	li {
 		font-size: $base-font-size; /* see above */
@@ -15,21 +15,21 @@
 		display: inline;
 	}
 }
-[class$="nav"] a {
+[class$='nav'] a {
 	border: 0;
 	border-right: 1px solid $decodedLightGrey;
 	font-family: $defaultStack;
 	padding: 0.5em 0.75em; /* 8px 12px */
 	display: inline-block;
 }
-[class$="nav"] li:last-child a {
+[class$='nav'] li:last-child a {
 	border-right: 0;
 	}
-	[class$="nav"] li a:hover {
+	[class$='nav'] li a:hover {
 		background-color: $decodedLightGrey;
 		border-bottom: none;
 	}
-	[class$="nav"] li a.is-active {
+	[class$='nav'] li a.is-active {
 		background-color: $decodedYellow;
 		color: $textColor;
 		font-family: $boldStack;
@@ -57,7 +57,7 @@
 		border-bottom: 1px solid transparent !important;
 	}
 	&.is-active:after {
-		content: "";
+		content: '';
 		font-size: 1em; /* 16px */
 		border: solid;
 		border-color: transparent $decodedYellow;
@@ -94,8 +94,8 @@
 			border-bottom: 1px solid transparent !important;
 			&.is-active {
 			}
-			&[rel="prev"],
-			&[rel="next"] {
+			&[rel='prev'],
+			&[rel='next'] {
 				border: 0;
 				&:hover {
 					background-color: transparent;
