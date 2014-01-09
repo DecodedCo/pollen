@@ -1,10 +1,14 @@
-  /* ==========================================================================
-    	Decoded Styleguide // by Jonas Haefele 2014
-   ============================================================================= */
-    
-    /* ==========================================================================
-           Colors
-       ========================================================================== */
+    /*! ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+
+/* 
+Colors
+========================================================================== 
+
+Use color variables where ever possible.
+
+*/
 
 $headingColor: #010101;
 $textColor: lighten($headingColor, 10%);
@@ -22,9 +26,13 @@ $white: #ffffff;
 $linkColor: rgb(0,0,200);
 $decodedBrown: rgb(40,36,25);
 
-    /* ==========================================================================
-       Fonts
-       ========================================================================== */
+/* 
+Fonts
+========================================================================== 
+
+Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
+
+*/
 
 $defaultStack: 'DIN Next',Helvetica,Arial, sans-serif;
 $boldStack: 'DIN Next-500','DIN Next',Helvetica,Arial, sans-serif;
@@ -33,18 +41,41 @@ $baseSize: 0.5em;
 $spacingSize: 1.5em;
 $headingPadding: 1px;
 
-    /* ==========================================================================
-       Grid Settings for Neat
-       ========================================================================== */
+/* 
+Grid Settings for Neat
+========================================================================== 
+
+[Examples of how to use the Grid System](http://neat.bourbon.io/examples/)
+
+Use `@include outer-container;` on elements that should contain grid items
+
+Then use `@include span-columns(12);` to declare how many grid columns an item should span.
+*/
    
 $max-width: 960px;
 $grid-columns: 12;
 
 $base-font-size: 16px;
 
-    /* ==========================================================================
-       Breakpoints
-       ========================================================================== */
+/* 
+Breakpoints
+========================================================================== 
+
+Available prefefined breakpoints are `$mobile`, `$phablet`, `$tablet` and `$tabletOnly`
+`$mobile`, `$phablet`, `$tablet` target any screensize smaller than the corresponding device, while `$tabletOnly` excludes small screen sizes.
+
+Adapt sizes of elements on the grid with changing screen sizes:
+
+
+<pre><code>//Default
+@include span-columns(7);     
+
+//Setting for phones  
+@include media($mobile) {
+		@include span-columns(4);   
+	}</code></pre>
+
+*/
 
 $mobile:		new-breakpoint(max-width 480px 4);
 $phablet:		new-breakpoint(max-width 780px 4);
