@@ -1,17 +1,25 @@
-    /* 
-    	Highlight/Marks
-    ============================================================ */
-.highlight {
-	background-color: $decodedYellow;
-}
-.mark {
-	background-color: rgba($decodedYellow, 0.4);
-}
-
-
 /* 
 Images
-========================================================================== */
+========================================================================== 
+
+## Circular Image
+```
+<img class="circular" src="http://lorempixel.com/136/136/people/1" alt="" style="width:136px; height:136px;" />
+```
+
+## Framed Image
+```
+<img class="framed" src="http://lorempixel.com/180/136/nature/1" alt="" style="width:136px; height:136px;" />
+```
+
+## Framed Circular Image
+```
+<span class="framed circular">
+	<img src="http://lorempixel.com/136/136/people/7" alt="" style="width:136px; height:136px;" />
+</span>
+```
+
+*/
 .circular, .img-circle { /* .img-circle for backwards compatibility */
 	border-radius: 100%;
 }
@@ -28,11 +36,15 @@ Images
 
 /* 
 Layout
-========================================================================== */
+==========================================================================
 
-/* # Align Block level Elements like images */
+## Align Block level Elements like images 
 
-/* Pull left */
+### Pull left 
+```
+<p><img class="pull-left" src="http://lorempixel.com/180/136/nature/2" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+```
+*/
 
 .pull-left {
 	float: left;
@@ -41,7 +53,12 @@ img.pull-left {
 	margin: 0 1em 0.5em 0; /* 0 16px 8px 0 */
 }
 
-/* Pull right */
+/*
+### Pull right
+```
+<p><img class="pull-right" src="http://lorempixel.com/180/136/nature/3" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+```
+*/
 
 .pull-right {
 	float: right;
@@ -50,7 +67,15 @@ img.pull-right {
 	margin: 0 0 0.5em 1em; /* 0 0 8px 16px */
 }
 
-/* ## Modules */
+/* 
+## Modules 
+```
+<div class="module">
+	<h2 class="h">This is an area of content.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.module-->
+```
+*/
 
 [class*="module"] {
 	border: 1px solid $decodedLightGrey;
@@ -85,23 +110,95 @@ img.pull-right {
 	
 }
 
+/* 
+### Highlight
+```
+<div class="module highlight">
+	<h2 class="h">This is a highlighted area of content.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.module-->
+```
+*/
+.highlight {
+	background-color: $decodedYellow;
+}
+/*
+### Mark
+```
+<div class="module mark">
+	<h2 class="h">This is a marked area of content.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.module-->
+```
+*/
+.mark {
+	background-color: rgba($decodedYellow, 0.4);
+}
 
-/* ### Module > Notification */
+/* 
+### Notification 
+```
+<div class="module notice">
+	<h2 class="h">This is a general notification.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.notice-->
+```
+*/
 [class$="notice"] {
 	background-color: $decodedLightGrey;
 	border: 0;
 	border-top: 0.25em solid $decodedGrey; /* 4px */
 }
+/*
+### Success Notification
+```
+<div class="module success-notice">
+	<h2 class="h">This is a notification of a successful action or event.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.success-notice-->
+```
+*/
 .success-notice {
 	background-color: #f0f6e9;
 	border-top-color: #b3d98c;
 }
+/*
+### Failure Notice
+```
+<div class="module failure-notice">
+	<h2 class="h">This is a notification of a failed action or event.</h2>
+	<p>Please complete the following required fields:</p>
+	<ul>
+		<li>Name</li>
+		<li>Date of birth</li>
+	</ul>
+</div><!--/.failure-notice-->
+```
+*/
 .failure-notice {
 	background-color: #fcecec;
 	border-top-color: #dd6969;
 }
 
-/* ### Module > Details */
+/* 
+### Details 
+```
+<div class="details module">
+	<details open>
+		<summary>How do I know which bone to choose?</summary>
+		<p>Whether you want to give your dog a nylon bone, a real bone, or a rawhide bone, choose a bone that matches your dog&#8217;s chewing rate and chewing habits. You may also wish to consider your dog's size and choose a bone that best fits his mouth and teeth.</p>
+	</details>
+	<details>
+		<summary>How do bones improve dental health?</summary>
+		<p>When your dog chews on bones, the chewing action scrapes away plaque, controls tartar build up, and helps stimulate gums. This diminishes bad breath, keeps teeth whiter, and reduces the risk of potentially serious dental problems.</p>
+	</details>
+	<details>
+		<summary>Are bones appropriate for older dogs?</summary>
+		<p>Provided that your older dog has healthy teeth, bones are extremely appropriate. Bones provide entertainment and mental stimulation that can be very beneficial to older dogs &#8211; especially those who are not extremely active.</p>
+	</details>
+</div><!--/.faq-->
+```
+*/
 .details details {
 	margin-left: 1.5em;
 }
@@ -122,7 +219,11 @@ img.pull-right {
 
 /* 
 Tooltip
-========================================================================== */
+========================================================================== 
+```
+<a href="#" class="tip" data-tip="Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a diam lectus sed sit amet ipsum mauris.">Hover to reveal a tooltip</a>
+```
+*/
 
 .tip {
 	position: relative;
@@ -160,9 +261,67 @@ Tooltip
 
 /* 
 List-style layout patterns
-============================================================ */
+============================================================ 
 
-/* ## Articles */
+## Articles 
+
+```
+<ol class="articles">
+	<li><a href="#">
+		<article class="module">
+			<h1 class="h">Defiant North Korea in rocket success</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T19:10-00:00">12 December 2012</time></p>
+			<p>North Korea successfully launches a long-range rocket to put a satellite into space, as neighbours accuse it of a disguised missile test.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<h1 class="h">Big decline in UK unemployment</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T18:10-00:00">12 December 2012</time></p>
+			<p>The number of people out of work fell by 82,000 between August and October, to 2.51 million, official figures show.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<h1 class="h">Sitar maestro Ravi Shankar dies</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T17:10-00:00">12 December 2012</time></p>
+			<p>Sitar player Ravi Shankar, who popularised Indian music around the world, dies in hospital in the United States at the age of 92.</p>
+		</article>
+	</a></li>
+</ol><!--/.articles-->
+```
+
+## Articles with images
+
+```
+<ol class="articles">
+	<li><a href="#">
+		<article class="module">
+			<img class="pull-left" src="http://lorempixel.com/240/180/city/4" alt=""/>
+			<h1 class="h">Defiant North Korea in rocket success</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T19:10-00:00">12 December 2012</time></p>
+			<p>North Korea successfully launches a long-range rocket to put a satellite into space, as neighbours accuse it of a disguised missile test.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<img class="pull-left" src="http://lorempixel.com/240/180/city/5" alt=""/>
+			<h1 class="h">Big decline in UK unemployment</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T18:10-00:00">12 December 2012</time></p>
+			<p>The number of people out of work fell by 82,000 between August and October, to 2.51 million, official figures show.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<img class="pull-left" src="http://lorempixel.com/240/180/city/6" alt=""/>
+			<h1 class="h">Sitar maestro Ravi Shankar dies</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T17:10-00:00">12 December 2012</time></p>
+			<p>Sitar player Ravi Shankar, who popularised Indian music around the world, dies in hospital in the United States at the age of 92.</p>
+		</article>
+	</a></li>
+</ol><!--/.articles-->
+```
+*/
 
 .articles {
 	overflow: hidden;
@@ -198,7 +357,16 @@ List-style layout patterns
 	width: 25%;
 }
 
-/* ## Code block */
+/* 
+## Code block 
+```
+<ol class="code">
+	<li><code>&#60;?php</code></li>
+	<li class="tab1"><code>echo 'Hello World!'; <span class="comment">// print 'Hello World'</span></code></li>
+	<li><code>?&#62;</code></li>
+</ol><!--/.code-->
+```
+*/
 
 .code {
 	font-family:'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace;
@@ -223,7 +391,20 @@ ol.code li {
 	ol.code li.tab4 { padding-left: 16ex; }
 	ol.code li.tab5 { padding-left: 20ex; }
 
-/* ## Metadata */
+/* 
+## Metadata 
+```
+<dl class="metadata">
+	<dt>Published</dt>
+	<dd><time datetime="1963-03-27T12:00Z">27 March 1963</time></dd>
+	<dt>Author</dt>
+	<dd>Richard Beeching</dd>
+	<dt>Policy Area</dt>
+	<dd>Transport</dd>
+</dl><!--/.metadata-->
+```
+*/
+
 dl.metadata {
 	font-size: 0.75em;
 	line-height: 1.3334;
@@ -258,7 +439,32 @@ dl.metadata dd {
 	}
 }
 
-/* ## Progress indicator */
+/* 
+## Progress indicator 
+```
+<ol class="progress">
+	<li class="is-active">Lorem dolor</li>
+	<li>Consectetur</li>
+	<li>Adipisicin</li>
+	<li>Eiusmod</li>
+</ol><!--/.progress-->
+
+<ol class="progress">
+	<li class="completed"><a href="#">Lorem dolor</a></li>
+	<li class="is-active">Consectetur</li>
+	<li>Adipisicin</li>
+	<li>Eiusmod</li>
+</ol><!--/.progress-->
+
+<ol class="progress">
+	<li class="completed"><a href="#">Lorem dolor</a></li>
+	<li class="completed"><a href="#">Consectetur</a></li>
+	<li class="completed"><a href="#">Adipisicin</a></li>
+	<li class="is-active">Eiusmod</li>
+</ol><!--/.progress-->
+```
+*/
+
 .progress li {
 	list-style: none;
 	line-height: 2; 
@@ -331,7 +537,17 @@ dl.metadata dd {
 	display: block;
 }
 
-/* ## Stats */
+/* 
+## Stats 
+```
+<ul class="stats">
+	<li><a href="#">1,234 <span>lorem</span></a></li>
+	<li><a href="#">567 <span>ipsum</span></a></li>
+	<li><a href="#">23,456 <span>dolor</span></a></li>
+</ul><!--/.stats-->
+```
+*/
+
 .stats {
 	overflow: hidden;
 }
@@ -362,7 +578,33 @@ dl.metadata dd {
 	display: block;
 }
 
-/* ## Tag cloud */
+/* 
+## Tag cloud 
+```
+<ol class="tags">
+	<li><a href="#" rel="tag" data-rank="1">Clavicle</a></li>
+	<li><a href="#" rel="tag" data-rank="4">Ethmoid</a></li>
+	<li><a href="#" rel="tag" data-rank="6">Frontal</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Incus</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Lacrimal</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Malleus</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Mandible</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Maxilla</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Palatine</a></li>
+	<li><a href="#" rel="tag" data-rank="5">Parietal</a></li>
+	<li><a href="#" rel="tag" data-rank="4">Occipital</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Ribs</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Scapula</a></li>
+	<li><a href="#" rel="tag" data-rank="4">Sphenoid</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Stapes</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Sternum</a></li>
+	<li><a href="#" rel="tag" data-rank="5">Temporal</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Vomer</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Vomer</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Zygomatic</a></li>
+</ol><!--/.tags-->
+```
+*/
 .tags li {
 	list-style: none;
 	margin: 0 0.3334em 0 0;
