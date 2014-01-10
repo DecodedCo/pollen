@@ -232,7 +232,7 @@ Details
 Tooltip
 ========================================================================== 
 ```
-<a href="#" class="tip" data-tip="Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a diam lectus sed sit amet ipsum mauris.">Hover to reveal a tooltip</a>
+<a href="#" class="tip" data-tip="Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a diam lectus sed sit amet ipsum mauris." style="padding-top:80px;">Hover to reveal a tooltip</a>
 ```
 */
 
@@ -270,11 +270,12 @@ Tooltip
 	}
 
 
-/* 
-List-style layout patterns
+	/* 
+	List-style layout patterns
+	============================================================ */
+/*
+Articles 
 ============================================================ 
-
-## Articles 
 
 ```
 <ol class="articles">
@@ -369,7 +370,8 @@ List-style layout patterns
 }
 
 /* 
-## Code block 
+Code block 
+============================================================ 
 ```
 <ol class="code">
 	<li><code>&#60;?php</code></li>
@@ -403,7 +405,8 @@ ol.code li {
 	ol.code li.tab5 { padding-left: 20ex; }
 
 /* 
-## Metadata 
+Metadata 
+============================================================ 
 ```
 <dl class="metadata">
 	<dt>Published</dt>
@@ -451,7 +454,8 @@ dl.metadata dd {
 }
 
 /* 
-## Progress indicator 
+Progress indicator 
+============================================================ 
 ```
 <ol class="progress">
 	<li class="is-active">Lorem dolor</li>
@@ -549,7 +553,8 @@ dl.metadata dd {
 }
 
 /* 
-## Stats 
+Stats 
+============================================================ 
 ```
 <ul class="stats">
 	<li><a href="#">1,234 <span>lorem</span></a></li>
@@ -590,7 +595,8 @@ dl.metadata dd {
 }
 
 /* 
-## Tag cloud 
+Tag cloud 
+============================================================ 
 ```
 <ol class="tags">
 	<li><a href="#" rel="tag" data-rank="1">Clavicle</a></li>
