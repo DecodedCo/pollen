@@ -773,10 +773,11 @@ img.pull-right {
   /* 0 0 8px 16px */ }
 
 /* 
-## Modules 
+Modules 
+============================================================ 
 ```
 <div class="module">
-	<h2 class="h">This is an area of content.</h2>
+	<h2>This is an area of content.</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div><!--/.module-->
 ```
@@ -793,19 +794,15 @@ img.pull-right {
     clear: both; }
   [class*="module"] > *:last-child {
     margin-bottom: 0; }
-  [class*="module"] .h {
-    color: inherit;
-    font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
-    font-size: 1.25em;
-    /* 20px */
-    line-height: 1.2;
-    /* 24px */
-    /*margin-top: 0;*/ }
+  [class*="module"] > h1, [class*="module"] > .headline, [class*="module"] > h2, [class*="module"] > h3 {
+    font-size: 1.217em; }
+  [class*="module"] > h1, [class*="module"] > .headline, [class*="module"] > h2, [class*="module"] > h3, [class*="module"] > h4, [class*="module"] > h5, [class*="module"] > h6 {
+    margin-top: 0; }
   [class*="module"].highlight, [class*="module"].mark {
     border: 0; }
 
 /* 
-### Highlight
+## Highlight
 ```
 <div class="module highlight">
 	<h2 class="h">This is a highlighted area of content.</h2>
@@ -817,7 +814,7 @@ img.pull-right {
   background-color: #fef800; }
 
 /*
-### Mark
+## Mark
 ```
 <div class="module mark">
 	<h2 class="h">This is a marked area of content.</h2>
@@ -829,7 +826,8 @@ img.pull-right {
   background-color: rgba(254, 248, 0, 0.4); }
 
 /* 
-### Notification 
+Notification 
+============================================================ 
 ```
 <div class="module notice">
 	<h2 class="h">This is a general notification.</h2>
@@ -844,7 +842,7 @@ img.pull-right {
   /* 4px */ }
 
 /*
-### Success Notification
+## Success Notification
 ```
 <div class="module success-notice">
 	<h2 class="h">This is a notification of a successful action or event.</h2>
@@ -857,7 +855,7 @@ img.pull-right {
   border-top-color: #b3d98c; }
 
 /*
-### Failure Notice
+## Failure Notice
 ```
 <div class="module failure-notice">
 	<h2 class="h">This is a notification of a failed action or event.</h2>
@@ -874,7 +872,8 @@ img.pull-right {
   border-top-color: #dd6969; }
 
 /* 
-### Details 
+Details 
+============================================================ 
 ```
 <div class="details module">
 	<details open>
