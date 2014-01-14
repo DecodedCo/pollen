@@ -62,7 +62,7 @@ h1,h2,h3,h4,h5,h6 {
 h1, .alpha {
     text-decoration: none;
     font-size: #{$alpha}em;
-    font-family: $boldStack;
+    font-weight: 500;
     margin: 0em auto 0.6em auto;
     line-height: 1.2;
     color: #010101;
@@ -73,7 +73,7 @@ h1, .alpha {
 h2, .beta {
     text-decoration: none;
     font-size: #{$beta}em;
-    font-family: $boldStack;
+    font-weight: 500;
     margin: 1em auto 0.6em auto;
     line-height: 1.2;
     color: #010101;
@@ -133,8 +133,7 @@ h3, .gamma {
 }
 
 h4, .delta {
-    font-family: $boldStack;
-    font-weight: normal;
+    font-weight: 500;
     margin: 0em auto;
     text-align: left;
     text-transform: uppercase;
@@ -151,7 +150,7 @@ h4.course-name {
 h5, .epsilon {
     font-size: #{$epsilon}em;
     margin: 1.5em 0em 1em;
-    font-family: $boldStack;
+    font-weight: 500;
 }
 
 h6, .zeta {
@@ -254,7 +253,7 @@ p:first-child, h2 + p {
 
 p.first-para {
     font-size: 1em;
-    font-family: $boldStack;
+    font-weight: 500;
 }
 
 i, cite, em, dfn {
@@ -263,8 +262,7 @@ i, cite, em, dfn {
     font-style: italic;
 }
 strong {
-    font-family: $boldStack;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 strong i, strong cite, strong em, strong dfn {
@@ -436,7 +434,7 @@ dl {
 	
 	}
 dt {
-    font-family: $boldStack;
+    font-weight: 500;
 	padding: 0;
     color: rgb(160,160,160);
     //text-transform: lowercase;
@@ -636,8 +634,7 @@ table td {
     line-height: 1.5em;
 }
 th {
-    font-family: $boldStack;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 table caption + thead tr:first-child th,

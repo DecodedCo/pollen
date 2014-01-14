@@ -1320,7 +1320,7 @@ h1, .headline, h2, h3, h4, h5, h6 {
 h1, .headline, .alpha {
   text-decoration: none;
   font-size: 1.97em;
-  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
+  font-weight: 500;
   margin: 0em auto 0.6em auto;
   line-height: 1.2;
   color: #010101; }
@@ -1329,7 +1329,7 @@ h1, .headline, .alpha {
 h2, .beta {
   text-decoration: none;
   font-size: 1.618em;
-  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
+  font-weight: 500;
   margin: 1em auto 0.6em auto;
   line-height: 1.2;
   color: #010101; }
@@ -1384,8 +1384,7 @@ h3, .gamma, .navbar .navbar-right .navbar-brand {
   color: #010101; }
 
 h4, .delta {
-  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 500;
   margin: 0em auto;
   text-align: left;
   text-transform: uppercase;
@@ -1400,7 +1399,7 @@ h4.course-name {
 h5, .epsilon {
   font-size: 0.752em;
   margin: 1.5em 0em 1em;
-  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif; }
+  font-weight: 500; }
 
 h6, .zeta {
   font-size: 1em; }
@@ -1488,7 +1487,7 @@ p:first-child, h2 + p {
 
 p.first-para {
   font-size: 1em;
-  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif; }
+  font-weight: 500; }
 
 i, cite, em, dfn {
   text-transform: none;
@@ -1496,8 +1495,7 @@ i, cite, em, dfn {
   font-style: italic; }
 
 strong {
-  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
-  font-weight: normal; }
+  font-weight: 500; }
 
 strong i, strong cite, strong em, strong dfn {
   font-weight: inherit; }
@@ -1661,7 +1659,7 @@ dd > *, li > * {
 
 
 dt {
-  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
+  font-weight: 500;
   padding: 0;
   color: #a0a0a0; }
 
@@ -1844,8 +1842,7 @@ table th, table td {
   line-height: 1.5em; }
 
 th {
-  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
-  font-weight: normal; }
+  font-weight: 500; }
 
 table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
   border-top: 0; }
