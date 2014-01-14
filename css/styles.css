@@ -1278,6 +1278,7 @@ body {
 
 body, pre, select, input, textarea, text {
   font-family: 'DIN Next', Helvetica, Arial, sans-serif;
+  font-weight: 400;
   color: #1b1b1b; }
 
 html {
