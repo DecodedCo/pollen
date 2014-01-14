@@ -15,7 +15,7 @@ body {
 body,pre,select,input,textarea,text {
 	@extend .font-smoothing;
     font-family: $defaultStack;
-    font-weight: 400;
+    font-weight: 300;
     color: $textColor;
 }
 
