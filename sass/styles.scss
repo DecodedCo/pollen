@@ -1,5 +1,5 @@
     /*! ===========================================================
-Pollen - Decoded Styles // by Jonas Haefele 2014
+Pollen - Decoded Styles // by Jonas Haefele 2014 
 ============================================================ */
 
 @charset "UTF-8";
@@ -8,10 +8,10 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 @import 'neat';
 
 @import 'normalize';		  /* browser inconsistencies v2.1.3 */
-@import 'reset';			    /* oppinionated defaults and further resets that normalize doesn't catch */
-@import 'sass-variables';	/* colors, modular scale, grid settings... */
+@import 'reset';			  /* oppinionated defaults and further resets that normalize doesn't catch */
+@import 'sass-variables';	  /* colors, modular scale, grid settings... */
 @import 'din-family';		  /* decoded font */
 @import 'patterns';			  /* lists, images, modules/boxes: legacy patterns from https://github.com/paulrobertlloyd/barebones */
 @import 'typography';		  /* typography styles */
-@import 'links-forms';		/* links, buttons, forms, input */
+@import 'links-forms';		  /* links, buttons, forms, input */
 @import 'navigation';		  /* nav bars, pagination,... */

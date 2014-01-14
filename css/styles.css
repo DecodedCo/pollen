@@ -1,39 +1,25 @@
-@charset "UTF-8";
-    /* ===========================================================
-Pollen - Decoded Styles // by Jonas Haefele 2014
+/*! ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014 
 ============================================================ */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* normalize.css v2.1.3 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block; }
 
 /**
@@ -48,8 +34,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-[hidden],
-template {
+[hidden], template {
   display: none; }
 
 /* ==========================================================================
@@ -92,8 +77,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active,
-a:hover {
+a:active, a:hover {
   outline: 0; }
 
 /* ==========================================================================
@@ -116,8 +100,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-b,
-strong {
+b, strong {
   font-weight: bold; }
 
 /**
@@ -144,10 +127,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, serif;
   font-size: 1em; }
 
@@ -172,8 +152,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -235,10 +214,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   font-family: inherit;
   /* 1 */
   font-size: 100%;
@@ -250,8 +226,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-button,
-input {
+button, input {
   line-height: normal; }
 
 /**
@@ -260,8 +235,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-button,
-select {
+button, select {
   text-transform: none; }
 
 /**
@@ -271,10 +245,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -283,16 +254,14 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled],
-html input[disabled] {
+button[disabled], html input[disabled] {
   cursor: default; }
 
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -315,15 +284,13 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -349,12 +316,12 @@ table {
 
 /* browser inconsistencies v2.1.3 */
 /* ============================================================
-	Decoded Styleguide // by Jonas Haefele 2014
-============================================================ */
-/* Adapted from https://github.com/paulrobertlloyd/barebones */
+    	Decoded Styleguide // by Jonas Haefele 2014
+    ============================================================ */
+/*! Adapted from https://github.com/paulrobertlloyd/barebones */
 /* 
-	Viewport
-============================================================ */
+    	Viewport
+    ============================================================ */
 @-ms-viewport {
   width: device-width; }
 
@@ -362,21 +329,21 @@ table {
   width: device-width; }
 
 /* 
-	Box sizing
-============================================================ */
+    	Box sizing
+    ============================================================ */
 /* apply a natural box layout model to all elements 
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
- * read comments about img with a 1px border might get unnecessary scaled */
+     * http://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
+     * read comments about img with a 1px border might get unnecessary scaled */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* 
-	Helpers
-============================================================ */
+    	Helpers
+    ============================================================ */
 /* Font Smoothing */
-.font-smoothing, body, pre, select, input, textarea, text, h1, .headline, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
+.font-smoothing, body, pre, select, input, textarea, text, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -392,8 +359,8 @@ table {
   position: absolute; }
 
 /* 
-	Sectioning
-============================================================ */
+    	Sectioning
+    ============================================================ */
 body {
   color: #444;
   font-family: sans-serif;
@@ -410,8 +377,8 @@ nav ul {
   list-style: none; }
 
 /* 
-	Text-level semantics
-============================================================ */
+    	Text-level semantics
+    ============================================================ */
 a {
   text-decoration: none;
   border-bottom: 1px solid rgba(34, 85, 221, 0.1); }
@@ -430,7 +397,7 @@ a:active {
   transition: none; }
 
 code, samp {
-  font-family: 'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace;
+  font-family: 'DejaVu Sans Mono', Inconsolata, Consolas, 'Lucida Console', monospace;
   font-size: 1em;
   /* 16px */
   line-height: 90%; }
@@ -469,8 +436,8 @@ sup {
   vertical-align: super; }
 
 /* 
-	Edits
-============================================================ */
+    	Edits
+    ============================================================ */
 mark, ins {
   background-color: #fff9d9;
   line-height: 90%;
@@ -485,15 +452,15 @@ del, s {
   text-decoration: line-through; }
 
 /* 
-	Embedded content
-============================================================ */
+    	Embedded content
+    ============================================================ */
 img {
   border: 0;
   max-width: 100%; }
 
 /*
-	Tabular data
-============================================================ */
+    	Tabular data
+    ============================================================ */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -525,8 +492,8 @@ thead th {
   border-bottom: 2px solid #ddd; }
 
 /* 
-	Forms
-============================================================ */
+    	Forms
+    ============================================================ */
 fieldset {
   border: 0;
   padding: 0; }
@@ -537,38 +504,30 @@ legend {
 label {
   cursor: pointer; }
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   color: inherit;
   font-family: inherit;
   font-size: 100%;
   margin: 0;
   outline: 0; }
 
-button,
-input[type='button'],
-input[type='submit'] {
+button, input[type='button'], input[type='submit'] {
   -webkit-appearance: button;
   line-height: normal;
   width: auto;
   cursor: pointer; }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-input[type='radio'],
-input[type='checkbox'] {
+input[type='radio'], input[type='checkbox'] {
   margin-right: 0.25em; }
 
 input[type='search'] {
   -webkit-appearance: none; }
 
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 [disabled] {
@@ -594,16 +553,16 @@ input[type='search']::-webkit-search-decoration {
   color: #ccc; }
 
 /* 
-	Interactive
-============================================================ */
+    	Interactive
+    ============================================================ */
 summary {
   border: 0;
   outline: 0;
   cursor: pointer; }
 
 /* 
-	Print styles
-============================================================ */
+    	Print styles
+    ============================================================ */
 @media print {
   @page {
     margin: 0.5cm; }
@@ -613,40 +572,29 @@ summary {
     color: #000 !important;
     text-shadow: none !important;
     box-shadow: none; }
-
   p, h1, .headline, h2, h3 {
     orphans: 3;
     widows: 3; }
-
   h1, .headline, h2, h3, h4 {
     page-break-after: avoid; }
-
   blockquote {
     border-left: 4px solid #ccc;
     padding: 0 1em;
     page-break-inside: avoid; }
-
   a, a:visited {
     color: #000 !important;
     border-bottom: 1px dotted #999;
     padding-left: 0 !important; }
-
   thead {
     display: table-header-group; }
-
   tr, img {
     page-break-inside: avoid; }
-
-  input[type='text'],
-  input[type='email'],
-  input[type='url'],
-  input[type='password'],
-  input[type='search'],
-  textarea {
+  input[type='text'], input[type='email'], input[type='url'], input[type='password'], input[type='search'], textarea {
     border-bottom: 1px solid #999;
     box-shadow: none; } }
+
 /* oppinionated defaults and further resets that normalize doesn't catch */
-    /* ===========================================================
+/*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 /* 
@@ -673,9 +621,28 @@ Use `@include outer-container;` on elements that should contain grid items
 
 Then use `@include span-columns(12);` to declare how many grid columns an item should span.
 */
+/* 
+Breakpoints
+========================================================================== 
+
+Available prefefined breakpoints are `$mobile`, `$phablet`, `$tablet` and `$tabletOnly`
+`$mobile`, `$phablet`, `$tablet` target any screensize smaller than the corresponding device, while `$tabletOnly` excludes small screen sizes.
+
+Adapt sizes of elements on the grid with changing screen sizes:
+
+
+<pre><code>//Default
+@include span-columns(7);     
+
+//Setting for phones  
+@include media($mobile) {
+		@include span-columns(4);   
+	}</code></pre>
+
+*/
 /* ==========================================================================
-   Various
-   ========================================================================== */
+       Various
+       ========================================================================== */
 /* colors, modular scale, grid settings... */
 @font-face {
   font-family: "DIN Next-500";
@@ -896,7 +863,7 @@ Details
 
 .details summary {
   color: #969696;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   display: inline; }
 
 .details summary:hover {
@@ -948,8 +915,8 @@ Tooltip
   z-index: 99; }
 
 /* 
-List-style layout patterns
-============================================================ */
+	List-style layout patterns
+	============================================================ */
 /*
 Articles 
 ============================================================ 
@@ -1054,7 +1021,7 @@ Code block
 ```
 */
 .code {
-  font-family: 'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace;
+  font-family: 'DejaVu Sans Mono', Inconsolata, Consolas, 'Lucida Console', monospace;
   font-size: 0.75em;
   line-height: 1.6667; }
 
@@ -1121,7 +1088,6 @@ dl.metadata dd {
     float: left;
     clear: left;
     display: block; }
-
   dl.metadata dd {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
@@ -1130,6 +1096,7 @@ dl.metadata dd {
     padding: 0.5em 0 0.5em 25%;
     width: 75%;
     float: right; } }
+
 /* 
 Progress indicator 
 ============================================================ 
@@ -1168,7 +1135,7 @@ Progress indicator
 .progress li:before {
   content: "";
   font-size: 1em;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   border: solid;
   border-color: #f6f6f6 transparent;
   border-width: 1.25em 0 1.25em 1.25em;
@@ -1213,7 +1180,7 @@ Progress indicator
   border-color: transparent rgba(151, 151, 151, 0.1); }
 
 .progress li.is-active {
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   background-color: #fef800; }
 
 .progress li.is-active:before {
@@ -1222,8 +1189,7 @@ Progress indicator
 .progress li.is-active:after {
   border-color: transparent #fef800; }
 
-.progress li a,
-.progress li a:hover {
+.progress li a, .progress li a:hover {
   border: 0;
   display: block; }
 
@@ -1254,7 +1220,7 @@ ul.stats li:last-child {
   border: none; }
 
 .stats a {
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   font-size: 1.125em;
   line-height: 1.3334;
   border: 0 none;
@@ -1302,23 +1268,23 @@ Tag cloud
   white-space: nowrap; }
 
 .tags [data-rank="6"] {
-  font-size: 1.2500em;
-  line-height: 1.0000; }
+  font-size: 1.25em;
+  line-height: 1; }
 
 .tags [data-rank="5"] {
-  font-size: 1.1250em;
+  font-size: 1.125em;
   line-height: 1.1111; }
 
 .tags [data-rank="4"] {
-  font-size: 1.0000em;
-  line-height: 1.2500; }
+  font-size: 1em;
+  line-height: 1.25; }
 
 .tags [data-rank="3"] {
-  font-size: 0.8750em;
+  font-size: 0.875em;
   line-height: 1.4286; }
 
 .tags [data-rank="2"] {
-  font-size: 0.7500em;
+  font-size: 0.75em;
   line-height: 1.6667; }
 
 .tags [data-rank="1"] {
@@ -1326,19 +1292,19 @@ Tag cloud
   line-height: 1.8181; }
 
 /* lists, images, modules/boxes: legacy patterns from https://github.com/paulrobertlloyd/barebones */
-    /* ===========================================================
+/*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 /* 
-Decoded Global Typography
-========================================================================== */
+  Decoded Global Typography
+  ========================================================================== */
 body {
   font: 16px/1.45 em;
   color: #1b1b1b;
   font-size: 110%; }
 
 body, pre, select, input, textarea, text {
-  font-family: "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   color: #1b1b1b; }
 
 html {
@@ -1381,7 +1347,7 @@ h1, .headline, h2, h3, h4, h5, h6 {
 h1, .headline, .alpha {
   text-decoration: none;
   font-size: 1.97em;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   margin: 0em auto 0.6em auto;
   line-height: 1.2;
   color: #010101; }
@@ -1390,7 +1356,7 @@ h1, .headline, .alpha {
 h2, .beta {
   text-decoration: none;
   font-size: 1.618em;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   margin: 1em auto 0.6em auto;
   line-height: 1.2;
   color: #010101; }
@@ -1399,43 +1365,43 @@ header h2 {
   letter-spacing: -1px; }
 
 /*
-h2#maintitle, .de-look {
-	letter-spacing: 5px;
-    font-weight: normal;
-    font-family: $defaultStack;
-    text-transform: uppercase;
-}
-
-.de-look {
-	font-size: 1.8em;
-}
-
-h2.article-name {
-    text-align: left;
-    top: 0em;
-    margin-top: 0em;
-    letter-spacing: 2px;
-    font-family: "DIN Next";
-    text-transform: uppercase;
-}
-*/
+    h2#maintitle, .de-look {
+    	letter-spacing: 5px;
+        font-weight: normal;
+        font-family: $defaultStack;
+        text-transform: uppercase;
+    }
+    
+    .de-look {
+    	font-size: 1.8em;
+    }
+    
+    h2.article-name {
+        text-align: left;
+        top: 0em;
+        margin-top: 0em;
+        letter-spacing: 2px;
+        font-family: "DIN Next";
+        text-transform: uppercase;
+    }
+    */
 h2 + h3 {
   font-weight: normal;
   display: block;
   line-height: 1.217em;
   color: #969696;
-  font-family: "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: -0.6em; }
 
 /*
-h2.article-name + h3 {
-    text-align: left;
-}
-*/
+    h2.article-name + h3 {
+        text-align: left;
+    }
+    */
 /* Heading 3 */
-h3, .gamma, .navbar .navbar-right h1, .navbar .navbar-right .headline {
+h3, .gamma, .navbar .navbar-right h1 {
   text-decoration: none;
   font-size: 1.217em;
   font-family: "DIN Next";
@@ -1445,7 +1411,7 @@ h3, .gamma, .navbar .navbar-right h1, .navbar .navbar-right .headline {
   color: #010101; }
 
 h4, .delta {
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin: 0em auto;
   text-align: left;
@@ -1461,7 +1427,7 @@ h4.course-name {
 h5, .epsilon {
   font-size: 0.752em;
   margin: 1.5em 0em 1em;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif; }
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif; }
 
 h6, .zeta {
   font-size: 1em; }
@@ -1493,37 +1459,37 @@ h6, .zeta {
 
 /* Extra heading */
 /*
-.course-name{
-  font-family: $boldStack;
-}
-
-.small-bold {
-  font-family: $boldStack;
-  font-weight: normal;
-  margin: 0em 0em 1em 0em;
-  text-align: left;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  color: #010101;
-  display: block;
-  clear: both;
-  font-size: 1em;
-}
-
-.line-title {
-    letter-spacing: -1px;
-    line-height: 1em;
-    width: 100%;
-    display: block;
-    text-align: left;
-    margin: 0em 0em 1em 0em;
-    font-family: $boldStack;
-}
-
-.course-name {
-    letter-spacing: 0px;
-}
- */
+    .course-name{
+      font-family: $boldStack;
+    }
+    
+    .small-bold {
+      font-family: $boldStack;
+      font-weight: normal;
+      margin: 0em 0em 1em 0em;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      color: #010101;
+      display: block;
+      clear: both;
+      font-size: 1em;
+    }
+    
+    .line-title {
+        letter-spacing: -1px;
+        line-height: 1em;
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin: 0em 0em 1em 0em;
+        font-family: $boldStack;
+    }
+    
+    .course-name {
+        letter-spacing: 0px;
+    }
+     */
 /* 
 Smaller text elements
 ========================================================================== */
@@ -1535,21 +1501,21 @@ Smaller text elements
 p, li {
   text-align: left;
   font-weight: normal;
-  font-family: "DIN Next", Helvetica, Arial, sans-serif; }
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif; }
 
 p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
   font-size: 0.925em;
   line-height: 1.45 em;
   font-weight: normal;
-  margin: .75em 0;
-  font-family: "DIN Next", Helvetica, Arial, sans-serif; }
+  margin: 0.75em 0;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif; }
 
 p:first-child, h2 + p {
   margin-top: 0em; }
 
 p.first-para {
   font-size: 1em;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif; }
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif; }
 
 i, cite, em, dfn {
   text-transform: none;
@@ -1557,7 +1523,7 @@ i, cite, em, dfn {
   font-style: italic; }
 
 strong {
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
 strong i, strong cite, strong em, strong dfn {
@@ -1582,8 +1548,7 @@ pre {
   /* 24px */
   white-space: pre-wrap; }
 
-pre code,
-pre samp {
+pre code, pre samp {
   line-height: 1.5; }
 
 /* ## Ampersands */
@@ -1721,13 +1686,14 @@ dd, li {
 dd > *, li > * {
   margin-top: 0; }
 
+
 dt {
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   padding: 0;
   color: #a0a0a0; }
 
 dd {
-  font-family: "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   text-indent: 0;
   margin: 0; }
 
@@ -1791,9 +1757,7 @@ blockquote + figcaption::before {
   height: 0;
   overflow: hidden; }
 
-.video-wrapper iframe,
-.video-wrapper object,
-.video-wrapper embed {
+.video-wrapper iframe, .video-wrapper object, .video-wrapper embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -1899,8 +1863,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-table th,
-table td {
+table th, table td {
   text-align: left;
   vertical-align: middle;
   border-top: 1px solid #dddddd;
@@ -1908,15 +1871,10 @@ table td {
   line-height: 1.5em; }
 
 th {
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
-table caption + thead tr:first-child th,
-table caption + thead tr:first-child td,
-table colgroup + thead tr:first-child th,
-table colgroup + thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
+table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
   border-top: 0; }
 
 th {
@@ -1938,7 +1896,7 @@ td, td img {
 td, th {
   border-bottom: none; }
 
-  /* 
+/* 
 Other
 ========================================================================== */
 hr {
@@ -1965,49 +1923,49 @@ ul.widget-bullet {
 
 /***** Mobile (portrait) *****/
 /*
-@media only screen and (max-width: 767px) {
-    .headline {
-        margin-top: 0em;
+    @media only screen and (max-width: 767px) {
+        .headline {
+            margin-top: 0em;
+        }
+        h2.course-name, h2.article-name {
+            top: 0em;
+            text-align: left;
+        }
+        h2.article-name + h3 {
+            text-align: left;
+        }
+        .quotebig blockquote {
+            padding-left: 1.5em;
+        }
     }
-    h2.course-name, h2.article-name {
-        top: 0em;
-        text-align: left;
+    
+    .art-directed aside {
+        position: relative;
     }
-    h2.article-name + h3 {
-        text-align: left;
+    
+    aside.stat, aside.stat span, aside.stat p {
+        text-align: center;
     }
-    .quotebig blockquote {
-        padding-left: 1.5em;
+    
+    .number {
+        background: rgb(254, 248, 0);
+        background: rgba(251, 248, 0, 0.9);
+        border: solid 1px rgba(251, 248, 0, 0.9);
+        border-radius: 7em;
+        height: 4em;
+        width: 4em;
+        display: block;
+        vertical-align: middle;
+        line-height: 4em;
+        text-align: center;
+        font-size: 2.5em;
+        color: black;
+        margin: 0px auto;
     }
-}
-
-.art-directed aside {
-    position: relative;
-}
-
-aside.stat, aside.stat span, aside.stat p {
-    text-align: center;
-}
-
-.number {
-    background: rgb(254, 248, 0);
-    background: rgba(251, 248, 0, 0.9);
-    border: solid 1px rgba(251, 248, 0, 0.9);
-    border-radius: 7em;
-    height: 4em;
-    width: 4em;
-    display: block;
-    vertical-align: middle;
-    line-height: 4em;
-    text-align: center;
-    font-size: 2.5em;
-    color: black;
-    margin: 0px auto;
-}
-
-*/
+    
+    */
 /* typography styles */
-    /* ===========================================================
+/*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 /* 
@@ -2032,25 +1990,25 @@ a:hover {
   text-decoration: none;
   border-bottom: 1px solid #1b1b1b; }
 
-a.button,
-a.primary-button {
+a.button, a.primary-button {
   cursor: pointer;
   margin-bottom: 1em;
   margin-right: 0.3em;
   border-bottom: none; }
 
+
 a.opps {
   color: green;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif; }
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif; }
 
-h1 a, .headline a, h2 a, h3 a {
+h1 a, h2 a, h3 a {
   color: #010101;
   text-decoration: none;
   border-bottom: none; }
 
 p a, li a {
   color: #010101;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif; }
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif; }
 
 p a:hover, li a:hover {
   border-bottom: 1px solid black; }
@@ -2145,7 +2103,7 @@ input[type='submit'], input[type='button'], button, .button, .primary-button {
   padding: 0.5em 1em 0.4em 1em;
   border: none;
   background: none;
-  font-family: "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: none;
   width: auto;
@@ -2167,13 +2125,13 @@ input[type='submit'], input[type='button'], button, .button, .primary-button {
 */
 .primary-button, input[type='button'].primary-button, input[type='submit'].primary-button {
   background: rgba(151, 151, 151, 0.1);
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase; }
   .primary-button:hover, .primary-button:focus, input[type='button'].primary-button:hover, input[type='button'].primary-button:focus, input[type='submit'].primary-button:hover, input[type='submit'].primary-button:focus {
     background-color: rgba(254, 248, 0, 0.4) !important; }
   .primary-button:active, input[type='button'].primary-button:active, input[type='submit'].primary-button:active {
-    background-color: white;
+    background-color: #ffffff;
     border: 2px solid #fef800; }
 
 input[type='submit'], input[type='submit'].primary-button {
@@ -2207,19 +2165,16 @@ input[type='submit'], input[type='submit'].primary-button {
 .combined {
   display: block;
   padding-bottom: 1px; }
-  .combined input,
-  .combined [class$='button'] {
+  .combined input, .combined [class$='button'] {
     margin: 0;
     border: 1px solid rgba(151, 151, 151, 0.1);
     border-left-width: 0;
     border-radius: 0;
     float: left; }
-  .combined input:first-of-type,
-  .combined [class$='button']:first-of-type {
+  .combined input:first-of-type, .combined [class$='button']:first-of-type {
     border-left-width: 1px;
     border-radius: 0.25em 0 0 0.25em; }
-  .combined input:last-of-type,
-  .combined [class$='button']:last-of-type {
+  .combined input:last-of-type, .combined [class$='button']:last-of-type {
     border-radius: 0 0.25em 0.25em 0; }
 
 /* 
@@ -2231,8 +2186,7 @@ input[type='submit'], input[type='submit'].primary-button {
 </p>
 ```
 */
-input[type='search'] + .button,
-input[type='search'] + input[type='submit'] {
+input[type='search'] + .button, input[type='search'] + input[type='submit'] {
   box-shadow: none;
   background: transparent url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNIDE2IDE0LjYgTCAxMC45IDkuNSBDIDExLjYgOC41IDEyIDcuMyAxMiA2IEMgMTIgMi43IDkuMyAwIDYgMCBDIDIuNyAwIDAgMi43IDAgNiBDIDAgOS4zIDIuNyAxMiA2IDEyIEMgNy4zIDEyIDguNSAxMS42IDkuNSAxMC45IEwgMTQuNiAxNiBMIDE2IDE0LjYgWk0gMiA2IEMgMiAzLjggMy44IDIgNiAyIEMgOC4yIDIgMTAgMy44IDEwIDYgQyAxMCA4LjIgOC4yIDEwIDYgMTAgQyAzLjggMTAgMiA4LjIgMiA2IFoiIGZpbGw9IiM5OTkiLz48L3N2Zz4=) no-repeat 50% 55%;
   border-color: transparent;
@@ -2264,8 +2218,7 @@ label.check + .caption {
   padding-left: 2em; }
 
 /* Labels */
-label,
-fieldset.options legend {
+label, fieldset.options legend {
   color: #444;
   margin: 0.375em 0;
   font-size: 1em;
@@ -2345,12 +2298,11 @@ abbr[title='Required'] {
   font-weight: 400;
   border: 0; }
 
-label.check + .caption,
-.input + .caption {
+label.check + .caption, .input + .caption {
   display: block; }
 
 /* links, buttons, forms, input */
-    /* ===========================================================
+/*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 /* 
@@ -2384,7 +2336,7 @@ General Navigation Styles
 [class$='nav'] a {
   border: 0;
   border-right: 1px solid rgba(151, 151, 151, 0.1);
-  font-family: "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   padding: 0.5em 0.75em;
   display: inline-block; }
 
@@ -2398,7 +2350,7 @@ General Navigation Styles
 [class$='nav'] li a.is-active {
   background-color: #fef800;
   color: #1b1b1b;
-  font-family: "DIN Next-500", "DIN Next", Helvetica, Arial, sans-serif;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   border-bottom: none; }
 
 /* ## Vertical 
@@ -2507,8 +2459,7 @@ General Navigation Styles
   margin-top: 0;
   border: 0 none; }
 
-.breadcrumb-nav a,
-.breadcrumb-nav strong {
+.breadcrumb-nav a, .breadcrumb-nav strong {
   padding: 0 0.5em;
   border: 0;
   border-bottom: 1px solid transparent; }
@@ -2540,7 +2491,7 @@ The Decoded Navbar sticks to the top of the page
 .navbar {
   background-color: #fef800;
   padding: 0 130px 0 20px;
-  border-bottom: 1px solid #e5df00;
+  border-bottom: 1px solid #e5dd00;
   position: fixed;
   top: 0;
   left: 0;
@@ -2549,17 +2500,15 @@ The Decoded Navbar sticks to the top of the page
   z-index: 1030; }
   @media screen and (max-width: 780px) {
     .navbar {
-      *zoom: 1;
       max-width: 960px;
       margin-left: auto;
       margin-right: auto; }
-      .navbar:before, .navbar:after {
-        content: " ";
-        display: table; }
       .navbar:after {
+        content: "";
+        display: table;
         clear: both; } }
   .navbar:after {
-    content: url("../assets/decoded-logo-navbar.png");
+    content: url('../assets/decoded-logo-navbar.png');
     display: block;
     position: absolute;
     top: 10px;
@@ -2569,21 +2518,21 @@ The Decoded Navbar sticks to the top of the page
     padding: 0; }
     @media screen and (max-width: 780px) {
       .navbar .navbar-left {
-        display: block;
         float: left;
+        display: block;
         margin-right: 7.42297%;
         width: 100%; }
         .navbar .navbar-left:last-child {
           margin-right: 0; } }
   .navbar nav li a {
-    padding: 0.8em 0.75em .8em 0.75em; }
+    padding: 0.8em 0.75em 0.8em 0.75em; }
   .navbar .navbar-right {
     float: right;
     padding: 1.15em 0 0 0; }
     @media screen and (max-width: 780px) {
       .navbar .navbar-right {
-        display: block;
         float: left;
+        display: block;
         margin-right: 7.42297%;
         width: 100%;
         text-align: right; }
