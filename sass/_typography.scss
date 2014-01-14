@@ -160,13 +160,13 @@ h6, .zeta {
 
 
 .headline {
-	@extend h1;
+    @extend h1;
 	margin: 1em 0em 0.4em;
-  padding: 0em 0.3em;
-  background: $decodedYellow;
-  background: rgba($decodedYellow, 0.9);
-  border-bottom: none;
-  display: inline-block;
+    padding: 0em 0.3em;
+    background: $decodedYellow;
+    background: rgba($decodedYellow, 0.9);
+    border-bottom: none;
+    display: inline-block;
 }
 .breadcrumb .headline {
 	background: none;

@@ -229,8 +229,9 @@ The Decoded Navbar sticks to the top of the page
 			@include span-columns(4);
 		}
 	}
-	nav li a {
+	.nav li a {
 		padding: 0.8em 0.75em .8em 0.75em;
+		font-weight: 300;
 	}
 	.navbar-right{
 		float: right;
