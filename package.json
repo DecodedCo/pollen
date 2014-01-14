@@ -1,12 +1,18 @@
 {
   "name": "Pollen",
   "version": "0.0.0",
-  "repository" : {"type": "git", "url": "https://github.com/DecodedCo/Pollen.git"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DecodedCo/Pollen.git"
+  },
   "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~0.4.2",
     "node-bourbon": "~1.0.0",
-    "node-neat": "~1.1.0"
+    "node-neat": "~1.1.0",
+    "node-sass": "~0.8.1",
+    "grunt-sass": "~0.10.0",
+    "grunt-contrib-watch": "~0.5.3"
   },
   "engines": {
     "node": ">=0.8.0"
