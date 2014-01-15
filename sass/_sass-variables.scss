@@ -78,9 +78,11 @@ Adapt sizes of elements on the grid with changing screen sizes:
 */
 
 $mobile:		new-breakpoint(max-width 480px 4);
-$phablet:		new-breakpoint(max-width 780px 4);
-$tablet: 		new-breakpoint(max-width 960px 12);
+$phablet:		new-breakpoint(min-width 480px max-width 780px 4);
+$tablet: 		new-breakpoint(min-width 780px 12);
 $tabletOnly: 	new-breakpoint(min-width 480px max-width 960px 12);
+$desktop:	 	new-breakpoint(min-width 960px 12);
+
 
     /* ==========================================================================
        Various
