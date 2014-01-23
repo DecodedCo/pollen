@@ -1,8 +1,6 @@
 module.exports = function(grunt) {
 
-  var sass    = require('node-sass')
-    , bourbon = require('node-bourbon').includePaths
-    , neat    = require('node-neat').includePaths;
+  var sass    = require('node-sass');
 
   // Project configuration.
   grunt.initConfig({
@@ -10,11 +8,14 @@ module.exports = function(grunt) {
     sass: {
       css: {
         options: {
-          includePaths: neat,
           outputStyle: 'expanded'
         },
         files: {
-          'css/styles.css': 'sass/styles.scss'
+          'css/base.css': 'sass/base.scss',
+          'css/din-family.css': 'sass/din-family.scss',
+          'css/links-forms.css': 'sass/links-forms.scss',
+          'css/navigation.css': 'sass/navigation.scss',
+          'css/patterns.css': 'sass/patterns.scss'
         }
       }
     },
