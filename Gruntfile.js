@@ -15,7 +15,8 @@ module.exports = function(grunt) {
           'css/din-family.css': 'sass/din-family.scss',
           'css/links-forms.css': 'sass/links-forms.scss',
           'css/navigation.css': 'sass/navigation.scss',
-          'css/patterns.css': 'sass/patterns.scss'
+          'css/patterns.css': 'sass/patterns.scss',
+          'css/grid-layout.css': 'sass/grid-layout.scss'
         }
       }
     },
