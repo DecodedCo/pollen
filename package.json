@@ -8,8 +8,6 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.2",
-    "node-bourbon": "~1.0.0",
-    "node-neat": "~1.1.0",
     "node-sass": "~0.8.1",
     "grunt-sass": "~0.10.0",
     "grunt-contrib-watch": "~0.5.3"

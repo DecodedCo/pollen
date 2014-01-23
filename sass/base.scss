@@ -8,8 +8,9 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 @import 'reset';			  /* oppinionated defaults and further resets that normalize doesn't catch */
 @import 'sass-variables';	  /* colors, modular scale, grid settings... */
 @import 'mixins';			  /* respond to mixin */
-/*@import 'din-family';*/	  /* decoded font */
-@import 'patterns';			  /* lists, images, modules/boxes: legacy patterns from https://github.com/paulrobertlloyd/barebones */
 @import 'typography';		  /* typography styles */
-@import 'links-forms';		  /* links, buttons, forms, input */
-@import 'navigation';		  /* nav bars, pagination,... */
+/*@import 'din-family';*/	  /* decoded font */
+/*@import 'patterns';		*/	  /* lists, images, modules/boxes: legacy patterns from https://github.com/paulrobertlloyd/barebones */
+
+/*@import 'links-forms';	*/	  /* links, buttons, forms, input */
+/*@import 'navigation';		*/  /* nav bars, pagination,... */

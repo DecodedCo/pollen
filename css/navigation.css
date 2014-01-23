@@ -1,0 +1,318 @@
+/*! ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+/* 
+Colors
+========================================================================== 
+
+Use color variables where ever possible.
+
+*/
+/* 
+Fonts
+========================================================================== 
+
+Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
+
+*/
+/* 
+Grid Settings for Neat
+========================================================================== 
+
+[Examples of how to use the Grid System](http://neat.bourbon.io/examples/)
+
+Use `@include outer-container;` on elements that should contain grid items
+
+Then use `@include span-columns(12);` to declare how many grid columns an item should span.
+*/
+/* 
+Breakpoints
+========================================================================== 
+
+Available prefefined breakpoints are `$mobile`, `$phablet`, `$tablet` and `$tabletOnly`
+`$mobile`, `$phablet`, `$tablet` target any screensize smaller than the corresponding device, while `$tabletOnly` excludes small screen sizes.
+
+Adapt sizes of elements on the grid with changing screen sizes:
+
+
+<pre><code>//Default
+@include span-columns(7);     
+
+//Setting for phones  
+@include media($mobile) {
+		@include span-columns(4);   
+	}</code></pre>
+
+*/
+/* ==========================================================================
+       Various
+       ========================================================================== */
+/*! ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+/* 
+Mixins
+========================================================================== 
+
+## @respond-to to screen size
+
+```
+  @include respond-to(small-screens) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens) { float: none; }
+```
+*/
+/*! ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+/* 
+General Navigation Styles
+========================================================================== 
+
+## Basic Navigation 
+
+```
+<nav role="navigation" class="nav">
+	<ul>
+		<li><a href="#">Lorem link</a></li>
+		<li><a href="#">Ipsum link</a></li>
+		<li><a href="#">Dolor link</a></li>
+	</ul>
+</nav><!--/.nav-->
+```
+*/
+.nav {
+  font-size: 0;
+  /* whitespace in inline-block lists http://www.broken-links.com/2013/03/25/removing-the-whitespace-from-inline-block-elements/ */ }
+  .nav li {
+    font-size: 16px;
+    /* see above */
+    font-size: 1rem;
+    /* see above */
+    margin: 0;
+    padding: 0;
+    display: inline; }
+
+.nav a {
+  border: 0;
+  border-right: 1px solid rgba(151, 151, 151, 0.1);
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
+  padding: 0.5em 0.75em;
+  display: inline-block; }
+
+.nav li:last-child a {
+  border-right: 0; }
+
+.nav li a:hover {
+  background-color: rgba(151, 151, 151, 0.1);
+  border-bottom: none; }
+
+.nav li a.is-active {
+  background-color: #fef800;
+  color: #1b1b1b;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
+  border-bottom: none; }
+
+/* ## Vertical 
+  
+```
+<nav role="navigation" class="nav vertical-nav" style='width:80%;'>
+	<ul>
+		<li><a href="#" class="is-active">Active tab</a></li>
+		<li><a href="#">Lorem tab</a></li>
+		<li><a href="#">Ipsum tab</a></li>
+		<li><a href="#">Dolor tab</a></li>
+	</ul>
+</nav><!--/.vertical-nav-->
+```
+*/
+.vertical-nav li {
+  margin: 0;
+  display: block; }
+
+.vertical-nav a {
+  border: 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.1);
+  display: block; }
+  .vertical-nav a:hover {
+    border: 0;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.1) !important; }
+  .vertical-nav a.is-active {
+    background-color: rgba(151, 151, 151, 0.1);
+    position: relative;
+    border-bottom: 1px solid transparent !important; }
+  .vertical-nav a.is-active:after {
+    content: '';
+    font-size: 1em;
+    border: solid;
+    border-color: transparent #fef800;
+    border-width: 1.25em 0 1.25em 1.25em;
+    display: block;
+    position: absolute;
+    right: -1.25em;
+    top: 0; }
+
+/* ## Tabbed 
+
+```
+<nav role="navigation" class="nav tabbed-nav">
+	<ul>
+		<li><a href="#" class="is-active">Active tab</a></li>
+		<li><a href="#">Lorem tab</a></li>
+		<li><a href="#">Ipsum tab</a></li>
+		<li><a href="#">Dolor tab</a></li>
+	</ul>
+</nav><!--/.tabbed-nav-->
+```
+*/
+.tabbed-nav {
+  border-top: 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.1);
+  padding: 0;
+  margin-left: 1em; }
+  .tabbed-nav a.is-active {
+    background-color: #fff !important;
+    margin-bottom: -1px;
+    border: 1px solid rgba(151, 151, 151, 0.1);
+    border-bottom-color: #fff;
+    border-radius: 0.25em 0.25em 0 0; }
+  .tabbed-nav ul {
+    margin: 0; }
+
+/* ## Pagination 
+  
+```
+<nav role="navigation" class="nav page-nav">
+	<ul>
+		<li><a href="#" rel="prev">Previous</a></li>
+		<li><a href="#" class="is-active">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ul>
+</nav><!--/.page-nav-->
+```  
+*/
+.page-nav li a {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid transparent !important; }
+  .page-nav li a[rel='prev'], .page-nav li a[rel='next'] {
+    border: 0; }
+    .page-nav li a[rel='prev']:hover, .page-nav li a[rel='next']:hover {
+      background-color: transparent; }
+
+/* ## Breadcrumb 
+  
+```
+<nav role="navigation" class="nav breadcrumb-nav">
+	<a href="#">Lorem section</a> /
+	<a href="#">Dolor section</a> /
+	<a href="#">Ipsum section</a> /
+	<strong class="is-active">Current section</strong>
+</nav><!--/.breadcrumb-nav-->
+```
+*/
+.breadcrumb-nav {
+  color: #ccc;
+  font-size: 0.75em;
+  line-height: 1.3334;
+  margin-top: 0;
+  border: 0 none; }
+
+.breadcrumb-nav a, .breadcrumb-nav strong {
+  padding: 0 0.5em;
+  border: 0;
+  border-bottom: 1px solid transparent; }
+
+.breadcrumb-nav a:first-child {
+  padding-left: 0; }
+
+/*
+Decoded Top Navigation Bar with Logo
+========================================================================== 
+The Decoded Topbar sticks to the top of the page
+```
+<header role='banner' class='topbar' role='navigation' id='nav'>
+	<div class='topbar-left collapse' id='topbar-collapse'>
+		<nav role='navigation' class='nav'>
+			<ul>
+				<li><a href='#one'>One</a></li>
+				<li><a href='#two'>Two</a></li>
+				<li><a href='#three'>Three</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class='topbar-right'>
+	  	<a href="https://decoded.co/" class="topbar-logo"><img src="/images/decoded-logo.png" alt="Decoded" height="30"></a>
+      	<div class="topbar-brand">Text left of Logo</div>
+      	<button class='topbar-toggle' data-target="#topbar-collapse"><i class="fa fa-bars"></i></button>
+	</div>
+</header>
+```
+*/
+.topbar {
+  background-color: #fef800;
+  border-bottom: 1px solid #e5dd00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 50px;
+  z-index: 1030; }
+  @media only screen and (min-width: 480px) {
+    .topbar {
+      padding: 0 20px 0 20px; } }
+  .topbar .topbar-toggle {
+    margin: -0.5em -0.5em 0 0;
+    padding: 0.2em 0.4em;
+    font-size: 1.5em;
+    color: #010101;
+    float: right; }
+    @media only screen and (min-width: 960px) {
+      .topbar .topbar-toggle {
+        display: none; } }
+  .topbar .nav {
+    float: left;
+    width: 100%;
+    display: inline-block; }
+    @media only screen and (min-width: 960px) {
+      .topbar .nav {
+        width: auto; } }
+  .topbar .topbar-left {
+    float: left;
+    padding: 0; }
+    @media only screen and (min-width: 480px) {
+      .topbar .topbar-left {
+        width: 70%; } }
+  .topbar .nav li a {
+    padding: 0.8em 0.75em 0.8em 0.75em;
+    font-weight: 300;
+    width: 50%; }
+    @media only screen and (min-width: 480px) {
+      .topbar .nav li a {
+        width: 33%; } }
+    @media only screen and (min-width: 960px) {
+      .topbar .nav li a {
+        width: auto; } }
+  .topbar .topbar-right {
+    float: right;
+    padding: 1.15em 0 0 0; }
+    @media only screen and (min-width: 480px) {
+      .topbar .topbar-right {
+        width: 30%;
+        text-align: right; } }
+    .topbar .topbar-right .topbar-brand {
+      display: none; }
+      @media only screen and (min-width: 960px) {
+        .topbar .topbar-right .topbar-brand {
+          display: block;
+          margin: 0; } }
+    .topbar .topbar-right .topbar-logo {
+      margin: -10px 0 0 20px; }
+    .topbar .topbar-right .topbar-logo, .topbar .topbar-right .topbar-brand {
+      float: right; }
+  .topbar .collapse {
+    display: none; }
+    @media only screen and (min-width: 960px) {
+      .topbar .collapse {
+        display: block; } }

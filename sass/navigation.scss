@@ -1,3 +1,5 @@
+@import 'sass-variables';
+@import 'mixins';
     /*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
@@ -189,7 +191,7 @@ Decoded Top Navigation Bar with Logo
 The Decoded Topbar sticks to the top of the page
 ```
 <header role='banner' class='topbar' role='navigation' id='nav'>
-	<div class='topbar-left collapse'>
+	<div class='topbar-left collapse' id='topbar-collapse'>
 		<nav role='navigation' class='nav'>
 			<ul>
 				<li><a href='#one'>One</a></li>
@@ -286,10 +288,9 @@ The Decoded Topbar sticks to the top of the page
 	}
 
 	.collapse {
-	display: none;
-	@include respond-to(large-screens){
-		display: block;
-	}
-}	
+		display: none;
+		@include respond-to(large-screens){
+			display: block;
+		}
+	}	
 }
-
