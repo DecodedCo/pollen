@@ -1,0 +1,23 @@
+{
+  "name": "Pollen",
+  "version": "0.0.0",
+  "homepage": "https://github.com/DecodedCo/Pollen",
+  "authors": [
+    "Jonas Haefele <jonas@decoded.co>"
+  ],
+  "description": "Decoded Base Styles and Behaviours",
+  "main": "/css/base.css",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "suit-grid-layouts": "~0.2.1"
+  }
+}
