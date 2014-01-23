@@ -186,25 +186,27 @@ General Navigation Styles
 /*
 Decoded Top Navigation Bar with Logo
 ========================================================================== 
-The Decoded Navbar sticks to the top of the page
+The Decoded Topbar sticks to the top of the page
 ```
-<header role='banner' class='navbar'>
-	<div class='navbar-right'>
-		<h1 class='headline'>Decoded Styleguide</h1>
-	</div>
-	<div class='navbar-left'>
+<header role='banner' class='topbar' role='navigation' id='nav'>
+	<div class='topbar-left collapse'>
 		<nav role='navigation' class='nav'>
 			<ul>
-				<li><a href='#styleguide'>Styleguide</a></li>
-				<li><a href='#patterns'>Pattern Library</a></li>
-				<li><a href='#forms'>Form Example</a></li>
+				<li><a href='#one'>One</a></li>
+				<li><a href='#two'>Two</a></li>
+				<li><a href='#three'>Three</a></li>
 			</ul>
-		</nav><!--/.nav-->
+		</nav>
 	</div>
-</header><!--/@banner-->
+	<div class='topbar-right'>
+	  	<a href="https://decoded.co/" class="topbar-logo"><img src="/images/decoded-logo.png" alt="Decoded" height="30"></a>
+      	<div class="topbar-brand">Text left of Logo</div>
+      	<button class='topbar-toggle' data-target="#topbar-collapse"><i class="fa fa-bars"></i></button>
+	</div>
+</header>
 ```
 */
-.navbar{
+.topbar{
 	background-color: $decodedYellow;
 	border-bottom: 1px solid darken($decodedYellow, 5%);
 	position: fixed;
@@ -217,7 +219,7 @@ The Decoded Navbar sticks to the top of the page
 	 	padding: 0 20px 0 20px;
 	}
 
-	.navbar-toggle{
+	.topbar-toggle{
 		margin: -.5em -0.5em 0 0;
 		padding: 0.2em 0.4em;
 		font-size: 1.5em;
@@ -238,7 +240,7 @@ The Decoded Navbar sticks to the top of the page
 			}
 		}
 
-	.navbar-left{
+	.topbar-left{
 		float: left;
 		padding: 0;
 		@include respond-to(medium-screens){
@@ -256,7 +258,7 @@ The Decoded Navbar sticks to the top of the page
 				width: auto;
 			}
 	}
-	.navbar-right{
+	.topbar-right{
 		float: right;
 		padding: 1.15em 0 0 0;
 		@include respond-to(medium-screens){
@@ -264,7 +266,7 @@ The Decoded Navbar sticks to the top of the page
 			text-align: right;
 		}
 
-		.navbar-brand{
+		.topbar-brand{
 			display: none;
 			 @include respond-to(large-screens){
 				display: block;
@@ -273,19 +275,21 @@ The Decoded Navbar sticks to the top of the page
 			}
 		}
 
-		.navbar-logo{
+		.topbar-logo{
 			margin: -10px 0 0 20px;
 		}
 
-		.navbar-logo,
-		.navbar-brand{
+		.topbar-logo,
+		.topbar-brand{
 			float: right;
 		}
-	}	
-}
-.collapse {
+	}
+
+	.collapse {
 	display: none;
 	@include respond-to(large-screens){
 		display: block;
 	}
+}	
 }
+
