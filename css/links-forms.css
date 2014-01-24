@@ -284,10 +284,9 @@ label.check + .caption {
 
 /* Labels */
 label, fieldset.options legend {
-  color: #444;
   margin: 0.375em 0;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.5;
   width: auto;
   display: block;

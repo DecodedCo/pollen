@@ -152,7 +152,15 @@ Nesting grids is easy. Each grid adapts independently of its context. In the fol
 @import '../bower_components/suit-grid-layouts/grid-layouts-v2.css' (min-width: 480px);
 @import '../bower_components/suit-grid-layouts/grid-layouts-v3.css' (min-width: 780px);
 
-.Grid-cell{
-	padding: 0 10px;
+/**
+* Set application's grid gutter (40px)
+*/
+
+.Grid {
+    margin: 0 -10px;
+}
+
+.Grid-cell {
+    padding: 0 10px;
 }
 
