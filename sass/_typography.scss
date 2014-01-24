@@ -23,6 +23,12 @@ html {
     padding-top: 0em;
 }
 
+    /* Font Smoothing */
+.font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 /* 
 Headings
 ========================================================================== 

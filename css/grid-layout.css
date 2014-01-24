@@ -1,21 +1,7 @@
-/*! ===========================================================
+    /*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
-/* 
-Mixins
-========================================================================== 
-
-## @respond-to to screen size
-
-```
-  @include respond-to(small-screens) { width: 100% ;}
-  @include respond-to(medium-screens) { width: 125px; }
-  @include respond-to(wide-screens) { float: none; }
-```
-*/
-/*! ===========================================================
-Pollen - Decoded Styles // by Jonas Haefele 2014
-============================================================ */
+    
 /* 
 Layout and Grids
 =====================================================================
@@ -94,10 +80,8 @@ Nesting grids is easy. Each grid adapts independently of its context. In the fol
 </div>
 ```
 */
-@import url('../bower_components/suit-grid/grid.css');
-@import url('../bower_components/suit-grid-layouts/grid-layouts-v1.css');
-@media only screen and (min-width: 480px) {
-  @import url('../bower_components/suit-grid-layouts/grid-layouts-v2.css'); }
 
-@media only screen and (min-width: 960px) {
-  @import url('../bower_components/suit-grid-layouts/grid-layouts-v3.css'); }
+@import '../bower_components/suit-grid/grid.css';
+@import '../bower_components/suit-grid-layouts/grid-layouts-v1.css';
+@import '../bower_components/suit-grid-layouts/grid-layouts-v2.css' (min-width: 480px);
+@import '../bower_components/suit-grid-layouts/grid-layouts-v3.css' (min-width: 720px);
