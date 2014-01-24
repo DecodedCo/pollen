@@ -29,15 +29,16 @@ a:hover {
     border-bottom: 1px solid $textColor;
 }
 
-a.button,
-a.primary-button {
+a.Button,
+button,
+a.Button-primary {
     cursor: pointer;
     margin-bottom: 1em;
     margin-right: 0.3em;
     border-bottom: none;
 }
 
-a.button:hover {
+a.Button:hover {
 }
 
 a.opps {
@@ -139,7 +140,7 @@ textarea {
 /* 
 ## Buttons 
 
-Add class `.button` to links to style them as buttons.
+Add class `.Button` to links to style them as buttons.
 
 ```
 <button>Button</button>
@@ -149,7 +150,7 @@ Add class `.button` to links to style them as buttons.
 ```
 */
 
-input[type='submit'], input[type='button'], button, .button, .primary-button {
+input[type='submit'], input[type='button'], button, .Button, .Button-primary {
     margin: 0em 1em 0 0;
     width: 100%;
     padding: 0.5em 1em 0.4em 1em;
@@ -174,13 +175,13 @@ input[type='submit'], input[type='button'], button, .button, .primary-button {
 /* 
 ## Primary Button
 ```  
-<button class="primary-button">Primary button</button>
-<input type="button" class="primary-button" value="Primary input button"/>
-<input type="submit" class="primary-button" value="Primary submit button"/>
+<button class="Button-primary">Primary button</button>
+<input type="button" class="Button-primary" value="Primary input button"/>
+<input type="submit" class="Button-primary" value="Primary submit button"/>
 ```
 */
 
-.primary-button,  input[type='button'].primary-button, input[type='submit'].primary-button {
+.Button-primary,  input[type='button'].Button-primary, input[type='submit'].Button-primary {
 	background: $decodedLightGrey;
 	font-family: $boldStack;
     font-weight: normal;
@@ -196,7 +197,7 @@ input[type='submit'], input[type='button'], button, .button, .primary-button {
 	}
 }
 
-input[type='submit'], input[type='submit'].primary-button{
+input[type='submit'], input[type='submit'].Button-primary{
 	 background: $decodedYellow;
 }
 
@@ -204,14 +205,14 @@ input[type='submit'], input[type='submit'].primary-button{
 ##Button Group  
 ```
 <div class="button-group">
-	<input type="submit" class="primary-button" value="Post comment"/>
+	<input type="submit" class="Button-primary" value="Post comment"/>
 	<input type="button" value="Preview"/>
 	<a href="#">Cancel</a>
 </div>
 ```  
 */
 
-.button-group {
+.Button-group {
 	padding: 0.75em 0;
 	overflow: hidden;
 }
@@ -263,7 +264,8 @@ input[type='submit'], input[type='submit'].primary-button{
 ```
 */
 
-input[type='search'] + .button,
+input[type='search'] + .Button,
+input[type='search'] + button,
 input[type='search'] + input[type='submit'] {
 	box-shadow: none;
 	background: transparent url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNIDE2IDE0LjYgTCAxMC45IDkuNSBDIDExLjYgOC41IDEyIDcuMyAxMiA2IEMgMTIgMi43IDkuMyAwIDYgMCBDIDIuNyAwIDAgMi43IDAgNiBDIDAgOS4zIDIuNyAxMiA2IDEyIEMgNy4zIDEyIDguNSAxMS42IDkuNSAxMC45IEwgMTQuNiAxNiBMIDE2IDE0LjYgWk0gMiA2IEMgMiAzLjggMy44IDIgNiAyIEMgOC4yIDIgMTAgMy44IDEwIDYgQyAxMCA4LjIgOC4yIDEwIDYgMTAgQyAzLjggMTAgMiA4LjIgMiA2IFoiIGZpbGw9IiM5OTkiLz48L3N2Zz4=) no-repeat 50% 55%;

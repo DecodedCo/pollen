@@ -55,7 +55,7 @@ a:hover {
   text-decoration: none;
   border-bottom: 1px solid #1b1b1b; }
 
-a.button, a.primary-button {
+a.Button, button, a.Button-primary {
   cursor: pointer;
   margin-bottom: 1em;
   margin-right: 0.3em;
@@ -153,7 +153,7 @@ textarea {
 /* 
 ## Buttons 
 
-Add class `.button` to links to style them as buttons.
+Add class `.Button` to links to style them as buttons.
 
 ```
 <button>Button</button>
@@ -162,7 +162,7 @@ Add class `.button` to links to style them as buttons.
 
 ```
 */
-input[type='submit'], input[type='button'], button, .button, .primary-button {
+input[type='submit'], input[type='button'], button, .Button, .Button-primary {
   margin: 0em 1em 0 0;
   width: 100%;
   padding: 0.5em 1em 0.4em 1em;
@@ -177,42 +177,42 @@ input[type='submit'], input[type='button'], button, .button, .primary-button {
   text-align: center;
   letter-spacing: 1px;
   border-radius: 0.25em; }
-  input[type='submit']:hover, input[type='button']:hover, button:hover, .button:hover, .primary-button:hover {
+  input[type='submit']:hover, input[type='button']:hover, button:hover, .Button:hover, .Button-primary:hover {
     background-color: rgba(151, 151, 151, 0.1); }
 
 /* 
 ## Primary Button
 ```  
-<button class="primary-button">Primary button</button>
-<input type="button" class="primary-button" value="Primary input button"/>
-<input type="submit" class="primary-button" value="Primary submit button"/>
+<button class="Button-primary">Primary button</button>
+<input type="button" class="Button-primary" value="Primary input button"/>
+<input type="submit" class="Button-primary" value="Primary submit button"/>
 ```
 */
-.primary-button, input[type='button'].primary-button, input[type='submit'].primary-button {
+.Button-primary, input[type='button'].Button-primary, input[type='submit'].Button-primary {
   background: rgba(151, 151, 151, 0.1);
   font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase; }
-  .primary-button:hover, .primary-button:focus, input[type='button'].primary-button:hover, input[type='button'].primary-button:focus, input[type='submit'].primary-button:hover, input[type='submit'].primary-button:focus {
+  .Button-primary:hover, .Button-primary:focus, input[type='button'].Button-primary:hover, input[type='button'].Button-primary:focus, input[type='submit'].Button-primary:hover, input[type='submit'].Button-primary:focus {
     background-color: rgba(254, 248, 0, 0.4) !important; }
-  .primary-button:active, input[type='button'].primary-button:active, input[type='submit'].primary-button:active {
+  .Button-primary:active, input[type='button'].Button-primary:active, input[type='submit'].Button-primary:active {
     background-color: #ffffff;
     border: 2px solid #fef800; }
 
-input[type='submit'], input[type='submit'].primary-button {
+input[type='submit'], input[type='submit'].Button-primary {
   background: #fef800; }
 
 /* 
 ##Button Group  
 ```
 <div class="button-group">
-	<input type="submit" class="primary-button" value="Post comment"/>
+	<input type="submit" class="Button-primary" value="Post comment"/>
 	<input type="button" value="Preview"/>
 	<a href="#">Cancel</a>
 </div>
 ```  
 */
-.button-group {
+.Button-group {
   padding: 0.75em 0;
   overflow: hidden; }
 
@@ -251,7 +251,7 @@ input[type='submit'], input[type='submit'].primary-button {
 </p>
 ```
 */
-input[type='search'] + .button, input[type='search'] + input[type='submit'] {
+input[type='search'] + .Button, input[type='search'] + button, input[type='search'] + input[type='submit'] {
   box-shadow: none;
   background: transparent url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNIDE2IDE0LjYgTCAxMC45IDkuNSBDIDExLjYgOC41IDEyIDcuMyAxMiA2IEMgMTIgMi43IDkuMyAwIDYgMCBDIDIuNyAwIDAgMi43IDAgNiBDIDAgOS4zIDIuNyAxMiA2IDEyIEMgNy4zIDEyIDguNSAxMS42IDkuNSAxMC45IEwgMTQuNiAxNiBMIDE2IDE0LjYgWk0gMiA2IEMgMiAzLjggMy44IDIgNiAyIEMgOC4yIDIgMTAgMy44IDEwIDYgQyAxMCA4LjIgOC4yIDEwIDYgMTAgQyAzLjggMTAgMiA4LjIgMiA2IFoiIGZpbGw9IiM5OTkiLz48L3N2Zz4=) no-repeat 50% 55%;
   border-color: transparent;
