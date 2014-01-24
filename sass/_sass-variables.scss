@@ -40,49 +40,41 @@ $lineHeight: (1.45)em;
 $baseSize: 0.5em;
 $spacingSize: 1.5em;
 $headingPadding: 1px;
-
-/* 
-Grid Settings for Neat
-========================================================================== 
-
-[Examples of how to use the Grid System](http://neat.bourbon.io/examples/)
-
-Use `@include outer-container;` on elements that should contain grid items
-
-Then use `@include span-columns(12);` to declare how many grid columns an item should span.
-*/
-   
-$max-width: 960px;
-$grid-columns: 12;
-
 $base-font-size: 16px;
 
 /* 
 Breakpoints
 ========================================================================== 
 
-Available prefefined breakpoints are `$mobile`, `$phablet`, `$tablet` and `$tabletOnly`
-`$mobile`, `$phablet`, `$tablet` target any screensize smaller than the corresponding device, while `$tabletOnly` excludes small screen sizes.
+## @respond-to to screen size
 
-Adapt sizes of elements on the grid with changing screen sizes:
-
-
-<pre><code>//Default
-@include span-columns(7);     
-
-//Setting for phones  
-@include media($mobile) {
-		@include span-columns(4);   
-	}</code></pre>
-
+```
+  @include respond-to(small-screens) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens) { float: none; }
+```
 */
 
-$mobile:		new-breakpoint(max-width 480px 4);
-$phablet:		new-breakpoint(min-width 480px max-width 780px 4);
-$tablet: 		new-breakpoint(min-width 780px 12);
-$tabletOnly: 	new-breakpoint(min-width 480px max-width 960px 12);
-$desktop:	 	new-breakpoint(min-width 960px 12);
+$break-small: 320px;
+$break-medium: 480px;
+$break-large: 720px;
+$break-xlarge: 960px;
 
+
+@mixin respond-to($media) {
+  @if $media == small-screens {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-medium) { @content; }
+  }
+  @else if $media == large-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+  @else if $media == xlarge-screens {
+    @media only screen and (min-width: $break-xlarge) { @content; }
+  }
+}
 
     /* ==========================================================================
        Various

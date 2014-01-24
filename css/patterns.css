@@ -16,42 +16,7 @@ Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights
 
 */
 /* 
-Grid Settings for Neat
-========================================================================== 
-
-[Examples of how to use the Grid System](http://neat.bourbon.io/examples/)
-
-Use `@include outer-container;` on elements that should contain grid items
-
-Then use `@include span-columns(12);` to declare how many grid columns an item should span.
-*/
-/* 
 Breakpoints
-========================================================================== 
-
-Available prefefined breakpoints are `$mobile`, `$phablet`, `$tablet` and `$tabletOnly`
-`$mobile`, `$phablet`, `$tablet` target any screensize smaller than the corresponding device, while `$tabletOnly` excludes small screen sizes.
-
-Adapt sizes of elements on the grid with changing screen sizes:
-
-
-<pre><code>//Default
-@include span-columns(7);     
-
-//Setting for phones  
-@include media($mobile) {
-		@include span-columns(4);   
-	}</code></pre>
-
-*/
-/* ==========================================================================
-       Various
-       ========================================================================== */
-/*! ===========================================================
-Pollen - Decoded Styles // by Jonas Haefele 2014
-============================================================ */
-/* 
-Mixins
 ========================================================================== 
 
 ## @respond-to to screen size
@@ -62,6 +27,9 @@ Mixins
   @include respond-to(wide-screens) { float: none; }
 ```
 */
+/* ==========================================================================
+       Various
+       ========================================================================== */
 /* 
 Images
 ========================================================================== 
