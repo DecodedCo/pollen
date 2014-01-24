@@ -262,16 +262,16 @@ input[type='submit'], input[type='submit'].primary-button {
 .combined {
   display: block;
   padding-bottom: 1px; }
-  .combined input, .combined [class$='button'] {
+  .combined input, .combined button, .combined [class$='button'] {
     margin: 0;
     border: 1px solid rgba(151, 151, 151, 0.1);
     border-left-width: 0;
     border-radius: 0;
     float: left; }
-  .combined input:first-of-type, .combined [class$='button']:first-of-type {
+  .combined input:first-of-type, .combined button:first-of-type, .combined [class$='button']:first-of-type {
     border-left-width: 1px;
     border-radius: 0.25em 0 0 0.25em; }
-  .combined input:last-of-type, .combined [class$='button']:last-of-type {
+  .combined input:last-of-type, .combined button:last-of-type, .combined [class$='button']:last-of-type {
     border-radius: 0 0.25em 0.25em 0; }
 
 /* 

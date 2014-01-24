@@ -233,7 +233,8 @@ input[type='submit'], input[type='submit'].primary-button{
 	display: block;
 	padding-bottom: 1px;
 	
-	input,
+	input, 
+	button,
 	[class$='button'] {
 		margin: 0;
 		border: 1px solid $decodedLightGrey;
@@ -242,11 +243,13 @@ input[type='submit'], input[type='submit'].primary-button{
 		float: left;
 	}
 	input:first-of-type,
+	button:first-of-type,
 	[class$='button']:first-of-type {
 		border-left-width: 1px;
 		border-radius: $borderRadius 0 0 $borderRadius;
 	}
 	input:last-of-type,
+	button:last-of-type,
 	[class$='button']:last-of-type {
 		border-radius: 0 $borderRadius $borderRadius 0;
 	}
