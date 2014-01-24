@@ -66,6 +66,681 @@ Mixins
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 /* 
+  Decoded Global Typography
+  ========================================================================== */
+body {
+  font: 16px/1.45 em;
+  color: #1b1b1b;
+  font-size: 110%; }
+
+body, pre, select, input, textarea, text {
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #1b1b1b; }
+
+html {
+  padding-top: 0em; }
+
+/* Font Smoothing */
+.font-smoothing, body, pre, select, input, textarea, text, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* 
+Headings
+========================================================================== 
+
+```
+<h1 class='headline'>Headline</h1>
+  <p class='lede'>The main headline is styled with the <code>.headline</code> class. Add a <code>.lede</code> class to format a leading paragraph.</p>
+  
+<h1>First Level Header</h1>
+	<p class='lede'>Basic markup and typographic styles</p>
+	<p>Add a <code>.alpha</code> class to an element to override styles with <code>h1</code> properties</p>
+
+<h2>Sections <a href='#'>Linked</a></h2>
+  <p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p>
+  <p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing <code>h2</code> element.</p>
+  <p>Add a <code>.beta</code> class to an element to override styles with <code>h2</code> properties</p>
+
+<h3>Third-Level Header <a href='#'>Linked</a></h3>
+  <p>The header above is an <code>h3</code> element, which may be used for any form of page-level header which falls below the <code>h2</code> header in a document hierarchy.</p>
+  <p>Add a <code>.gamma</code> class to an element to override styles with <code>h3</code> properties</p>
+
+<h4>Fourth-Level Header <a href='#'>Linked</a></h4>
+  <p>The header above is an <code>h4</code> element, which may be used for any form of page-level header which falls below the <code>h3</code> header in a document hierarchy.</p>
+  <p>Add a <code>.delta</code> class to an element to override styles with <code>h4</code> properties</p>
+
+<h5>Fifth-Level Header <a href='#'>Linked</a></h5>
+  <p>The header above is an <code>h5</code> element, which may be used for any form of page-level header which falls below the <code>h4</code> header in a document hierarchy.</p>
+  <p>Add a <code>.epsilon</code> class to an element to override styles with <code>h5</code> properties</p>
+
+```
+*/
+h1, .headline, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+h1, .headline, .alpha {
+  text-decoration: none;
+  font-size: 1.97em;
+  font-weight: 500;
+  margin: 0em auto 0.6em auto;
+  line-height: 1.2;
+  color: #010101; }
+
+/* Heading 2 */
+h2, .beta {
+  text-decoration: none;
+  font-size: 1.618em;
+  font-weight: 500;
+  margin: 1em auto 0.6em auto;
+  line-height: 1.2;
+  color: #010101; }
+
+header h2 {
+  letter-spacing: -1px; }
+
+/*
+    h2#maintitle, .de-look {
+    	letter-spacing: 5px;
+        font-weight: normal;
+        font-family: $defaultStack;
+        text-transform: uppercase;
+    }
+    
+    .de-look {
+    	font-size: 1.8em;
+    }
+    
+    h2.article-name {
+        text-align: left;
+        top: 0em;
+        margin-top: 0em;
+        letter-spacing: 2px;
+        font-family: "DIN Next";
+        text-transform: uppercase;
+    }
+    */
+h2 + h3 {
+  font-weight: normal;
+  display: block;
+  line-height: 1.217em;
+  color: #969696;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: -0.6em; }
+
+/*
+    h2.article-name + h3 {
+        text-align: left;
+    }
+    */
+/* Heading 3 */
+h3, .gamma {
+  text-decoration: none;
+  font-size: 1.217em;
+  font-family: "DIN Next";
+  text-transform: none;
+  margin: 1.5em auto 0.6em auto;
+  line-height: 1.2;
+  color: #010101; }
+
+h4, .delta {
+  font-weight: 500;
+  margin: 0em auto;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: #010101;
+  display: block;
+  clear: both; }
+
+h4.course-name {
+  text-transform: none; }
+
+h5, .epsilon {
+  font-size: 0.752em;
+  margin: 1.5em 0em 1em;
+  font-weight: 500; }
+
+h6, .zeta {
+  font-size: 1em; }
+
+.headline {
+  margin: 1em 0em 0.4em;
+  padding: 0em 0.3em;
+  background: #fef800;
+  background: rgba(254, 248, 0, 0.9);
+  border-bottom: none;
+  display: inline-block; }
+
+.breadcrumb .headline {
+  background: none;
+  padding: 0em; }
+
+.lede {
+  color: #969696;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: 0.6667em 0 1em; }
+
+.caption {
+  color: #969696;
+  font-size: 0.75em;
+  line-height: 1.25;
+  margin: 0.6667em 0; }
+
+/* Extra heading */
+/*
+    .course-name{
+      font-family: $boldStack;
+    }
+    
+    .small-bold {
+      font-family: $boldStack;
+      font-weight: normal;
+      margin: 0em 0em 1em 0em;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      color: #010101;
+      display: block;
+      clear: both;
+      font-size: 1em;
+    }
+    
+    .line-title {
+        letter-spacing: -1px;
+        line-height: 1em;
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin: 0em 0em 1em 0em;
+        font-family: $boldStack;
+    }
+    
+    .course-name {
+        letter-spacing: 0px;
+    }
+     */
+/* 
+Smaller text elements
+========================================================================== */
+/* ## Paragraphs 
+``` 
+<p>All paragraphs are wrapped in <code>p</code> tags. Additionally, <code>p</code> elements can be wrapped with a <code>blockquote</code> element <em>if the <code>p</code> element is indeed a quote</em>. Historically, <code>blockquote</code> has been used purely to force indents, but this is now achieved using CSS. Reserve <code>blockquote</code> for quotes.</p>
+```			
+*/
+p, li {
+  text-align: left;
+  font-weight: normal;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif; }
+
+p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
+  font-size: 0.925em;
+  line-height: 1.45 em;
+  font-weight: normal;
+  margin: 0.75em 0;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif; }
+
+p:first-child, h2 + p {
+  margin-top: 0em; }
+
+p.first-para {
+  font-size: 1em;
+  font-weight: 500; }
+
+i, cite, em, dfn {
+  text-transform: none;
+  font-weight: inherit;
+  font-style: italic; }
+
+strong {
+  font-weight: 500; }
+
+strong i, strong cite, strong em, strong dfn {
+  font-weight: inherit; }
+
+/* ## Pre-formated text 
+
+The `pre` element represents a block of pre-formatted text, in which structure is represented by typographic conventions rather than by elements. Such examples are an e-mail (with paragraphs indicated by blank lines, lists indicated by lines prefixed with a bullet), fragments of computer code (with structure indicated according to the conventions of that language) or displaying <abbr title='American Standard Code for Information Interchange'>ASCII</abbr> art. Here&#8217;s an example showing the printable characters of <abbr>ASCII</abbr>:
+
+```
+<pre><samp>&#32; ! ' # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~</samp></pre>
+
+```  
+*/
+pre {
+  margin-left: 1.5em;
+  /* 24px */
+  white-space: pre-wrap; }
+
+pre code, pre samp {
+  line-height: 1.5; }
+
+/* ## Ampersands */
+.amp {
+  font-family: Palatino, 'Palatino Linotype', 'Baskerville', 'DIN Next';
+  font-style: italic;
+  font-weight: normal; }
+
+.course-name .amp {
+  font-family: 'Baskerville', 'DIN Next';
+  padding: 0px 0.15em 0px 0.1em;
+  opacity: 0.8; }
+
+/* ## Blockquotes 
+
+The `blockquote` element represents a section that is being quoted from another source.
+
+```
+<blockquote cite='http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206'>
+	<p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
+</blockquote>
+```
+*/
+blockquote {
+  position: relative;
+  display: block;
+  line-height: 1.5;
+  /* 32px */
+  padding: 0em;
+  font-style: italic;
+  font-size: 1em;
+  margin: 0;
+  padding-left: 1.8em; }
+
+.quotebig blockquote, .quoteitem blockquote {
+  padding-left: 0em; }
+
+blockquote:before {
+  display: none;
+  height: 0;
+  content: "“";
+  margin: 0 0 0 -0.68em;
+  font-size: 4em;
+  position: absolute;
+  top: -0.32em;
+  font-weight: 300;
+  font-family: "Times";
+  color: rgba(100, 100, 100, 0.2);
+  text-rendering: auto; }
+
+/* 
+Lists
+========================================================================== 
+## Ordered Lists
+
+The `ol` element denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3&#8230; a,b,c&#8230; i,ii,iii&#8230; and so on). Each item requires a surrounding `&lt;li&gt;` and `&lt;/li&gt;` tag, to denote individual items within the list (as you may have guessed, `li` stands for list item)
+
+```
+<ol>
+	<li>This is an ordered list.</li>
+	<li>
+		This is the second item, which contains a sub list
+		<ol>
+			<li>This is the sub list, which is also ordered.</li>
+			<li>It has two items.</li>
+		</ol>
+	</li>
+	<li>This is the final item on this list.</li>
+</ol>
+```
+
+##Unordered Lists
+
+```
+<ul>
+	<li>
+		United Kingdom of Great Britain and Northern Ireland:
+		<ul>
+			<li>England</li>
+			<li>Scotland</li>
+			<li>Wales</li>
+			<li>Northern Ireland</li>
+		</ul>
+	</li>
+	<li>Republic of Ireland</li>
+	<li>Isle of Man</li>
+	<li>
+		Channel Islands:
+		<ul>
+			<li>Bailiwick of Guernsey</li>
+			<li>Bailiwick of Jersey</li>
+		</ul>
+	</li>
+</ul>
+```
+
+##Definition Lists
+
+```
+<dl>
+	<dt>This is a term.</dt>
+	<dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
+	<dt>Here is another term.</dt>
+	<dd>And it gets a definition too, which is this line.</dd>
+	<dt>Here is term that shares a definition with the term below.</dt>
+	<dt>Here is a defined term.</dt>
+	<dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+</dl>
+
+
+```
+*/
+ol {
+  list-style-type: decimal;
+  padding: 0; }
+
+ul {
+  list-style-type: circle;
+  padding: 0; }
+
+ul li li {
+  list-style-type: square; }
+
+dt {
+  font-size: 1em;
+  /* 16px */
+  font-weight: 700;
+  line-height: 1.5;
+  /* 24px */ }
+
+dd, li {
+  margin-left: 1.5em;
+  /* 24px */ }
+
+dd > *, li > * {
+  margin-top: 0; }
+
+
+dt {
+  font-weight: 500;
+  padding: 0;
+  color: #a0a0a0; }
+
+dd {
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
+  text-indent: 0;
+  margin: 0; }
+
+/* ## Bullet-less list 
+Add a .no-bullets class to remove the bullets from a list  
+*/
+.no-bullets li {
+  list-style: none;
+  margin-left: 0; }
+
+/*
+Images & Video
+========================================================================== 
+## Figures 
+
+Figures are usually used to refer to images:
+
+```
+<figure>
+	<img src='http://lorempixel.com/680/400/abstract' width='680px' height='400px' alt='Example image'/>
+	<figcaption>
+		This is a placeholder image, with supporting caption.
+	</figcaption>
+</figure>
+```
+
+When you  wish to cite the source of a quote, you should do so using a figure also:
+
+```
+<blockquote cite='http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206'>
+	<p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
+</blockquote>
+<figcaption>
+	Winston Churchill, in <cite><a href='http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206'>a speech to the House of Commons</a></cite>. 11th November 1947
+</figcaption>
+```
+
+*/
+figure.banner {
+  position: relative; }
+
+figure.wide img {
+  width: 100%; }
+
+figcaption {
+  color: #999;
+  font-size: 0.752em;
+  line-height: 1.217;
+  padding: 0.618em 0;
+  clear: left; }
+
+blockquote + figcaption::before {
+  content: "\2014"; }
+
+/* wrap videos in s `.video-wrapper` class*/
+.video-wrapper {
+  position: relative;
+  margin: 0 0 15px 0;
+  padding-bottom: 51%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.video-wrapper iframe, .video-wrapper object, .video-wrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* 
+Table
+========================================================================== 
+
+Tables should be used when displaying tabular data. The `thead`, `tfoot` and `tbody` elements enable you to group rows within each a table.
+
+If you use these elements, you must use every element. They should appear in this order: `thead`, `tfoot` and `tbody`, so that browsers can render the foot before receiving all the data. You must use these tags within the table element
+			
+```
+<table>
+	<caption>The Very Best Eggnog</caption>
+	<colgroup>
+		<col style='width:50%' />
+		<col style='width:25%' />
+		<col style='width:25%' />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope='col'>Ingredients</th>
+			<th scope='col'>Serves 12</th>
+			<th scope='col'>Serves 24</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Milk</td>
+			<td>1 quart</td>
+			<td>2 quart</td>
+		</tr>
+		<tr>
+			<td>Cinnamon Sticks</td>
+			<td>2</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>Vanilla Bean, Split</td>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>Cloves</td>
+			<td>5</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>Mace</td>
+			<td>10 blades</td>
+			<td>20 blades</td>
+		</tr>
+		<tr>
+			<td>Egg Yolks</td>
+			<td>12</td>
+			<td>24</td>
+		</tr>
+		<tr>
+			<td>Cups Sugar</td>
+			<td>1 &frac12; cups</td>
+			<td>3 cups</td>
+		</tr>
+		<tr>
+			<td>Dark Rum</td>
+			<td>1 &frac12; cups</td>
+			<td>3 cups</td>
+		</tr>
+		<tr>
+			<td>Brandy</td>
+			<td>1 &frac12; cups</td>
+			<td>3 cups</td>
+		</tr>
+		<tr>
+			<td>Vanilla</td>
+			<td>1 tbsp</td>
+			<td>2 tbsp</td>
+		</tr>
+		<tr>
+			<td>Half-and-half or Light Cream</td>
+			<td>1 quart</td>
+			<td>2 quart</td>
+		</tr>
+		<tr>
+			<td>Freshly grated nutmeg to taste</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+```
+*/
+table {
+  color: #1b1b1b;
+  font-size: 0.9375em;
+  line-height: 1.6;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+table th, table td {
+  text-align: left;
+  vertical-align: middle;
+  border-top: 1px solid #dddddd;
+  padding: 0.5em 0em;
+  line-height: 1.5em; }
+
+th {
+  font-weight: 500; }
+
+table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
+  border-top: 0; }
+
+th {
+  color: #1b1b1b;
+  border-bottom-color: rgba(100, 100, 100, 0.1); }
+
+td, th {
+  text-align: left;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+  padding: 0.2667em 1.0667em 0.2em 0; }
+
+table, td, tr {
+  margin: 0;
+  padding: 0; }
+
+td, td img {
+  vertical-align: top; }
+
+td, th {
+  border-bottom: none; }
+
+/* 
+Other
+========================================================================== */
+hr {
+  text-align: center;
+  border: 0;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+  display: block;
+  font-size: 1em;
+  float: none !important;
+  display: block !important;
+  margin: 1em auto;
+  clear: both; }
+
+caption {
+  color: #666;
+  font-size: 0.9333em;
+  line-height: 1.1429;
+  caption-side: bottom;
+  padding: 1.1429em 0 0.5714em;
+  text-align: left; }
+
+ul.widget-bullet {
+  padding-left: 1.1em; }
+
+/***** Mobile (portrait) *****/
+/*
+    @media only screen and (max-width: 767px) {
+        .headline {
+            margin-top: 0em;
+        }
+        h2.course-name, h2.article-name {
+            top: 0em;
+            text-align: left;
+        }
+        h2.article-name + h3 {
+            text-align: left;
+        }
+        .quotebig blockquote {
+            padding-left: 1.5em;
+        }
+    }
+    
+    .art-directed aside {
+        position: relative;
+    }
+    
+    aside.stat, aside.stat span, aside.stat p {
+        text-align: center;
+    }
+    
+    .number {
+        background: rgb(254, 248, 0);
+        background: rgba(251, 248, 0, 0.9);
+        border: solid 1px rgba(251, 248, 0, 0.9);
+        border-radius: 7em;
+        height: 4em;
+        width: 4em;
+        display: block;
+        vertical-align: middle;
+        line-height: 4em;
+        text-align: center;
+        font-size: 2.5em;
+        color: black;
+        margin: 0px auto;
+    }
+    
+    */
+/*! ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+/* 
 General Navigation Styles
 ========================================================================== 
 
@@ -306,6 +981,7 @@ The Decoded Topbar sticks to the top of the page
       @media only screen and (min-width: 960px) {
         .topbar .topbar-right .topbar-brand {
           display: block;
+          font-size: 1.217em;
           margin: 0; } }
     .topbar .topbar-right .topbar-logo {
       margin: -10px 0 0 20px; }

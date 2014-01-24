@@ -337,11 +337,6 @@ table {
 /* 
     	Helpers
     ============================================================ */
-/* Font Smoothing */
-.font-smoothing, body, pre, select, input, textarea, text, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 /* Visibly hidden */
 .hidden {
   border: 0;
@@ -673,6 +668,11 @@ body, pre, select, input, textarea, text {
 
 html {
   padding-top: 0em; }
+
+/* Font Smoothing */
+.font-smoothing, body, pre, select, input, textarea, text, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 /* 
 Headings

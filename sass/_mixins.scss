@@ -17,7 +17,9 @@ Mixins
 
 $break-small: 320px;
 $break-medium: 480px;
-$break-large: 960px;
+$break-large: 720px;
+$break-xlarge: 960px;
+
 
 @mixin respond-to($media) {
   @if $media == small-screens {
@@ -28,5 +30,8 @@ $break-large: 960px;
   }
   @else if $media == large-screens {
     @media only screen and (min-width: $break-large) { @content; }
+  }
+  @else if $media == xlarge-screens {
+    @media only screen and (min-width: $break-xlarge) { @content; }
   }
 }
