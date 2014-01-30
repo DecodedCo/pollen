@@ -157,10 +157,13 @@ Nesting grids is easy. Each grid adapts independently of its context. In the fol
 */
 
 .Grid {
-    margin: 0 -10px;
+    margin: 0 -10px 10px -10px;
 }
 
 .Grid-cell {
     padding: 0 10px;
+}
+.Grid-cell.Grid {
+    padding: 0 0;
 }
 

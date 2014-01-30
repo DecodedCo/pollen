@@ -1,6 +1,7 @@
 /*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014 
 ============================================================ */
+@import url("../bower_components/normalize-css/normalize.css");
 /* ============================================================
     	Decoded Styleguide // by Jonas Haefele 2014
     ============================================================ */
@@ -188,7 +189,7 @@ label {
 button, input, select, textarea {
   color: inherit;
   font-family: inherit;
-  font-size: 100%;
+  font-size: 1em;
   margin: 0;
   outline: 0; }
 

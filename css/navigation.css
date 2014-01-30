@@ -870,6 +870,35 @@ General Navigation Styles
 .breadcrumb-nav a:first-child {
   padding-left: 0; }
 
+/* Generic Nav Bar for inline menus and options
+==========================================================================
+
+
+*/
+.navbar .navbar-left {
+  float: left;
+  padding: 0;
+  font-size: 16px;
+  /* see above */
+  font-size: 1rem;
+  /* see above */ }
+.navbar .nav li a {
+  padding: 0.8em 0.75em 0.8em 0.75em;
+  font-weight: 300;
+  width: 50%; }
+  @media only screen and (min-width: 480px) {
+    .navbar .nav li a {
+      width: 33%; } }
+  @media only screen and (min-width: 960px) {
+    .navbar .nav li a {
+      width: auto; } }
+.navbar .navbar-right {
+  float: right;
+  font-size: 16px;
+  /* see above */
+  font-size: 1rem;
+  /* see above */ }
+
 /*
 Decoded Top Navigation Bar with Logo
 ========================================================================== 
