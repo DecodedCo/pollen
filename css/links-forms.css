@@ -46,15 +46,18 @@ Hyperlinks and Buttons
 </p>
 ```
 */
-a {
+a, .Button-link {
   font-style: normal;
   color: #1b1b1b;
   text-decoration: none;
   border-bottom: 1px solid transparent; }
-
-a:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #1b1b1b; }
+  a:hover, .Button-link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #1b1b1b; }
+  a:active, a.active, .Button-link:active, .Button-link.active {
+    border: none;
+    text-decoration: none;
+    border-bottom: 1px solid #fef800; }
 
 a.Button, button, a.Button-primary {
   cursor: pointer;
@@ -76,7 +79,7 @@ p a, li a {
   font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif; }
 
 p a:hover, li a:hover {
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid #1b1b1b; }
 
 /* 
 ## External Links 
@@ -164,7 +167,6 @@ Add class `.Button` to links to style them as buttons.
 */
 input[type='submit'], input[type='button'], button, .Button, .Button-primary {
   margin: 0em 1em 0 0;
-  width: 100%;
   padding: 0.5em 1em 0.4em 1em;
   border: 1px solid rgba(151, 151, 151, 0.1);
   background: none;
@@ -174,7 +176,6 @@ input[type='submit'], input[type='button'], button, .Button, .Button-primary {
   font-size: 1rem;
   text-transform: none;
   width: auto;
-  height: 100%;
   line-height: 1em;
   text-align: center;
   letter-spacing: 1px;
@@ -205,6 +206,38 @@ input[type='submit'], input[type='button'], button, .Button, .Button-primary {
 
 input[type='submit'], input[type='submit'].Button-primary {
   background: #fef800; }
+
+/* 
+## Primary Button
+
+Reset button styles for buttons with link behaviour
+```  
+<button class="Button-link">Text link button</button>
+```
+*/
+.Button-link {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid transparent;
+  background: none;
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-size: 1rem;
+  text-transform: none;
+  width: auto;
+  line-height: 1em;
+  box-shadow: none;
+  border-radius: 0; }
+  .Button-link:hover {
+    background-color: none;
+    text-decoration: none;
+    border-bottom: 1px solid #1b1b1b; }
+  .Button-link:active, .Button-link.active {
+    border: none;
+    text-decoration: none;
+    border-bottom: 1px solid #fef800; }
 
 /* 
 ##Button Group  
