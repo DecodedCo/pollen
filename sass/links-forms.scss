@@ -18,16 +18,23 @@ Hyperlinks and Buttons
 ```
 */
 
-a {
+a,
+.Button-link {
     font-style: normal;
     color: $textColor;
     text-decoration: none;
     border-bottom: 1px solid transparent;
-}
 
-a:hover {
-    text-decoration: none;
-    border-bottom: 1px solid $textColor;
+	&:hover {
+	    text-decoration: none;
+	    border-bottom: 1px solid $textColor;
+	}
+	&:active,
+	&.active{
+		border: none;
+		text-decoration: none;
+		border-bottom: 1px solid $decodedYellow;
+	}
 }
 
 a.Button,
@@ -56,7 +63,7 @@ p a, li a {
 }
 
 p a:hover, li a:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $textColor;
 }
 
 
@@ -150,7 +157,6 @@ Add class `.Button` to links to style them as buttons.
 
 input[type='submit'], input[type='button'], button, .Button, .Button-primary {
     margin: 0em 1em 0 0;
-    width: 100%;
     padding: 0.5em 1em 0.4em 1em;
     border: 1px solid $decodedLightGrey;
     background: none;
@@ -160,7 +166,6 @@ input[type='submit'], input[type='button'], button, .Button, .Button-primary {
 	font-size: 1rem;			
     text-transform: none;
     width: auto;
-    height: 100%;
     line-height: 1em;
     text-align: center;
     letter-spacing: 1px;
@@ -205,6 +210,43 @@ input[type='submit'], input[type='submit'].Button-primary{
 	 background: $decodedYellow;
 }
 
+/* 
+## Primary Button
+
+Reset button styles for buttons with link behaviour
+```  
+<button class="Button-link">Text link button</button>
+```
+*/
+
+.Button-link{
+	margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background: none;
+    font-family: $defaultStack;
+    font-weight: 300;
+    font-size: $base-font-size; 
+	font-size: 1rem;			
+    text-transform: none;
+    width: auto;
+    line-height: 1em;
+    box-shadow: none;
+    border-radius: 0;
+	
+	&:hover{
+    	background-color: none;
+    	text-decoration: none;
+   		border-bottom: 1px solid $textColor;
+    }
+    &:active,
+    &.active{
+    	border: none;
+    	text-decoration: none;
+   		border-bottom: 1px solid $decodedYellow;
+    }
+}
 /* 
 ##Button Group  
 ```
