@@ -949,9 +949,6 @@ The Decoded Topbar sticks to the top of the page
   .topbar .topbar-left {
     float: left;
     padding: 0; }
-    @media only screen and (min-width: 480px) {
-      .topbar .topbar-left {
-        width: 70%; } }
   .topbar .nav li a {
     padding: 0.8em 0.75em 0.8em 0.75em;
     font-weight: 300;
@@ -967,7 +964,6 @@ The Decoded Topbar sticks to the top of the page
     padding: 1.15em 0 0 0; }
     @media only screen and (min-width: 480px) {
       .topbar .topbar-right {
-        width: 30%;
         text-align: right; } }
     .topbar .topbar-right .topbar-brand {
       display: none; }

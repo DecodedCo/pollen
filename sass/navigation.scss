@@ -282,9 +282,6 @@ The Decoded Topbar sticks to the top of the page
 	.topbar-left{
 		float: left;
 		padding: 0;
-		@include respond-to(medium-screens){
-			width: 70%;
-		}
 	}
 	.nav li a {
 		padding: 0.8em 0.75em .8em 0.75em;
@@ -301,7 +298,6 @@ The Decoded Topbar sticks to the top of the page
 		float: right;
 		padding: 1.15em 0 0 0;
 		@include respond-to(medium-screens){
-			width: 30%;
 			text-align: right;
 		}
 
