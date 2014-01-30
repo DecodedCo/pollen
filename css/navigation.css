@@ -403,38 +403,30 @@ The `ol` element denotes an ordered list, and various numbering schemes are avai
 
 ```
 */
-ol {
+.typography ol {
   list-style-type: decimal;
   padding: 0; }
-
-ul {
+.typography ul {
   list-style-type: circle;
   padding: 0; }
-
-ul li li {
+.typography ul li li {
   list-style-type: square; }
-
-dt {
+.typography dt {
   font-size: 1em;
   /* 16px */
   font-weight: 700;
   line-height: 1.5;
   /* 24px */ }
-
-dd, li {
+.typography dd, .typography li {
   margin-left: 1.5em;
   /* 24px */ }
-
-dd > *, li > * {
+.typography dd > *, .typography li > * {
   margin-top: 0; }
-
-
-dt {
+.typography dt {
   font-weight: 500;
   padding: 0;
   color: #a0a0a0; }
-
-dd {
+.typography dd {
   font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   text-indent: 0;
   margin: 0; }

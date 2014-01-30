@@ -327,17 +327,27 @@ input[type='search'] + input[type='submit'] {
 
 Combine Inputs and Icons or buttons
 */
-.Input-group{
-	position: relative;
+.input-prepend,
+.input-append {
+  position: relative; }
+
+.input-prepend input {
+  padding-left: 2em; 
 }
-.Input-group input{
-	padding-left: 2em;
+.input-prepend input {
+  padding-right: 2em; 
 }
-.Input-group-icon{
-	position: absolute;
-	left: 0.5em;
-	top: 0.3em;
-	width: 2em;
+.input-prepend .input-addon {
+  position: absolute;
+  left: 0.5em;
+  top: 0.3em;
+  width: 2em; 
+}
+.input-append .input-addon {
+  position: absolute;
+  right: 0.5em;
+  top: 0.3em;
+  width: 2em; 
 }
 /* 
 ## Single checkboxes 
