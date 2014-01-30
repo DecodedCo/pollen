@@ -979,3 +979,58 @@ ul.widget-bullet {
     
     */
 /* typography styles */
+/*! ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014 
+============================================================ */
+/*! ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+/* 
+Colors
+========================================================================== 
+
+Use color variables where ever possible.
+
+*/
+/* 
+Fonts
+========================================================================== 
+
+Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
+
+*/
+/* 
+Breakpoints
+========================================================================== 
+
+## @respond-to to screen size
+
+```
+  @include respond-to(small-screens) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens) { float: none; }
+```
+*/
+/* ==========================================================================
+       Various
+       ========================================================================== */
+/* colors, modular scale, grid settings... */
+.u-marginBottom--large {
+  margin-bottom: 3em; }
+
+.u-marginBottom--medium {
+  margin-bottom: 3em; }
+
+.u-marginBottom--small {
+  margin-bottom: 3em; }
+
+.u-marginTop--large {
+  margin-top: 3em; }
+
+.u-marginTop--medium {
+  margin-top: 3em; }
+
+.u-marginTop--small {
+  margin-top: 3em; }
+
+/* extend suit utils */
