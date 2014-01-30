@@ -159,7 +159,9 @@ Nesting grids is easy. Each grid adapts independently of its context. In the fol
 .Grid {
     margin: 0 -10px 10px -10px;
 }
-
+.Grid--no-padding {
+    margin: 0 -20px 0px -20px;
+}
 .Grid-cell {
     padding: 0 10px;
 }
