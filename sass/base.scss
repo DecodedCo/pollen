@@ -5,7 +5,10 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 @charset "UTF-8";
 
 @import "../bower_components/normalize-css/normalize.css";
+@import "../bower_components/suit-utils-display/display.css";
+@import "../bower_components/suit-utils-text/text.css";
 
 @import 'reset';			  /* oppinionated defaults and further resets that normalize doesn't catch */
 @import 'sass-variables';	  /* colors, modular scale, grid settings... */
 @import 'typography';		  /* typography styles */
+@import 'utils';		 	  /* extend suit utils */

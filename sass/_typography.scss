@@ -1,4 +1,4 @@
-    /*! ===========================================================
+  /*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 
@@ -413,45 +413,45 @@ The `ol` element denotes an ordered list, and various numbering schemes are avai
 
 ```
 */
-   
-ol {
-	list-style-type: decimal;
-	padding: 0;
-}
-ul {
-	list-style-type: circle;
-	padding: 0;
-	}
-	ul li li {
-		list-style-type: square;
-	}
-dt {
-	font-size: 1em; /* 16px */
-	font-weight: 700;
-	line-height: 1.5; /* 24px */
-}
-dd, li {
-	margin-left: 1.5em; /* 24px */
-	}
-	dd > *, li > * {
-		margin-top: 0;
-	}
+.typography {   
+    ol {
+    	list-style-type: decimal;
+    	padding: 0;
+    }
+    ul {
+    	list-style-type: circle;
+    	padding: 0;
+    	}
+    	ul li li {
+    		list-style-type: square;
+    	}
+    dt {
+    	font-size: 1em; /* 16px */
+    	font-weight: 700;
+    	line-height: 1.5; /* 24px */
+    }
+    dd, li {
+    	margin-left: 1.5em; /* 24px */
+    	}
+    	dd > *, li > * {
+    		margin-top: 0;
+    	}
 
-dl {
-	
-	}
-dt {
-    font-weight: 500;
-	padding: 0;
-    color: rgb(160,160,160);
-    //text-transform: lowercase;
+    dl {
+    	
+    	}
+    dt {
+        font-weight: 500;
+    	padding: 0;
+        color: rgb(160,160,160);
+        //text-transform: lowercase;
+    }
+    dd {
+    	font-family: $defaultStack;
+    	text-indent: 0;
+    	margin: 0;
+    }
 }
-dd {
-	font-family: $defaultStack;
-	text-indent: 0;
-	margin: 0;
-}
-
 
 /* ## Bullet-less list 
 Add a .no-bullets class to remove the bullets from a list  
