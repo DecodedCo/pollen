@@ -171,7 +171,7 @@ input[type='submit'], input[type='button'], button, .Button, .Button-primary {
     	background-color: $decodedLightGrey ;
     }
     &:active,
-    &.State-active{
+    &.active{
     	border: 1px solid $decodedYellow;
     }
 }

@@ -875,6 +875,8 @@ General Navigation Styles
 
 
 */
+.navbar, .navbar.Grid-cell {
+  margin-bottom: 0.75em; }
 .navbar .navbar-left {
   float: left;
   padding: 0;
@@ -882,6 +884,8 @@ General Navigation Styles
   /* see above */
   font-size: 1rem;
   /* see above */ }
+.navbar .nav li.active a {
+  background-color: rgba(254, 248, 0, 0.3); }
 .navbar .nav li a {
   padding: 0.8em 0.75em 0.8em 0.75em;
   font-weight: 300;
