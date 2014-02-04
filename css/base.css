@@ -429,7 +429,7 @@ h2 + h3 {
 h3, .gamma {
   text-decoration: none;
   font-size: 1.217em;
-  font-family: "DIN Next";
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   text-transform: none;
   margin: 1.5em auto 0.6em auto;
   line-height: 1.2;
@@ -481,39 +481,34 @@ h6, .zeta {
   line-height: 1.25;
   margin: 0.6667em 0; }
 
-/* Extra heading */
-/*
-    .course-name{
-      font-family: $boldStack;
-    }
-    
-    .small-bold {
-      font-family: $boldStack;
-      font-weight: normal;
-      margin: 0em 0em 1em 0em;
-      text-align: left;
-      text-transform: uppercase;
-      letter-spacing: 0px;
-      color: #010101;
-      display: block;
-      clear: both;
-      font-size: 1em;
-    }
-    
-    .line-title {
-        letter-spacing: -1px;
-        line-height: 1em;
-        width: 100%;
-        display: block;
-        text-align: left;
-        margin: 0em 0em 1em 0em;
-        font-family: $boldStack;
-    }
-    
-    .course-name {
-        letter-spacing: 0px;
-    }
-     */
+.course-name {
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
+  letter-spacing: 0px; }
+  .course-name span {
+    font-family: 'DIN Next', Helvetica, Arial, sans-serif;
+    font-weight: 300; }
+
+.small-bold {
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  margin: 0em 0em 1em 0em;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: #010101;
+  display: block;
+  clear: both;
+  font-size: 1em; }
+
+.line-title {
+  letter-spacing: -1px;
+  line-height: 1em;
+  width: 100%;
+  display: block;
+  text-align: left;
+  margin: 0em 0em 1em 0em;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif; }
+
 /* 
 Smaller text elements
 ========================================================================== */
