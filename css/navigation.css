@@ -201,10 +201,9 @@ h6, .zeta {
   margin: 0.6667em 0; }
 
 .course-name {
-  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
+  font-weight: 500;
   letter-spacing: 0px; }
   .course-name span {
-    font-family: 'DIN Next', Helvetica, Arial, sans-serif;
     font-weight: 300; }
 
 .small-bold {
@@ -238,13 +237,12 @@ Smaller text elements
 */
 p, li {
   text-align: left;
-  font-weight: normal;
+  font-weight: 300;
   font-family: 'DIN Next', Helvetica, Arial, sans-serif; }
 
 p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
-  font-size: 0.925em;
   line-height: 1.45 em;
-  font-weight: normal;
+  font-weight: 300;
   margin: 0.75em 0;
   font-family: 'DIN Next', Helvetica, Arial, sans-serif; }
 
@@ -581,7 +579,7 @@ If you use these elements, you must use every element. They should appear in thi
 </table>
 ```
 */
-table {
+.typography table {
   color: #1b1b1b;
   font-size: 0.9375em;
   line-height: 1.6;
@@ -591,37 +589,29 @@ table {
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0; }
-
-table th, table td {
+.typography table th, .typography table td {
   text-align: left;
   vertical-align: middle;
   border-top: 1px solid #dddddd;
   padding: 0.5em 0em;
   line-height: 1.5em; }
-
-th {
+.typography th {
   font-weight: 500; }
-
-table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
+.typography table caption + thead tr:first-child th, .typography table caption + thead tr:first-child td, .typography table colgroup + thead tr:first-child th, .typography table colgroup + thead tr:first-child td, .typography table thead:first-child tr:first-child th, .typography table thead:first-child tr:first-child td {
   border-top: 0; }
-
-th {
+.typography th {
   color: #1b1b1b;
   border-bottom-color: rgba(100, 100, 100, 0.1); }
-
-td, th {
+.typography td, .typography th {
   text-align: left;
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);
   padding: 0.2667em 1.0667em 0.2em 0; }
-
-table, td, tr {
+.typography table, .typography td, .typography tr {
   margin: 0;
   padding: 0; }
-
-td, td img {
+.typography td, .typography td img {
   vertical-align: top; }
-
-td, th {
+.typography td, .typography th {
   border-bottom: none; }
 
 /* 
