@@ -249,6 +249,7 @@ p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
     font-weight: 300;
     margin: .75em 0;
     font-family: $defaultStack;
+    font-size: #{$epsilon}em;
 }
 
 p:first-child, h2 + p {
