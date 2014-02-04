@@ -274,10 +274,12 @@ The Decoded Topbar sticks to the top of the page
 		float: left;
 		width: 100%;
 		display: inline-block;
+		margin: 0;
+		padding: 0;
 		@include respond-to(xlarge-screens){
 				width: auto;
 			}
-		}
+	}
 
 	.topbar-left{
 		float: left;
@@ -294,6 +296,9 @@ The Decoded Topbar sticks to the top of the page
 				width: auto;
 			}
 	}
+	.nav li:first-child a{
+			border-left: 1px solid $decodedLightGrey;
+		}
 	.topbar-right{
 		float: right;
 		padding: 1.15em 0 0 0;
@@ -305,7 +310,6 @@ The Decoded Topbar sticks to the top of the page
 			display: none;
 			 @include respond-to(xlarge-screens){
 				display: block;
-				font-size: #{$gamma}em;
 				margin: 0;
 			}
 		}

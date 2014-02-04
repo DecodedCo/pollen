@@ -148,7 +148,7 @@ h2 + h3 {
 h3, .gamma {
   text-decoration: none;
   font-size: 1.217em;
-  font-family: "DIN Next";
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   text-transform: none;
   margin: 1.5em auto 0.6em auto;
   line-height: 1.2;
@@ -200,39 +200,34 @@ h6, .zeta {
   line-height: 1.25;
   margin: 0.6667em 0; }
 
-/* Extra heading */
-/*
-    .course-name{
-      font-family: $boldStack;
-    }
-    
-    .small-bold {
-      font-family: $boldStack;
-      font-weight: normal;
-      margin: 0em 0em 1em 0em;
-      text-align: left;
-      text-transform: uppercase;
-      letter-spacing: 0px;
-      color: #010101;
-      display: block;
-      clear: both;
-      font-size: 1em;
-    }
-    
-    .line-title {
-        letter-spacing: -1px;
-        line-height: 1em;
-        width: 100%;
-        display: block;
-        text-align: left;
-        margin: 0em 0em 1em 0em;
-        font-family: $boldStack;
-    }
-    
-    .course-name {
-        letter-spacing: 0px;
-    }
-     */
+.course-name {
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
+  letter-spacing: 0px; }
+  .course-name span {
+    font-family: 'DIN Next', Helvetica, Arial, sans-serif;
+    font-weight: 300; }
+
+.small-bold {
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  margin: 0em 0em 1em 0em;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: #010101;
+  display: block;
+  clear: both;
+  font-size: 1em; }
+
+.line-title {
+  letter-spacing: -1px;
+  line-height: 1em;
+  width: 100%;
+  display: block;
+  text-align: left;
+  margin: 0em 0em 1em 0em;
+  font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif; }
+
 /* 
 Smaller text elements
 ========================================================================== */
@@ -942,7 +937,9 @@ The Decoded Topbar sticks to the top of the page
   .topbar .nav {
     float: left;
     width: 100%;
-    display: inline-block; }
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
     @media only screen and (min-width: 960px) {
       .topbar .nav {
         width: auto; } }
@@ -959,6 +956,8 @@ The Decoded Topbar sticks to the top of the page
     @media only screen and (min-width: 960px) {
       .topbar .nav li a {
         width: auto; } }
+  .topbar .nav li:first-child a {
+    border-left: 1px solid rgba(151, 151, 151, 0.1); }
   .topbar .topbar-right {
     float: right;
     padding: 1.15em 0 0 0; }
@@ -970,7 +969,6 @@ The Decoded Topbar sticks to the top of the page
       @media only screen and (min-width: 960px) {
         .topbar .topbar-right .topbar-brand {
           display: block;
-          font-size: 1.217em;
           margin: 0; } }
     .topbar .topbar-right .topbar-logo {
       margin: -10px 0 0 20px; }
