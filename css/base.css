@@ -366,7 +366,7 @@ h4.course-name {
   text-transform: none; }
 
 h5, .epsilon {
-  font-size: 0.823em;
+  font-size: 0.9em;
   margin: 1.5em 0em 1em;
   font-weight: 500; }
 
@@ -442,7 +442,8 @@ p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
   line-height: 1.45 em;
   font-weight: 300;
   margin: 0.75em 0;
-  font-family: 'DIN Next', Helvetica, Arial, sans-serif; }
+  font-family: 'DIN Next', Helvetica, Arial, sans-serif;
+  font-size: 0.9em; }
 
 p:first-child, h2 + p {
   margin-top: 0em; }
@@ -665,7 +666,7 @@ figure.wide img {
 
 figcaption {
   color: #999;
-  font-size: 0.823em;
+  font-size: 0.9em;
   line-height: 1.217;
   padding: 0.618em 0;
   clear: left; }
