@@ -195,10 +195,9 @@ h6, .zeta {
 
 
 .course-name{
-  font-family: $boldStack;
+  font-weight: 500;
   letter-spacing: 0px;
   span {
-    font-family: $defaultStack;
     font-weight: 300;
   }
 }
@@ -240,15 +239,14 @@ Smaller text elements
 
 p, li {
     text-align: left;
-    font-weight: normal;
+    font-weight: 300;
     font-family: $defaultStack;
 }
 
 p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset {
 	@extend .font-smoothing;
-    font-size: 0.925em;
     line-height: $lineHeight;
-    font-weight: normal;
+    font-weight: 300;
     margin: .75em 0;
     font-family: $defaultStack;
 }
@@ -618,64 +616,64 @@ If you use these elements, you must use every element. They should appear in thi
 </table>
 ```
 */
+.typography {   
+    table {
+        color: $textColor;
+        font-size: 0.9375em;
+        line-height: 1.6;
+        border-spacing: 0;
+        width: 100%;
+        max-width: 100%;
+        background-color: transparent;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
 
-table {
-    color: $textColor;
-    font-size: 0.9375em;
-    line-height: 1.6;
-    border-spacing: 0;
-    width: 100%;
-    max-width: 100%;
-    background-color: transparent;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+    table th,
+    table td {
+        text-align: left;
+        vertical-align: middle;
+        border-top: 1px solid rgb(221, 221, 221);
+        padding: 0.5em 0em;
+        line-height: 1.5em;
+    }
+    th {
+        font-weight: 500;
+    }
 
-table th,
-table td {
-    text-align: left;
-    vertical-align: middle;
-    border-top: 1px solid rgb(221, 221, 221);
-    padding: 0.5em 0em;
-    line-height: 1.5em;
-}
-th {
-    font-weight: 500;
-}
+    table caption + thead tr:first-child th,
+    table caption + thead tr:first-child td,
+    table colgroup + thead tr:first-child th,
+    table colgroup + thead tr:first-child td,
+    table thead:first-child tr:first-child th,
+    table thead:first-child tr:first-child td {
+        border-top: 0;
+    }
 
-table caption + thead tr:first-child th,
-table caption + thead tr:first-child td,
-table colgroup + thead tr:first-child th,
-table colgroup + thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
-    border-top: 0;
-}
+    th {
+        color: $textColor;
+        border-bottom-color: $borderColor;
+    }
 
-th {
-    color: $textColor;
-    border-bottom-color: $borderColor;
-}
+    td, th {
+        text-align: left;
+        border-bottom: 1px solid $borderColor;
+        padding: 0.2667em 1.0667em 0.2em 0;
+    }
 
-td, th {
-    text-align: left;
-    border-bottom: 1px solid $borderColor;
-    padding: 0.2667em 1.0667em 0.2em 0;
-}
+    table, td, tr {
+        margin: 0;
+        padding: 0;
+    }
 
-table, td, tr {
-    margin: 0;
-    padding: 0;
-}
+    td, td img {
+        vertical-align: top;
+    }
 
-td, td img {
-    vertical-align: top;
+    td, th {
+        border-bottom: none;
+    }
 }
-
-td, th {
-    border-bottom: none;
-}
-
 
   /* 
 Other
