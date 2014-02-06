@@ -9,11 +9,11 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 }
 
 .u-marginBottom--medium{
-	margin-bottom: $spacingSize*2;
+	margin-bottom: $spacingSize;
 }
 
 .u-marginBottom--small{
-	margin-bottom: $spacingSize*2;
+	margin-bottom: $spacingSize/2;
 }
 
 .u-marginTop--large{
@@ -21,9 +21,9 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 }
 
 .u-marginTop--medium{
-	margin-top: $spacingSize*2;
+	margin-top: $spacingSize;
 }
 
 .u-marginTop--small{
-	margin-top: $spacingSize*2;
+	margin-top: $spacingSize/2;
 }

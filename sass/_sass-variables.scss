@@ -23,8 +23,20 @@ $decodedLightGreyOpq: rgb(245,245,245);
 
 $white: #ffffff;
 
-$linkColor: rgb(0,0,200);
+$linkColor: rgb(0,0,0);
 $decodedBrown: rgb(40,36,25);
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              $decodedGrey;  
+$gray:                   $decodedGrey; 
+$gray-light:             $decodedLightGrey;
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+$brand-primary: $decodedYellow;
+$brand-success: #2ecc71;
+$brand-warning: #e67e22;
+$brand-danger: #e74c3c;
+$brand-info: #2980b9;
 
 /* 
 Fonts
