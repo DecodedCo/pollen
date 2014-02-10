@@ -4,8 +4,7 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 
 @charset "UTF-8";
 
-//@import 'reset';			  /* oppinionated defaults and further resets that normalize doesn't catch */
 @import 'sass-variables';	  /* colors, modular scale, grid settings... */
-//@import 'typography';		  /* typography styles */
 @import 'utils';		 	  /* extend suit utils */
 @import 'bootstrap/bootstrap';/* bootstrap */
+@import 'typography';		  /* typography styles */
