@@ -37,8 +37,8 @@ Breakpoints
 /*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014 
 ============================================================ */
-@import url("../bower_components/suit-utils-display/display.css");
-@import url("../bower_components/suit-utils-text/text.css");
+@import url("/bower_components/suit-utils-display/display.css");
+@import url("/bower_components/suit-utils-text/text.css");
 /*
 Dimensions Utilities
 ==========================================
@@ -63,7 +63,7 @@ v3-u-sizeXofY - To use at the third Media Query breakpoint.
 etc.
 
 */
-@import url("../bower_components/suit-utils-dimension/dimension.css");
+@import url("/bower_components/suit-utils-dimension/dimension.css");
 /* 
 Layout Helpers
 =================================================
@@ -81,7 +81,7 @@ u-alignBaseline -Vertically align to baseline.
 u-alignBottom - Vertically align to bottom.
 
 */
-@import url("../bower_components/suit-utils-layout/layout.css");
+@import url("/bower_components/suit-utils-layout/layout.css");
 /*
 SUIT arrange
 ===============================================
@@ -95,7 +95,7 @@ Arrange--bottom - The modifier class for bottom-aligned cells
 Arrange--equal - The modifier class for equal-width cells
 
 */
-@import url("../bower_components/suit-arrange/arrange.css");
+@import url("/bower_components/suit-arrange/arrange.css");
 /*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
