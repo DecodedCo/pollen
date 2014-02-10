@@ -50,6 +50,8 @@ p {
 // Headings
 // -------------------------
 
+// CUSTOM: add alpha-zeta classes
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $headings-font-family;
@@ -65,9 +67,9 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3 {
+h1, .h1, .alpha,
+h2, .h2, .beta,
+h3, .h3, .gamma {
   margin-top: $line-height-computed;
   margin-bottom: ($line-height-computed / 2);
 
@@ -76,9 +78,9 @@ h3, .h3 {
     font-size: 65%;
   }
 }
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h4, .h4, .delta,
+h5, .h5, .epsilon,
+h6, .h6, .zeta {
   margin-top: ($line-height-computed / 2);
   margin-bottom: ($line-height-computed / 2);
 
@@ -88,13 +90,111 @@ h6, .h6 {
   }
 }
 
-h1, .h1 { font-size: $font-size-h1; }
+h1, .h1, .alpha { 
+  font-size: $font-size-h1; 
+  //CUSTOM font weight
+  font-weight: 200;
+}
 
-h2, .h2 { font-size: $font-size-h2; }
-h3, .h3 { font-size: $font-size-h3; }
-h4, .h4 { font-size: $font-size-h4; }
-h5, .h5 { font-size: $font-size-h5; }
-h6, .h6 { font-size: $font-size-h6; }
+h2, .h2, .beta { font-size: $font-size-h2; }
+
+// CUSTOM h2 Decoded style
+h2.sub-heading, .h2.sub-heading {
+  font-weight: 200;
+  line-height: 1.4;
+  color: $decodedGrey;
+  margin-top: 0;
+  text-transform: uppercase;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 3em;
+    height: 0.15em;
+    background: $brand-primary;
+    margin: .25em 0em 0em;
+    border-radius: 5px;
+  }
+}
+
+h3, .h3, .gamma { font-size: $font-size-h3; }
+
+// CUSTOM group h2 and h3 together
+h2 + h3 {
+    font-weight: 200;
+    display: block;
+    line-height: #{$gamma}em;
+    color: $decodedGrey;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -($line-height-computed / 2);
+}
+
+h4, .h4, .delta { 
+  font-size: $font-size-h4; 
+  // CUSTOM text transform
+  text-transform: uppercase;
+}
+h4.course-name {
+    text-transform: none;
+}
+
+h5, .h5, .epsilon { font-size: $font-size-h5; }
+h6, .h6, .zeta { font-size: $font-size-h6; }
+
+// CUSTOM Decoded Font Styles
+// --------------------------
+
+
+.headline {
+  @extend h1;
+  margin: 1em 0em 0.4em;
+  padding: 0em 0.3em;
+  background: $decodedYellow;
+  background: rgba($decodedYellow, 0.9);
+  border-bottom: none;
+  display: inline-block;
+}
+.breadcrumb .headline {
+  background: none;
+  padding: 0em;
+}
+
+.lede {
+  color: $decodedGrey;
+  font-weight: 300;
+  font-size: 1.25em; 
+  line-height: 1.2;
+  margin: 0.6667em 0 1em; 
+}
+.caption {
+  color: $decodedGrey;
+  font-size: 0.75em; 
+  line-height: 1.25; 
+  margin: 0.6667em 0; 
+}
+
+
+.course-name{
+  font-weight: 500;
+  letter-spacing: 0px;
+  span {
+    font-weight: 300;
+  }
+}
+
+.small-bold {
+  font-weight: 500;
+  margin: 0em 0em 1em 0em;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: #010101;
+  display: block;
+  clear: both;
+  font-size: 1em;
+}
+
 
 
 // Emphasis & misc
