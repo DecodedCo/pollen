@@ -231,7 +231,9 @@
 }
 
 // CUSTOM Extra panel classes
-
+.panel-gray {
+  background-color: $gray-light;
+}
 .panel-borderTop{
   border-top: $padding-base-vertical solid $decodedYellow;
 }
