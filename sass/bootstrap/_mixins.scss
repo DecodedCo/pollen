@@ -410,6 +410,7 @@
     color: $heading-text-color;
     background-color: $heading-bg-color;
     border-color: $heading-border;
+    margin-top: 0;
 
     + .panel-collapse .panel-body {
       border-top-color: $border;
