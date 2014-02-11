@@ -1725,7 +1725,6 @@ textarea.input-lg, select[multiple].input-lg {
   border: 1px solid rgba(151, 151, 151, 0.1);
   font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   line-height: 1em;
-  letter-spacing: 1px;
   border-radius: 0.25em;
   box-shadow: none;
   background-color: transparent;
