@@ -210,8 +210,9 @@
 
 
 // Contextual variations
+// CUSTOM colors
 .panel-default {
-  @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
+  @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $brand-primary);
 }
 .panel-primary {
   @include panel-variant($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);
@@ -227,4 +228,10 @@
 }
 .panel-danger {
   @include panel-variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border);
+}
+
+// CUSTOM Extra panel classes
+
+.panel-borderTop{
+  border-top: $padding-base-vertical solid $decodedYellow;
 }
