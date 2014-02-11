@@ -138,6 +138,9 @@ Breakpoints
 .u-marginBottom--small {
   margin-bottom: 0.75em; }
 
+.u-marginBottom--none {
+  margin-bottom: 0; }
+
 .u-marginTop--large {
   margin-top: 3em; }
 
@@ -146,6 +149,9 @@ Breakpoints
 
 .u-marginTop--small {
   margin-top: 0.75em; }
+
+.u-marginTop--none {
+  margin-top: 0; }
 
 .u-marginLeft--large {
   margin-left: 3em; }
@@ -156,6 +162,9 @@ Breakpoints
 .u-marginLeft--small {
   margin-left: 0.75em; }
 
+.u-marginLeft--none {
+  margin-left: 0; }
+
 .u-marginRight--large {
   margin-right: 3em; }
 
@@ -164,6 +173,9 @@ Breakpoints
 
 .u-marginRight--small {
   margin-right: 0.75em; }
+
+.u-marginRight--none {
+  margin-right: 0; }
 
 /* extend suit utils */
 @import url("//assets.decoded.co/din-family.css");
@@ -1774,22 +1786,22 @@ textarea.input-lg, select[multiple].input-lg {
 
 .btn-primary {
   color: #222222;
-  border-color: #e5dd00; }
+  border-color: #fef800; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
     color: #222222;
     background-color: #fef800;
-    border-color: #e5dd00; }
+    border-color: #fef800; }
   .open .btn-primary.dropdown-toggle {
     color: #222222;
     background-color: #fef800;
-    border-color: #e5dd00; }
+    border-color: #fef800; }
   .btn-primary:active, .btn-primary.active {
     background-image: none; }
   .open .btn-primary.dropdown-toggle {
     background-image: none; }
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
     background-color: #fef800;
-    border-color: #e5dd00; }
+    border-color: #fef800; }
   .btn-primary .badge {
     color: #fef800;
     background-color: #222222; }
@@ -4022,6 +4034,9 @@ a.list-group-item-danger {
       border-top-color: #f29e97; }
   .panel-danger > .panel-footer + .panel-collapse .panel-body {
     border-bottom-color: #f29e97; }
+
+.panel-gray {
+  background-color: rgba(151, 151, 151, 0.1); }
 
 .panel-borderTop {
   border-top: 6px solid #fef800; }
