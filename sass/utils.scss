@@ -2,9 +2,9 @@
 Pollen - Decoded Styles // by Jonas Haefele 2014 
 ============================================================ */
 
-//@import "/bower_components/normalize-css/normalize.css";
-@import "/bower_components/suit-utils-display/display.css";
-@import "/bower_components/suit-utils-text/text.css";
+//@import "../../normalize-css/normalize.css";
+@import "../../suit-utils-display/display.css";
+@import "../../suit-utils-text/text.css";
 
 /*
 Dimensions Utilities
@@ -31,13 +31,13 @@ etc.
 
 */
 
-@import "/bower_components/suit-utils-dimension/dimension.css";
+@import "../../suit-utils-dimension/dimension.css";
 
 // move into .css file to enable media queries for dimension utils
 
-//@import "/bower_components/suit-utils-dimension/dimension-v1.css" (max-width: 480px);
-//@import "/bower_components/suit-utils-dimension/dimension-v2.css" (min-width: 480px) and (max-width: 780px);
-//@import "/bower_components/suit-utils-dimension/dimension-v3.css" (min-width: 780px);
+//@import "../../suit-utils-dimension/dimension-v1.css" (max-width: 480px);
+//@import "../../suit-utils-dimension/dimension-v2.css" (min-width: 480px) and (max-width: 780px);
+//@import "../../suit-utils-dimension/dimension-v3.css" (min-width: 780px);
 /* 
 Layout Helpers
 =================================================
@@ -56,7 +56,7 @@ u-alignBottom - Vertically align to bottom.
 
 */
 
-@import "/bower_components/suit-utils-layout/layout.css";
+@import "../../suit-utils-layout/layout.css";
 
 /*
 SUIT arrange
@@ -72,7 +72,7 @@ Arrange--equal - The modifier class for equal-width cells
 
 */
 
-@import "/bower_components/suit-arrange/arrange.css";
+@import "../../suit-arrange/arrange.css";
 
 @import 'sass-variables';	  /* colors, modular scale, grid settings... */
 
