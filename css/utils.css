@@ -1,4 +1,36 @@
 /*! ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+/* 
+Colors
+========================================================================== 
+
+Use color variables where ever possible.
+
+*/
+/* 
+Fonts
+========================================================================== 
+
+Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
+
+*/
+/* 
+Breakpoints
+========================================================================== 
+
+## @respond-to to screen size
+
+```
+  @include respond-to(small-screens) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens) { float: none; }
+```
+*/
+/* ==========================================================================
+       Various
+       ========================================================================== */
+/*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014 
 ============================================================ */
 @import url("../../suit-utils-display/display.css");
