@@ -1502,7 +1502,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   color: #222222;
   background-color: #fff;
   background-image: none;
-  border: 1px solid rgba(151, 151, 151, 0.1);
+  border: 1px solid rgba(100, 100, 100, 0.1);
   border-radius: 3px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
@@ -2871,7 +2871,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   color: #222222;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid rgba(151, 151, 151, 0.1);
+  border: 1px solid rgba(100, 100, 100, 0.1);
   border-radius: 3px; }
   .input-group-addon.input-sm {
     padding: 5px 10px;
