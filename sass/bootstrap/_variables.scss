@@ -239,7 +239,7 @@ $input-bg-disabled:              $gray-lighter !default;
 //** Text color for `<input>`s
 $input-color:                    $text-color;
 //** `<input>` border color
-$input-border:                   $gray-light;
+$input-border:                   $borderColor;
 //** `<input>` border radius
 $input-border-radius:            $border-radius-base !default;
 //** Border color for inputs on focus
