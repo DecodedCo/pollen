@@ -1620,22 +1620,22 @@ textarea.input-lg, select[multiple].input-lg {
 
 .btn-default {
   color: #333;
-  border-color: #ccc; }
+  border-color: rgba(151, 151, 151, 0.1); }
   .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
     color: #222222;
     background-color: #fff;
-    border-color: #ccc; }
+    border-color: rgba(151, 151, 151, 0.1); }
   .open .btn-default.dropdown-toggle {
     color: #333;
     background-color: #fff;
-    border-color: #ccc; }
+    border-color: rgba(151, 151, 151, 0.1); }
   .btn-default:active, .btn-default.active {
     background-image: none; }
   .open .btn-default.dropdown-toggle {
     background-image: none; }
   .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
     background-color: #fff;
-    border-color: #ccc; }
+    border-color: rgba(151, 151, 151, 0.1); }
   .btn-default .badge {
     color: #fff;
     background-color: #333; }
