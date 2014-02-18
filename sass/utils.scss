@@ -142,3 +142,17 @@ Arrange--equal - The modifier class for equal-width cells
 .u-marginRight--none{
 	margin-right: 0;
 }
+
+/* transition classes */
+
+.transitionAll-1s {
+    transition: all 1s;
+}
+
+.transitionAll-2s {
+    transition: all 2s;
+}
+
+.transitionAll-3s {
+    transition: all 3s;
+}
