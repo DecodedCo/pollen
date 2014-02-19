@@ -1,13 +1,48 @@
-@import 'sass-variables';
+@import url("../../suit-utils-display/display.css");
+@import url("../../suit-utils-text/text.css");
+@import url("../../suit-utils-dimension/dimension.css");
+@import url("../../suit-utils-layout/layout.css");
+@import url("../../suit-arrange/arrange.css");
 
-    /*! ===========================================================
+/* ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+/* 
+Colors
+========================================================================== 
+
+Use color variables where ever possible.
+
+*/
+/* 
+Fonts
+========================================================================== 
+
+Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
+
+*/
+/* 
+Breakpoints
+========================================================================== 
+
+## @respond-to to screen size
+
+```
+  @include respond-to(small-screens) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens) { float: none; }
+```
+*/
+/* ==========================================================================
+       Various
+       ========================================================================== */
+/*! ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014 
 ============================================================ */
-
-//@import "../../normalize-css/normalize.css";
-@import "../../suit-utils-display/display.css";
-@import "../../suit-utils-text/text.css";
-
+/*
+@import url("../../suit-utils-display/display.css");
+@import url("../../suit-utils-text/text.css");
+*/
 /*
 Dimensions Utilities
 ==========================================
@@ -32,14 +67,9 @@ v3-u-sizeXofY - To use at the third Media Query breakpoint.
 etc.
 
 */
-
-@import "../../suit-utils-dimension/dimension.css";
-
-// move into .css file to enable media queries for dimension utils
-
-//@import "../../suit-utils-dimension/dimension-v1.css" (max-width: 480px);
-//@import "../../suit-utils-dimension/dimension-v2.css" (min-width: 480px) and (max-width: 780px);
-//@import "../../suit-utils-dimension/dimension-v3.css" (min-width: 780px);
+/*
+@import url("../../suit-utils-dimension/dimension.css");
+*/
 /* 
 Layout Helpers
 =================================================
@@ -57,9 +87,7 @@ u-alignBaseline -Vertically align to baseline.
 u-alignBottom - Vertically align to bottom.
 
 */
-
-@import "../../suit-utils-layout/layout.css";
-
+/*@import url("../../suit-utils-layout/layout.css");*/
 /*
 SUIT arrange
 ===============================================
@@ -73,8 +101,7 @@ Arrange--bottom - The modifier class for bottom-aligned cells
 Arrange--equal - The modifier class for equal-width cells
 
 */
-
-@import "../../suit-arrange/arrange.css";
+/*@import url("../../suit-arrange/arrange.css");*/
 
 @import 'sass-variables';	  /* colors, modular scale, grid settings... */
 
