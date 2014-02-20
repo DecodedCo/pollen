@@ -4536,8 +4536,7 @@ The Decoded Topbar sticks to the top of the page
 ```
 */
 .global-nav {
-  border-bottom: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  border-bottom: none; }
   .global-nav li.navbar-tab {
     overflow: hidden; }
     .global-nav li.navbar-tab:before {
@@ -4552,10 +4551,12 @@ The Decoded Topbar sticks to the top of the page
       transition: height 1s; }
     .global-nav li.navbar-tab:hover:before {
       height: 4em; }
-    .global-nav li.navbar-tab a {
+    .global-nav li.navbar-tab a, .global-nav li.navbar-tab a:hover {
       position: relative;
       z-index: 2000;
-      text-transform: none; }
+      text-transform: none;
+      color: #1b1b1b;
+      background: none; }
     @media (max-width: 768px) {
       .global-nav li.navbar-tab {
         width: 50%;
@@ -4574,5 +4575,9 @@ The Decoded Topbar sticks to the top of the page
     @media (max-width: 768px) {
       .global-nav .form-group {
         padding-right: 0.75em; } }
+
+.global-nav-light {
+  border-bottom: 1px solid #fef800;
+  background-color: #FFF; }
 
 /* global nav styles */
