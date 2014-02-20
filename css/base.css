@@ -3720,9 +3720,7 @@ a.list-group-item-danger {
   margin-bottom: 22px;
   background-color: rgba(255, 255, 255, 0.95);
   border: 1px solid transparent;
-  border-radius: 0;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+  border-radius: 0; }
 
 .panel-body {
   padding: 15px; }
@@ -3895,7 +3893,7 @@ a.list-group-item-danger {
   background-color: rgba(151, 151, 151, 0.1); }
 
 .panel-borderTop {
-  border-top: 6px solid #fef800; }
+  border-top: 2px solid #fef800; }
 
 .well {
   min-height: 20px;
@@ -4577,7 +4575,7 @@ The Decoded Topbar sticks to the top of the page
         padding-right: 0.75em; } }
 
 .global-nav-light {
-  border-bottom: 1px solid #fef800;
+  border-bottom: 2px solid #fef800;
   background-color: #FFF; }
 
 /* global nav styles */
