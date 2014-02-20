@@ -26,7 +26,7 @@ The Decoded Topbar sticks to the top of the page
 */
 .global-nav {
 	border-bottom: none;
-	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	//box-shadow: 0 0 5px rgba(0,0,0,0.1);
 
 	li.navbar-tab{
 		overflow: hidden;
@@ -45,10 +45,12 @@ The Decoded Topbar sticks to the top of the page
 		&:hover:before {
 			height: 4em;
 		}
-		a {
+		a, a:hover {
 			position: relative;
 			z-index: 2000;
 			text-transform: none;
+			color: $textColor;
+			background: none;
 		}
 
 		@media (max-width: $grid-float-breakpoint) {
@@ -77,4 +79,10 @@ The Decoded Topbar sticks to the top of the page
 			}
 		}
 	}
+}
+
+.global-nav-light {
+	border-bottom: 1px solid $decodedYellow;
+	background-color: #FFF;
+	//box-shadow: none;
 }
