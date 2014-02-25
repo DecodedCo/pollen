@@ -33,19 +33,19 @@ $brand-warning: #e67e22;
 $brand-danger: #e74c3c;
 $brand-info: #2980b9;
 
-$state-success-text: darken($brand-success, 40%);
+$state-success-text: darken($brand-success, 20%);
 $state-success-bg: lighten($brand-success, 20%);
 $state-success-border: $state-success-bg;
 
-$state-info-text: darken($brand-info, 40%);
+$state-info-text: darken($brand-info, 20%);
 $state-info-bg: lighten($brand-info, 20%);
 $state-info-border: $state-info-bg;
 
-$state-warning-text: darken($brand-warning, 40%);
+$state-warning-text: darken($brand-warning, 20%);
 $state-warning-bg: lighten($brand-warning, 20%);
 $state-warning-border: $state-warning-bg;
 
-$state-danger-text: darken($brand-danger, 40%);
+$state-danger-text: darken($brand-danger, 20%);
 $state-danger-bg: lighten($brand-danger, 20%);
 $state-danger-border: $state-danger-bg;
 
