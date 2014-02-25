@@ -134,7 +134,7 @@ Forms
 input {
   padding: 0.35em 0.5em;
   border-radius: 0.25em;
-  border: 1px solid rgba(151, 151, 151, 0.1); }
+  border: 1px solid whitesmoke; }
 
 /* 
 ## Text Area 
@@ -151,7 +151,7 @@ textarea {
   width: 100%;
   padding: 0.5em 0.5em;
   border-radius: 0.25em;
-  border: 1px solid rgba(151, 151, 151, 0.1); }
+  border: 1px solid whitesmoke; }
 
 /* 
 ## Buttons 
@@ -168,7 +168,7 @@ Add class `.Button` to links to style them as buttons.
 input[type='submit'], input[type='button'], button, .Button, .Button-primary {
   margin: 0em 1em 0 0;
   padding: 0.5em 1em 0.4em 1em;
-  border: 1px solid rgba(151, 151, 151, 0.1);
+  border: 1px solid whitesmoke;
   background: none;
   font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -182,7 +182,7 @@ input[type='submit'], input[type='button'], button, .Button, .Button-primary {
   border-radius: 0.25em;
   box-shadow: none; }
   input[type='submit']:hover, input[type='button']:hover, button:hover, .Button:hover, .Button-primary:hover {
-    background-color: rgba(151, 151, 151, 0.1); }
+    background-color: whitesmoke; }
   input[type='submit']:active, input[type='submit'].active, input[type='button']:active, input[type='button'].active, button:active, button.active, .Button:active, .Button.active, .Button-primary:active, .Button-primary.active {
     border: 1px solid #fef800; }
 
@@ -195,7 +195,7 @@ input[type='submit'], input[type='button'], button, .Button, .Button-primary {
 ```
 */
 .Button-primary, input[type='button'].Button-primary, input[type='submit'].Button-primary {
-  background: rgba(151, 151, 151, 0.1);
+  background: whitesmoke;
   font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase; }
@@ -269,7 +269,7 @@ Reset button styles for buttons with link behaviour
   padding-bottom: 1px; }
   .Button-combined input, .Button-combined button, .Button-combined [class$='button'] {
     margin: 0;
-    border: 1px solid rgba(151, 151, 151, 0.1);
+    border: 1px solid whitesmoke;
     border-left-width: 0;
     border-radius: 0;
     float: left; }

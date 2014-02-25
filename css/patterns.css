@@ -57,7 +57,7 @@ Images
   border-radius: 100%; }
 
 .framed {
-  box-shadow: 0 2px 2px rgba(151, 151, 151, 0.1);
+  box-shadow: 0 2px 2px whitesmoke;
   border: 1px solid #ccc;
   padding: 0.25em;
   display: inline-block; }
@@ -107,7 +107,7 @@ Modules
 ```
 */
 [class*="module"] {
-  border: 1px solid rgba(151, 151, 151, 0.1);
+  border: 1px solid whitesmoke;
   border-top: 1em solid #fef800;
   padding: 2%;
   display: block; }
@@ -160,7 +160,7 @@ Notification
 ```
 */
 [class$="notice"] {
-  background-color: rgba(151, 151, 151, 0.1);
+  background-color: whitesmoke;
   border: 0;
   border-top: 0.25em solid #969696;
   /* 4px */ }
@@ -342,10 +342,10 @@ Articles
   display: block;
   border-bottom: none; }
   .articles > li > a:hover {
-    background-color: rgba(151, 151, 151, 0.1);
+    background-color: rgba(245, 245, 245, 0.1);
     border-bottom: none; }
   .articles > li > a:active {
-    background-color: rgba(151, 151, 151, 0.05);
+    background-color: rgba(245, 245, 245, 0.05);
     border-bottom: none; }
 
 .articles li {
@@ -435,7 +435,7 @@ dl.metadata dt {
 dl.metadata dd {
   color: #888;
   margin-left: 0;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.1);
+  border-bottom: 1px solid whitesmoke;
   padding-bottom: 0.5em; }
 
 @media screen and (min-width: 40em) {
@@ -519,22 +519,22 @@ Progress indicator
   top: 0; }
 
 .progress li.completed {
-  background-color: rgba(151, 151, 151, 0.1); }
+  background-color: whitesmoke; }
 
 .progress li.completed:hover {
-  background-color: rgba(151, 151, 151, 0.1); }
+  background-color: whitesmoke; }
 
 .progress li.completed:before {
-  border-color: rgba(151, 151, 151, 0.1) transparent; }
+  border-color: whitesmoke transparent; }
 
 .progress li.completed:hover:before {
-  border-color: rgba(151, 151, 151, 0.1) transparent; }
+  border-color: whitesmoke transparent; }
 
 .progress li.completed:after {
-  border-color: transparent rgba(151, 151, 151, 0.1); }
+  border-color: transparent whitesmoke; }
 
 .progress li.completed:hover:after {
-  border-color: transparent rgba(151, 151, 151, 0.1); }
+  border-color: transparent whitesmoke; }
 
 .progress li.is-active {
   font-family: 'DIN Next-500', 'DIN Next', Helvetica, Arial, sans-serif;
@@ -568,7 +568,7 @@ Stats
   list-style: none;
   margin: 0 0.75em 0 0;
   padding: 0 0.75em 0 0;
-  border-right: 1px solid rgba(151, 151, 151, 0.1);
+  border-right: 1px solid whitesmoke;
   float: left; }
 
 ul.stats li:last-child {
