@@ -1453,7 +1453,7 @@ textarea.input-lg, select[multiple].input-lg {
 
 .has-feedback {
   position: relative; }
-  .has-feedback .form-control {
+  .has-feedback .form-control, .has-feedback select, .has-feedback textarea, .has-feedback input[type="text"], .has-feedback input[type="password"], .has-feedback input[type="datetime"], .has-feedback input[type="datetime-local"], .has-feedback input[type="date"], .has-feedback input[type="month"], .has-feedback input[type="time"], .has-feedback input[type="week"], .has-feedback input[type="number"], .has-feedback input[type="email"], .has-feedback input[type="url"], .has-feedback input[type="search"], .has-feedback input[type="tel"], .has-feedback input[type="color"] {
     padding-right: 45px; }
   .has-feedback .form-control-feedback {
     position: absolute;
@@ -1465,13 +1465,13 @@ textarea.input-lg, select[multiple].input-lg {
     line-height: 36px;
     text-align: center; }
 
-.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline {
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success label {
   color: #1b7942; }
-.has-success .form-control {
+.has-success select, .has-success textarea, .has-success input[type="text"], .has-success input[type="password"], .has-success input[type="datetime"], .has-success input[type="datetime-local"], .has-success input[type="date"], .has-success input[type="month"], .has-success input[type="time"], .has-success input[type="week"], .has-success input[type="number"], .has-success input[type="email"], .has-success input[type="url"], .has-success input[type="search"], .has-success input[type="tel"], .has-success input[type="color"], .has-success .form-control {
   border-color: #1b7942;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-success .form-control:focus {
+  .has-success select:focus, .has-success textarea:focus, .has-success input[type="text"]:focus, .has-success input[type="password"]:focus, .has-success input[type="datetime"]:focus, .has-success input[type="datetime-local"]:focus, .has-success input[type="date"]:focus, .has-success input[type="month"]:focus, .has-success input[type="time"]:focus, .has-success input[type="week"]:focus, .has-success input[type="number"]:focus, .has-success input[type="email"]:focus, .has-success input[type="url"]:focus, .has-success input[type="search"]:focus, .has-success input[type="tel"]:focus, .has-success input[type="color"]:focus, .has-success .form-control:focus {
     border-color: #124f2b;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #2ecc70;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #2ecc70; }
@@ -1482,13 +1482,13 @@ textarea.input-lg, select[multiple].input-lg {
 .has-success .form-control-feedback {
   color: #1b7942; }
 
-.has-warning .help-block, .has-warning .control-label, .has-warning .radio, .has-warning .checkbox, .has-warning .radio-inline, .has-warning .checkbox-inline {
+.has-warning .help-block, .has-warning .control-label, .has-warning .radio, .has-warning .checkbox, .has-warning .radio-inline, .has-warning .checkbox-inline, .has-warning label {
   color: #924d10; }
-.has-warning .form-control {
+.has-warning select, .has-warning textarea, .has-warning input[type="text"], .has-warning input[type="password"], .has-warning input[type="datetime"], .has-warning input[type="datetime-local"], .has-warning input[type="date"], .has-warning input[type="month"], .has-warning input[type="time"], .has-warning input[type="week"], .has-warning input[type="number"], .has-warning input[type="email"], .has-warning input[type="url"], .has-warning input[type="search"], .has-warning input[type="tel"], .has-warning input[type="color"], .has-warning .form-control {
   border-color: #924d10;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-warning .form-control:focus {
+  .has-warning select:focus, .has-warning textarea:focus, .has-warning input[type="text"]:focus, .has-warning input[type="password"]:focus, .has-warning input[type="datetime"]:focus, .has-warning input[type="datetime-local"]:focus, .has-warning input[type="date"]:focus, .has-warning input[type="month"]:focus, .has-warning input[type="time"]:focus, .has-warning input[type="week"]:focus, .has-warning input[type="number"]:focus, .has-warning input[type="email"]:focus, .has-warning input[type="url"]:focus, .has-warning input[type="search"]:focus, .has-warning input[type="tel"]:focus, .has-warning input[type="color"]:focus, .has-warning .form-control:focus {
     border-color: #64330b;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e67a22;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e67a22; }
@@ -1499,13 +1499,13 @@ textarea.input-lg, select[multiple].input-lg {
 .has-warning .form-control-feedback {
   color: #924d10; }
 
-.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error label {
   color: #a82115; }
-.has-error .form-control {
+.has-error select, .has-error textarea, .has-error input[type="text"], .has-error input[type="password"], .has-error input[type="datetime"], .has-error input[type="datetime-local"], .has-error input[type="date"], .has-error input[type="month"], .has-error input[type="time"], .has-error input[type="week"], .has-error input[type="number"], .has-error input[type="email"], .has-error input[type="url"], .has-error input[type="search"], .has-error input[type="tel"], .has-error input[type="color"], .has-error .form-control {
   border-color: #a82115;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-error .form-control:focus {
+  .has-error select:focus, .has-error textarea:focus, .has-error input[type="text"]:focus, .has-error input[type="password"]:focus, .has-error input[type="datetime"]:focus, .has-error input[type="datetime-local"]:focus, .has-error input[type="date"]:focus, .has-error input[type="month"]:focus, .has-error input[type="time"]:focus, .has-error input[type="week"]:focus, .has-error input[type="number"]:focus, .has-error input[type="email"]:focus, .has-error input[type="url"]:focus, .has-error input[type="search"]:focus, .has-error input[type="tel"]:focus, .has-error input[type="color"]:focus, .has-error .form-control:focus {
     border-color: #7b160f;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e7473c;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #e7473c; }
