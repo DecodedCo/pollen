@@ -361,13 +361,13 @@ h4, .h4, .delta, h5, .h5, .epsilon, h6, .h6, .zeta {
 
 h1, .headline, .h1, .alpha {
   font-size: 31px;
-  font-weight: 200; }
+  font-weight: 300; }
 
 h2, .h2, .beta {
   font-size: 25px; }
 
 h2.sub-heading, .h2.sub-heading {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4;
   color: #969696;
   margin-top: 0;
