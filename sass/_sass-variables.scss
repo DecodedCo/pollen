@@ -12,14 +12,13 @@ Use color variables where ever possible.
 
 $headingColor: #010101;
 $textColor: lighten($headingColor, 10%);
-$borderColor: rgba(100,100,100,.1);
+$borderColor: rgba(151,151,151,.4);
 
 $decodedYellow: rgb(254,248,0);
 $decodedYellowRGBA: rgba(254,248,0,.8);
 $decodedGrey: rgb(150,150,150);
 $darkYellow: rgba(201,181,0,1);
-$decodedLightGrey: lighten($borderColor,20%);
-$decodedLightGreyOpq: rgb(245,245,245);
+$decodedLightGrey: rgb(245,245,245);
 
 $white: #ffffff;
 
@@ -28,7 +27,7 @@ $decodedBrown: rgb(40,36,25);
 
 $gray-darker:            lighten(#000, 13.5%) !default; // #222
 $gray-dark:              $decodedGrey;  
-$gray:                   $decodedGrey; 
+$gray:                   $borderColor; 
 $gray-light:             $decodedLightGrey;
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
@@ -37,6 +36,7 @@ $brand-success: #2ecc71;
 $brand-warning: #e67e22;
 $brand-danger: #e74c3c;
 $brand-info: #2980b9;
+
 
 /* 
 Fonts
