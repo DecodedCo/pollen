@@ -93,14 +93,14 @@ h6, .h6, .zeta {
 h1, .h1, .alpha { 
   font-size: $font-size-h1; 
   //CUSTOM font weight
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h2, .h2, .beta { font-size: $font-size-h2; }
 
 // CUSTOM h2 Decoded style
 h2.sub-heading, .h2.sub-heading {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4;
   color: $decodedGrey;
   margin-top: 0;
