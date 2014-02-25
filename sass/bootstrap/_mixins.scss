@@ -904,7 +904,7 @@ $contrasted-lightness-threshold: 30% !default;
   input[type="search"],
   input[type="tel"],
   input[type="color"],
-  .form-control,
+  .form-control
    {
     border-color: $border-color;
     @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075)); // Redeclare so transitions work
