@@ -3818,16 +3818,16 @@ a.list-group-item-danger {
       border-bottom: 1px solid whitesmoke; }
 
 .panel-default {
-  border-color: rgba(245, 245, 245, 0.3); }
+  border-color: whitesmoke; }
   .panel-default > .panel-heading {
     color: inherit;
     background-color: transparent;
     border-color: #fef800;
     margin-top: 0; }
     .panel-default > .panel-heading + .panel-collapse .panel-body {
-      border-top-color: rgba(245, 245, 245, 0.3); }
+      border-top-color: whitesmoke; }
   .panel-default > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: rgba(245, 245, 245, 0.3); }
+    border-bottom-color: whitesmoke; }
 
 .panel-primary {
   border-color: #fef800; }
