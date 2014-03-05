@@ -422,6 +422,7 @@ $contrasted-lightness-threshold: 30% !default;
 // -------------------------
 @mixin panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
   border-color: $border;
+  box-shadow: 0 01px 2px 0px rgba($gray-dark, 0.2);
 
   & > .panel-heading {
     color: $heading-text-color;

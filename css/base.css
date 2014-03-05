@@ -1590,7 +1590,7 @@ textarea.input-lg, select[multiple].input-lg {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  border: 1px solid whitesmoke;
+  border: 1px solid rgba(151, 151, 151, 0.4);
   font-family: 'DIN Next', Helvetica, Arial, sans-serif;
   line-height: 1em;
   border-radius: 0.25em;
@@ -3818,19 +3818,21 @@ a.list-group-item-danger {
       border-bottom: 1px solid whitesmoke; }
 
 .panel-default {
-  border-color: whitesmoke; }
+  border-color: transparent;
+  box-shadow: 0 1px 2px 0px rgba(150, 150, 150, 0.2); }
   .panel-default > .panel-heading {
     color: inherit;
     background-color: transparent;
     border-color: #fef800;
     margin-top: 0; }
     .panel-default > .panel-heading + .panel-collapse .panel-body {
-      border-top-color: whitesmoke; }
+      border-top-color: transparent; }
   .panel-default > .panel-footer + .panel-collapse .panel-body {
-    border-bottom-color: whitesmoke; }
+    border-bottom-color: transparent; }
 
 .panel-primary {
-  border-color: #fef800; }
+  border-color: #fef800;
+  box-shadow: 0 1px 2px 0px rgba(150, 150, 150, 0.2); }
   .panel-primary > .panel-heading {
     color: #222222;
     background-color: #fef800;
@@ -3842,7 +3844,8 @@ a.list-group-item-danger {
     border-bottom-color: #fef800; }
 
 .panel-success {
-  border-color: #7ee2a8; }
+  border-color: #7ee2a8;
+  box-shadow: 0 1px 2px 0px rgba(150, 150, 150, 0.2); }
   .panel-success > .panel-heading {
     color: #1b7942;
     background-color: #7ee2a8;
@@ -3854,7 +3857,8 @@ a.list-group-item-danger {
     border-bottom-color: #7ee2a8; }
 
 .panel-info {
-  border-color: #6ab2de; }
+  border-color: #6ab2de;
+  box-shadow: 0 1px 2px 0px rgba(150, 150, 150, 0.2); }
   .panel-info > .panel-heading {
     color: #164766;
     background-color: #6ab2de;
@@ -3866,7 +3870,8 @@ a.list-group-item-danger {
     border-bottom-color: #6ab2de; }
 
 .panel-warning {
-  border-color: #f0b37e; }
+  border-color: #f0b37e;
+  box-shadow: 0 1px 2px 0px rgba(150, 150, 150, 0.2); }
   .panel-warning > .panel-heading {
     color: #924d10;
     background-color: #f0b37e;
@@ -3878,7 +3883,8 @@ a.list-group-item-danger {
     border-bottom-color: #f0b37e; }
 
 .panel-danger {
-  border-color: #f29e97; }
+  border-color: #f29e97;
+  box-shadow: 0 1px 2px 0px rgba(150, 150, 150, 0.2); }
   .panel-danger > .panel-heading {
     color: #a82115;
     background-color: #f29e97;
