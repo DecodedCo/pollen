@@ -528,8 +528,8 @@ $contrasted-lightness-threshold: 30% !default;
   &:focus,
   &:active,
   &.active {
-    // CUSTOM not jsut $color
-    color: contrast-color($background, $color, $white, 30%);
+    // CUSTOM not just $color
+    color: contrast-color($background, $link-color, $white, 60%);
     // CUSTOM - no color darken
     background-color: $background;
         border-color: $border;

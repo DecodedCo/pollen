@@ -71,6 +71,11 @@ button,
 }
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+
+  &:hover, 
+  &:active {
+    color: $link-color;
+  }
 }
 // Success appears as green
 .btn-success {
