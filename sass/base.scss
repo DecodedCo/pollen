@@ -1,5 +1,5 @@
     /*! ===========================================================
-Pollen - Decoded Styles // by Jonas Haefele 2014 
+Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 
 @charset "UTF-8";
@@ -7,3 +7,4 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 @import 'sass-variables';	  /* colors, modular scale, grid settings... */
 @import 'bootstrap/bootstrap';/* bootstrap */
 @import 'navigation';		  /* global nav styles */
+@import 'elements';     /* little time savers */
