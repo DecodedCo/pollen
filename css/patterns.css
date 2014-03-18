@@ -1,23 +1,42 @@
 /* ===========================================================
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
-/* 
+/*
 Colors
-========================================================================== 
+==========================================================================
 
 Use color variables where ever possible.
 
 */
-/* 
+/*
+Secondary Colors
+----------------
+
+Use collections as in:
+```
+@each $color in $secondary-colors-light {
+  .bg-#{nth($color)} {
+      background-color: nth($color);
+  }
+}
+```
+*/
+/*
+Bootstrap Color Variables
+--------------------------
+*/
+/* Grey Values for Botstrap */
+/* Map Colors for Bootstrap */
+/*
 Fonts
-========================================================================== 
+==========================================================================
 
 Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
 
 */
-/* 
+/*
 Breakpoints
-========================================================================== 
+==========================================================================
 
 ## @respond-to to screen size
 
