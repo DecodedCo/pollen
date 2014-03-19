@@ -1,6 +1,6 @@
 /*
 Decoded Top Navigation Bar with Logo
-========================================================================== 
+==========================================================================
 The Decoded Topbar sticks to the top of the page
 ```
 <header class="navbar navbar-default navbar-fixed-top global-nav" role="navigation" id="nav">
@@ -13,7 +13,7 @@ The Decoded Topbar sticks to the top of the page
             <li class="navbar-tab"><a href="/#/morning"><i class="fa fa-sun-o"></i> Morning</a></li>
             <li class="navbar-tab"><a href="/#/lantern"><i class="fa fa-heart"></i> Lantern</a></li>
             <li class="form-group"><input id="account-chooser" type="text" class="form-control" placeholder="Search all accounts..."></li>
-          </ul>          
+          </ul>
         </div>
         <div class="navbar-right">
           <ul class="nav navbar-nav">
@@ -30,7 +30,7 @@ The Decoded Topbar sticks to the top of the page
 
 	li.navbar-tab{
 		overflow: hidden;
-	
+
 		&:before {
 			content: ' ';
 			display: block;
