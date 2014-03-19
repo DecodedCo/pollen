@@ -27,17 +27,7 @@ $decodedBrown: rgb(40,36,25);
 
 /*
 Secondary Colors
-----------------
-
-Use collections as in:
-```
-@each $color in $secondary-colors-light {
-  .bg-#{nth($color)} {
-      background-color: nth($color);
-  }
-}
-```
-*/
+----------------*/
 
 $green: rgb(46,204,133);
 $blue:  rgb(52,141,204);
