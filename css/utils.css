@@ -113,17 +113,7 @@ Use color variables where ever possible.
 */
 /*
 Secondary Colors
-----------------
-
-Use collections as in:
-```
-@each $color in $secondary-colors-light {
-  .bg-#{nth($color)} {
-      background-color: nth($color);
-  }
-}
-```
-*/
+----------------*/
 /*
 Bootstrap Color Variables
 --------------------------
