@@ -2,9 +2,9 @@
 Pollen - Decoded Styles // by Jonas Haefele 2014
 ============================================================ */
 
-/* 
+/*
 Colors
-========================================================================== 
+==========================================================================
 
 Use color variables where ever possible.
 
@@ -25,22 +25,61 @@ $white: #ffffff;
 $linkColor: rgb(0,0,0);
 $decodedBrown: rgb(40,36,25);
 
+/*
+Secondary Colors
+----------------
+
+Use collections as in:
+```
+@each $color in $secondary-colors-light {
+  .bg-#{nth($color)} {
+      background-color: nth($color);
+  }
+}
+```
+*/
+
+$green: rgb(46,204,133);
+$blue:  rgb(52,141,204);
+$red:   rgb(231,76,60);
+$orange:rgb(243,146,15);
+$pink:  rgb(249,58,142);
+$purple:rgb(140,86,182);
+
+$secondary-colors: $green, $blue, $red, $orange, $pink, $purple;
+
+$green-light: rgb(192,227,139);
+$blue-light:  rgb(127,195,225);
+$red-light:   rgb(253,158,127);
+$orange-light:rgb(255,202,128);
+$pink-light:  rgb(252,131,179);
+$purple-light:rgb(171,127,193);
+
+$secondary-colors-light: $green-light, $blue-light, $red-light, $orange-light, $pink-light, $purple-light;
+
+/*
+Bootstrap Color Variables
+--------------------------
+*/
+
+/* Grey Values for Bootstrap */
 $gray-darker:            lighten(#000, 13.5%) !default; // #222
-$gray-dark:              $decodedGrey;  
-$gray:                   $borderColor; 
+$gray-dark:              $decodedGrey;
+$gray:                   $borderColor;
 $gray-light:             $decodedLightGrey;
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
+/* Map Colors for Bootstrap */
+
 $brand-primary: $decodedYellow;
-$brand-success: #2ecc71;
-$brand-warning: #e67e22;
-$brand-danger: #e74c3c;
-$brand-info: #2980b9;
+$brand-success: $green;
+$brand-warning: $orange;
+$brand-danger:  $red;
+$brand-info:    $blue;
 
-
-/* 
+/*
 Fonts
-========================================================================== 
+==========================================================================
 
 Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
 
@@ -54,9 +93,9 @@ $spacingSize: 1.5em;
 $headingPadding: 1px;
 $base-font-size: 16px;
 
-/* 
+/*
 Breakpoints
-========================================================================== 
+==========================================================================
 
 ## @respond-to to screen size
 
@@ -96,7 +135,7 @@ $borderRadius: 0.25em;
 $accent-stroke-width: 2px;
 
 $alpha:		1.97;
-$beta:		1.618;	
+$beta:		1.618;
 $gamma:		1.217;
 $delta:		1;
 $epsilon:	0.9;
@@ -105,4 +144,4 @@ $zeta:		0.618;
 $mega:		2.618;
 $giga:		3.187;
 
- 
+
