@@ -29,29 +29,18 @@ The Decoded Topbar sticks to the top of the page
 	//box-shadow: 0 0 5px rgba(0,0,0,0.1);
 
 	li.navbar-tab{
-		overflow: hidden;
+    vertical-align: top;
 
-		&:before {
-			content: ' ';
-			display: block;
-			background-color: lighten($decodedYellow, 30%);
-			width: 100%;
-			height: 0;
-			z-index: 100;
-			position: absolute;
-			bottom: 0;
-			transition: height 1s;
-		}
-		&:hover:before {
-			height: 4em;
-		}
 		a, a:hover {
-			position: relative;
-			z-index: 2000;
 			text-transform: none;
 			color: $textColor;
 			background: none;
+      transition: background-color 0.5s;
 		}
+
+    a:hover {
+      background-color: lighten($decodedYellow, 30%);
+    }
 
 		@media (max-width: $grid-float-breakpoint) {
 			width: 50%;
