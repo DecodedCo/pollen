@@ -27,27 +27,27 @@ $gray:                   lighten(#000, 33.5%) !default; // #555
 $gray-light:             lighten(#000, 60%) !default;   // #999
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
-$brand-primary: rgb(254, 248, 0);
-$brand-success: #2ecc71;
-$brand-warning: #e67e22;
-$brand-danger: #e74c3c;
-$brand-info: #2980b9;
+$brand-primary: $decodedYellow;
+$brand-success: $green;
+$brand-warning: $orange;
+$brand-danger:  $red;
+$brand-info:    $blue;
 
-$state-success-text: darken($brand-success, 20%);
-$state-success-bg: lighten($brand-success, 20%);
-$state-success-border: $state-success-bg;
+$state-success-text: $green;
+$state-success-bg: $green-light;
+$state-success-border: $green;
 
-$state-info-text: darken($brand-info, 20%);
-$state-info-bg: lighten($brand-info, 20%);
-$state-info-border: $state-info-bg;
+$state-info-text: $blue;
+$state-info-bg: $blue-light;
+$state-info-border: $blue;
 
-$state-warning-text: darken($brand-warning, 20%);
-$state-warning-bg: lighten($brand-warning, 20%);
-$state-warning-border: $state-warning-bg;
+$state-warning-text: $orange;
+$state-warning-bg: $orange-light;
+$state-warning-border: $orange;
 
-$state-danger-text: darken($brand-danger, 20%);
-$state-danger-bg: lighten($brand-danger, 20%);
-$state-danger-border: $state-danger-bg;
+$state-danger-text: $red;
+$state-danger-bg: $red-light;
+$state-danger-border: $red;
 
 $text-color: $gray-darker;
 
