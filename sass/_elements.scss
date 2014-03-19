@@ -56,3 +56,29 @@ Loading Animation
     opacity: 0;
   }
 }
+
+/* Colored Backgrounds */
+
+@include bg-variant('.bg-red-light', $red-light);
+
+@include bg-variant('.bg-orange-light', $orange-light);
+
+@include bg-variant('.bg-green-light', $green-light);
+
+@include bg-variant('.bg-blue-light', $blue-light);
+
+@include bg-variant('.bg-pink-light', $pink-light);
+
+@include bg-variant('.bg-purple-light', $purple-light);
+
+@include bg-variant('.bg-red', $red);
+
+@include bg-variant('.bg-orange', $orange);
+
+@include bg-variant('.bg-green', $green);
+
+@include bg-variant('.bg-blue', $blue);
+
+@include bg-variant('.bg-pink', $pink);
+
+@include bg-variant('.bg-purple', $purple);
