@@ -246,7 +246,7 @@
       float: none;
       width: auto;
       margin-top: 0;
-      background-color: transparent;
+      background-color: $white;
       border: 0;
       box-shadow: none;
       > li > a,
@@ -419,7 +419,7 @@
       &:hover,
       &:focus {
         color: $navbar-default-link-hover-color;
-        background-color: $navbar-default-link-hover-bg;
+        //background-color: $navbar-default-link-hover-bg;
       }
     }
     > .active > a {

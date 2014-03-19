@@ -25,64 +25,53 @@ The Decoded Topbar sticks to the top of the page
 ```
 */
 .global-nav {
-	border-bottom: none;
-	//box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-bottom: none;
+  //box-shadow: 0 0 5px rgba(0,0,0,0.1);
 
-	li.navbar-tab{
-		overflow: hidden;
+  li.navbar-tab{
+    vertical-align: top;
 
-		&:before {
-			content: ' ';
-			display: block;
-			background-color: lighten($decodedYellow, 30%);
-			width: 100%;
-			height: 0;
-			z-index: 100;
-			position: absolute;
-			bottom: 0;
-			transition: height 1s;
-		}
-		&:hover:before {
-			height: 4em;
-		}
-		a, a:hover {
-			position: relative;
-			z-index: 2000;
-			text-transform: none;
-			color: $textColor;
-			background: none;
-		}
+    a, a:hover {
+      text-transform: none;
+      color: $textColor;
+      background: none;
+      transition: background-color 0.5s;
+    }
 
-		@media (max-width: $grid-float-breakpoint) {
-			width: 50%;
-			display: inline-block;
-			margin-right: -3px;
-		}
-	}
-	.logo {
-		float: right;
-		margin-right: $spacingSize/2;
-	}
+    a:hover {
+      background-color: lighten($decodedYellow, 30%);
+    }
 
-	.navbar-collapse {
-		border: none;
-		@media (max-width: $grid-float-breakpoint) {
-			clear: both;
-		}
-	}
-	.form-group {
-		margin: 0.4em 0 0 $spacingSize/2;
+    @media (max-width: $grid-float-breakpoint) {
+      width: 50%;
+      display: inline-block;
+      margin-right: -3px;
+    }
+  }
+  .logo {
+    float: right;
+    margin-right: $spacingSize/2;
+  }
 
-		@media (max-width: $grid-float-breakpoint) {
-			&{
-				padding-right: $spacingSize/2;
-			}
-		}
-	}
+  .navbar-collapse {
+    border: none;
+    @media (max-width: $grid-float-breakpoint) {
+      clear: both;
+    }
+  }
+  .form-group {
+    margin: 0.4em 0 0 $spacingSize/2;
+
+    @media (max-width: $grid-float-breakpoint) {
+      &{
+        padding-right: $spacingSize/2;
+      }
+    }
+  }
 }
 
 .global-nav-light {
-	border-bottom: $accent-stroke-width solid $decodedYellow;
-	background-color: #FFF;
-	//box-shadow: none;
+  border-bottom: $accent-stroke-width solid $decodedYellow;
+  background-color: #FFF;
+  //box-shadow: none;
 }
