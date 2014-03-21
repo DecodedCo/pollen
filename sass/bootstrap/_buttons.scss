@@ -72,7 +72,7 @@ button,
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 
-  &:hover, 
+  &:hover,
   &:active {
     color: $link-color;
   }
@@ -173,4 +173,29 @@ input[type="button"] {
   &.btn-block {
     width: 100%;
   }
+}
+
+// color-named buttons
+.btn-red {
+  @include button-variant($red, $red-light, $red);
+}
+
+.btn-orange {
+  @include button-variant($orange, $orange-light, $orange);
+}
+
+.btn-green {
+  @include button-variant($green, $green-light, $green);
+}
+
+.btn-blue {
+  @include button-variant($blue, $blue-light, $blue);
+}
+
+.btn-pink {
+  @include button-variant($pink, $pink-light, $pink);
+}
+
+.btn-purple {
+  @include button-variant($purple, $purple-light, $purple);
 }
