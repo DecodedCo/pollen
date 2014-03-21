@@ -36,7 +36,6 @@ $(document).ready(function () {
       }
       var newheight = window.innerHeight - menupos.top - 30;
       menu.css({ left:newpos, 'max-height':newheight });
-
   });
 });
 
