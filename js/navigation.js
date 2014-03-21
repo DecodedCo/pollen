@@ -22,20 +22,23 @@ $(document).ready(function () {
       // Avoid having the menu to close when clicking
       event.stopPropagation();
       // If a menu is already open we close it
-      //$('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
-      // opening the one you clicked on
-      $(this).parent().addClass('open');
+      if($(this).parent().hasClass('open')){
+        $(this).parent().removeClass('open');
+      }else{
+        // opening the one you clicked on
+        $(this).parent().addClass('open');
 
-      var menu = $(this).parent().find("ul");
-      var menupos = menu.offset();
+        var menu = $(this).parent().find("ul");
+        var menupos = menu.offset();
 
-      if ((menupos.left + menu.width()) + 30 > $(window).width()) {
-          var newpos = - menu.width();
-      } else {
-          var newpos = $(this).parent().width();
+        if ((menupos.left + menu.width()) + 30 > $(window).width()) {
+            var newpos = - menu.width();
+        } else {
+            var newpos = $(this).parent().width();
+        }
+        var newheight = window.innerHeight - menupos.top - 30;
+        menu.css({ left:newpos, 'max-height':newheight });
       }
-      var newheight = window.innerHeight - menupos.top - 30;
-      menu.css({ left:newpos, 'max-height':newheight });
   });
 });
 
