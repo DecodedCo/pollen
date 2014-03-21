@@ -214,7 +214,7 @@
 .panel-default {
   @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $brand-primary);
 }
-.panel-primary {
+.panel-primary, .panel-yellow {
   @include panel-variant($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);
 }
 .panel-success {
@@ -236,4 +236,29 @@
 }
 .panel-borderTop{
   border-top: $accent-stroke-width solid $decodedYellow;
+}
+
+// color-named panels
+.panel-red {
+  @include panel-variant($red, $white, $red-light, 'transparent');
+}
+
+.panel-orange {
+  @include panel-variant($orange, $white, $orange-light, 'transparent');
+}
+
+.panel-green {
+  @include panel-variant($green, $white, $green-light, 'transparent');
+}
+
+.panel-blue {
+  @include panel-variant($blue, $white, $blue-light, 'transparent');
+}
+
+.panel-pink {
+  @include panel-variant($pink, $white, $pink-light, 'transparent');
+}
+
+.panel-purple {
+  @include panel-variant($purple, $white, $purple-light, 'transparent');
 }
