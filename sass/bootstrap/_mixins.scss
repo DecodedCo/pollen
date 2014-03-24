@@ -529,10 +529,10 @@ $contrasted-lightness-threshold: 30% !default;
   &:active,
   &.active {
     // CUSTOM not just $color
-    color: contrast-color($background, $link-color, $white, 60%);
+    color: contrast-color($background, $white, $link-color, 40%);
     // CUSTOM - no color darken
     background-color: $background;
-        border-color: $border;
+        border-color: $background;
   }
   .open & { &.dropdown-toggle {
     color: $color;
