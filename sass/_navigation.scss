@@ -105,3 +105,8 @@ The Decoded Topbar sticks to the top of the page
     left: -100%;
     margin-left: 10px;
 }
+
+.global-nav + .container,
+.global-nav + .container-fluid {
+  margin-top: 70px;
+}
