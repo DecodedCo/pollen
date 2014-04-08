@@ -13,7 +13,6 @@ module.exports = function(grunt) {
         files: {
           'css/base.css': 'sass/base.scss',
           'css/din-family.css': 'sass/din-family.scss',
-          'css/links-forms.css': 'sass/links-forms.scss',
           'css/patterns.css': 'sass/patterns.scss',
           'css/utils.css': 'sass/utils.scss'
         }
