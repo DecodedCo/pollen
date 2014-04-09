@@ -14,7 +14,7 @@ Loading Animation
   position: relative;
   box-sizing: border-box;
   text-align: center;
-  z-index: 0;
+  z-index: 10000;
   text-transform: uppercase;
 }
 
@@ -31,6 +31,10 @@ Loading Animation
   border-radius: 100px;
   border: 3px solid #fff;
   box-shadow: 0 0 50px rgba(254,248,0, 0.7), inset 0 0 50px rgba(254,248,0, 0.7);
+}
+
+.loader-no-height{
+  margin: 0 auto -120px auto;
 }
 
 .loader:after {
