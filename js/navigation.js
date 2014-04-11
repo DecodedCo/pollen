@@ -42,6 +42,9 @@ $(document).ready(function () {
   });
 });
 
-function NavBarCtrl($scope) {
-  $scope.isCollapsed = true;
-}
+(function(window, angular, undefined) {'use strict';
+  angular.module('pollen.navbar', ['ng'])
+  .controller('NavBarCtrl', ['$scope', function($scope){
+    $scope.isCollapsed = true;
+  }]);
+})(window, window.angular);
