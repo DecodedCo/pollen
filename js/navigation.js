@@ -42,4 +42,6 @@ $(document).ready(function () {
   });
 });
 
-
+function NavBarCtrl($scope) {
+  $scope.isCollapsed = true;
+}
