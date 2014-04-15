@@ -18,17 +18,42 @@ module.exports = function(grunt) {
         }
       }
     },
+    // Add vendor prefixed styles
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions']
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'css/',
+          src: '{,*/}*.css',
+          dest: 'css/'
+        }]
+      }
+    },
+    cssmin: {
+      minify: {
+        expand: true,
+        cwd: 'css/',
+        src: ['*.css'],
+        dest: 'css/',
+        ext: '.css'
+      }
+    },
     watch: {
       sass: {
         files: ['**/*.scss'],
-        tasks: ['sass']
-      },
+        tasks: ['sass', 'autoprefixer', 'cssmin']
+      }
     }
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
   grunt.registerTask('default', ['sass']);
