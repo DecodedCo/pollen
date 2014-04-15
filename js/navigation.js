@@ -43,8 +43,10 @@ $(document).ready(function () {
 });
 
 (function(window, angular, undefined) {'use strict';
-  angular.module('pollen.navbar', ['ng'])
-  .controller('NavBarCtrl', ['$scope', function($scope){
-    $scope.isCollapsed = true;
-  }]);
+  if(typeof angular != 'undefined') {
+    angular.module('pollen.navbar', ['ng'])
+    .controller('NavBarCtrl', ['$scope', function($scope){
+      $scope.isCollapsed = true;
+    }]);
+  }
 })(window, window.angular);
