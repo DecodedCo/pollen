@@ -24,9 +24,6 @@ button,
   @include user-select(none);
   border: 1px solid $borderColor;
   font-family: $defaultStack;
-  line-height: 1em;
-  //letter-spacing: 1px;
-  border-radius: $borderRadius;
   box-shadow: none;
   background-color: transparent;
 
