@@ -9,7 +9,8 @@
 // Core styles
 
 button,
-.btn {
+.btn,
+.btn-default {
   display: inline-block;
   margin-bottom: 0;
   font-weight: $btn-font-weight;
@@ -64,9 +65,6 @@ button,
 // Alternate buttons
 // --------------------------------------------------
 
-.btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
-}
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 
