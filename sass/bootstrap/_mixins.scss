@@ -554,8 +554,10 @@ $contrasted-lightness-threshold: 30% !default;
     &:focus,
     &:active,
     &.active {
-      background-color: $background;
-          border-color: $border;
+      // CUSTOM
+      // background-color: $background;
+      border-color: rgba($border, 0.3);
+      color: rgba($color, 0.3);
     }
   }
 
