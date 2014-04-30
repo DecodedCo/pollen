@@ -527,6 +527,12 @@ $contrasted-lightness-threshold: 30% !default;
   &.btn.btn-contrast,
   &.btn-contrast {
     background-color: $contrast-background;
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] &,
+    .disabled & {
+      color: rgba($link-color, 0.5);
+    }
   }
 
   &:hover,
