@@ -26,6 +26,8 @@ button,
   font-family: $defaultStack;
   box-shadow: none;
   background-color: transparent;
+  // make firefox behave
+  height: $input-height-base;
 
   // CUSTOM no underline
   text-decoration: none;
@@ -174,13 +176,19 @@ button,
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+  // make firefox behave
+  height: $input-height-large;
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+  // make firefox behave
+  height: $input-height-small;
 }
 .btn-xs {
   @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+  // make firefox behave
+  height: auto;
 }
 
 
