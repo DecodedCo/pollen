@@ -36,7 +36,7 @@ button,
 
   &:hover,
   &:focus {
-    background-color: $decodedLightGrey ;
+    background-color: $decodedLightGrey;
     text-decoration: none;
   }
 
@@ -56,6 +56,15 @@ button,
     @include opacity(.65);
     @include box-shadow(none);
   }
+
+  &.btn-contrast{
+    background-color: rgba(255,255,255,0.5);
+
+    &:hover,
+    &:active {
+      border-color: #fff;
+    }
+  }
 }
 
 
@@ -63,28 +72,39 @@ button,
 // --------------------------------------------------
 
 .btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border, $btn-primary-contrast);
 
   &:hover,
   &:active {
     color: $link-color;
   }
+
+  &.btn.btn-contrast,
+  &.btn-contrast{
+    border-color: #fff;
+    background-color: lighten($decodedYellow, 30%);
+
+    &:hover,
+    &:active {
+      background-color: #FFF;
+    }
+  }
 }
 // Success appears as green
 .btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border, $btn-success-contrast);
 }
 // Info appears as blue-green
 .btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border, $btn-info-contrast);
 }
 // Warning appears as orange
 .btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border, $btn-warning-contrast);
 }
 // Danger and error appear as red
 .btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border, $btn-danger-contrast);
 }
 
 
@@ -123,6 +143,21 @@ button,
     &:focus {
       color: $btn-link-disabled-color;
       text-decoration: none;
+    }
+  }
+  &.btn.btn-contrast,
+  &.btn-contrast{
+    border-color: transparent;
+    background-color: rgba(255,255,255,0.5);
+
+    &:hover,
+    &:active {
+      background-color: #FFF;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      background-color: transparent;
     }
   }
 }
@@ -170,25 +205,25 @@ input[type="button"] {
 
 // color-named buttons
 .btn-red {
-  @include button-variant($red, $red-light, $red);
+  @include button-variant($red, $red-light, $red, $red-light);
 }
 
 .btn-orange {
-  @include button-variant($orange, $orange-light, $orange);
+  @include button-variant($orange, $orange-light, $orange, $orange-light);
 }
 
 .btn-green {
-  @include button-variant($green, $green-light, $green);
+  @include button-variant($green, $green-light, $green, $green-light);
 }
 
 .btn-blue {
-  @include button-variant($blue, $blue-light, $blue);
+  @include button-variant($blue, $blue-light, $blue, $blue-light);
 }
 
 .btn-pink {
-  @include button-variant($pink, $pink-light, $pink);
+  @include button-variant($pink, $pink-light, $pink, $pink-light);
 }
 
 .btn-purple {
-  @include button-variant($purple, $purple-light, $purple);
+  @include button-variant($purple, $purple-light, $purple, $purple-light);
 }

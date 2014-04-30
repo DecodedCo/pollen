@@ -207,22 +207,27 @@ $btn-default-border:             $borderColor;
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg;
+$btn-primary-contrast:          #fff;
 
 $btn-success-color:              $brand-success;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             darken($btn-success-bg, 5%) !default;
+$btn-success-contrast:           $green-light;
 
 $btn-info-color:                 $brand-info;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                darken($btn-info-bg, 5%) !default;
+$btn-info-contrast:              $blue-light;
 
 $btn-warning-color:              $brand-warning;
 $btn-warning-bg:                 $brand-warning !default;
 $btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+$btn-warning-contrast:           $orange-light;
 
 $btn-danger-color:               $brand-danger;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+$btn-danger-contrast:            $red-light;
 
 $btn-link-disabled-color:        $gray-light !default;
 
