@@ -431,3 +431,16 @@ input[type="checkbox"],
     right: ($grid-gutter-width / 2);
   }
 }
+
+// Basic Spacing for multiline forms
+
+.form-spaced .input-group,
+.form-spaced .btn-group,
+.form-spaced > .btn,
+.form-spaced > button,
+.form-spaced > input,
+.form-spaced > textarea,
+.form-spaced > .form-control {
+  margin-bottom: $spacingSize/2;
+}
+

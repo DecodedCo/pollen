@@ -518,11 +518,22 @@ $contrasted-lightness-threshold: 30% !default;
 // -------------------------
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
-@mixin button-variant($color, $background, $border) {
+@mixin button-variant($color, $background, $border, $contrast-background) {
   color: $color;
   // CUSTOM - no background
   //background-color: $background;
   border-color: $border;
+
+  &.btn.btn-contrast,
+  &.btn-contrast {
+    background-color: $contrast-background;
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] &,
+    .disabled & {
+      color: rgba($link-color, 0.5);
+    }
+  }
 
   &:hover,
   &:focus,
@@ -548,14 +559,17 @@ $contrasted-lightness-threshold: 30% !default;
   } }
   &.disabled,
   &[disabled],
-  fieldset[disabled] & {
+  fieldset[disabled] &,
+  .disabled & {
     &,
     &:hover,
     &:focus,
     &:active,
     &.active {
-      background-color: $background;
-          border-color: $border;
+      // CUSTOM
+      // background-color: $background;
+      border-color: rgba($border, 0.3);
+      color: rgba($color, 0.3);
     }
   }
 
