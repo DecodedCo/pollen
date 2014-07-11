@@ -5,7 +5,7 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 // Variables
 // --------------------------------------------------
-@import url("//assets.decoded.co/din-family.css");
+@import url("./din-family.css");
 
 @mixin calc($property, $expression) {
   #{$property}: -moz-calc(#{$expression});
