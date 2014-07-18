@@ -63,6 +63,8 @@ Loading Animation
 
 /* Colored Backgrounds */
 
+@include bg-variant('.bg-yellow', $decodedYellow);
+
 @include bg-variant('.bg-red-light', $red-light);
 
 @include bg-variant('.bg-orange-light', $orange-light);

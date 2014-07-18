@@ -7,11 +7,10 @@
 // --------------------------------------------------
 
 // Core styles
-//.Button classes for compatibility
-.Button,
-.Button-primary,
+
 button,
-.btn {
+.btn,
+.btn-default {
   display: inline-block;
   margin-bottom: 0;
   font-weight: $btn-font-weight;
@@ -25,11 +24,10 @@ button,
   @include user-select(none);
   border: 1px solid $borderColor;
   font-family: $defaultStack;
-  line-height: 1em;
-  //letter-spacing: 1px;
-  border-radius: $borderRadius;
   box-shadow: none;
   background-color: transparent;
+  // make firefox behave
+  height: $input-height-base;
 
   // CUSTOM no underline
   text-decoration: none;
@@ -40,7 +38,7 @@ button,
 
   &:hover,
   &:focus {
-    background-color: $decodedLightGrey ;
+    background-color: $decodedLightGrey;
     text-decoration: none;
   }
 
@@ -60,38 +58,55 @@ button,
     @include opacity(.65);
     @include box-shadow(none);
   }
+
+  &.btn-contrast{
+    background-color: rgba(255,255,255,0.5);
+
+    &:hover,
+    &:active {
+      border-color: #fff;
+    }
+  }
 }
 
 
 // Alternate buttons
 // --------------------------------------------------
 
-.btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
-}
 .btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border, $btn-primary-contrast);
 
   &:hover,
   &:active {
     color: $link-color;
   }
+
+  &.btn.btn-contrast,
+  &.btn-contrast{
+    border-color: #fff;
+    background-color: lighten($decodedYellow, 30%);
+
+    &:hover,
+    &:active {
+      background-color: #FFF;
+    }
+  }
 }
 // Success appears as green
 .btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border, $btn-success-contrast);
 }
 // Info appears as blue-green
 .btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border, $btn-info-contrast);
 }
 // Warning appears as orange
 .btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border, $btn-warning-contrast);
 }
 // Danger and error appear as red
 .btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border, $btn-danger-contrast);
 }
 
 
@@ -101,10 +116,11 @@ button,
 // Make a button look and behave like a link
 .btn-link {
   color: $link-color;
-  font-weight: normal;
+  font-weight: 300;
   cursor: pointer;
   border-radius: 0;
-
+  padding: 0;
+  border-color: transparent;
   &,
   &:active,
   &[disabled],
@@ -116,12 +132,12 @@ button,
   &:hover,
   &:focus,
   &:active {
-    border-color: transparent;
+    border-bottom: 1px solid $link-hover-color;
   }
   &:hover,
   &:focus {
     color: $link-hover-color;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: transparent;
   }
   &[disabled],
@@ -130,6 +146,25 @@ button,
     &:focus {
       color: $btn-link-disabled-color;
       text-decoration: none;
+      border-bottom:1px solid transparent;
+    }
+  }
+  &.btn.btn-contrast,
+  &.btn-contrast{
+    background-color: rgba(255,255,255,0.5);
+    border-color: transparent;
+    border-bottom: 1px solid $link-hover-color;
+    padding: 0 5px;
+
+    &:hover,
+    &:active {
+      background-color: #FFF;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      background-color: transparent;
+      border-bottom-color: transparent;
     }
   }
 }
@@ -141,13 +176,19 @@ button,
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+  // make firefox behave
+  height: $input-height-large;
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+  // make firefox behave
+  height: $input-height-small;
 }
 .btn-xs {
   @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+  // make firefox behave
+  height: auto;
 }
 
 
@@ -177,25 +218,25 @@ input[type="button"] {
 
 // color-named buttons
 .btn-red {
-  @include button-variant($red, $red-light, $red);
+  @include button-variant($red, $red-light, $red, $red-light);
 }
 
 .btn-orange {
-  @include button-variant($orange, $orange-light, $orange);
+  @include button-variant($orange, $orange-light, $orange, $orange-light);
 }
 
 .btn-green {
-  @include button-variant($green, $green-light, $green);
+  @include button-variant($green, $green-light, $green, $green-light);
 }
 
 .btn-blue {
-  @include button-variant($blue, $blue-light, $blue);
+  @include button-variant($blue, $blue-light, $blue, $blue-light);
 }
 
 .btn-pink {
-  @include button-variant($pink, $pink-light, $pink);
+  @include button-variant($pink, $pink-light, $pink, $pink-light);
 }
 
 .btn-purple {
-  @include button-variant($purple, $purple-light, $purple);
+  @include button-variant($purple, $purple-light, $purple, $purple-light);
 }
