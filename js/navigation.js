@@ -1,6 +1,6 @@
 $(document).ready(function () {
   function updateGlobalNavCollapse(){
-    $(".global-nav li a, .dropdown-menu").on("click", function(event) {
+    $(".global-nav").on("click", "li a, .dropdown-menu", function(event) {
       // only collapse if it's not a dropdown
       if(!$(this).parent().hasClass('dropdown')){
         var $toggle = $(this).parents('.global-nav').find('.navbar-toggle');
