@@ -44,7 +44,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['**/*.scss'],
-        tasks: ['sass', 'autoprefixer', 'cssmin']
+        tasks: ['build']
       }
     }
   });
@@ -56,5 +56,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['build']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'cssmin']);
 };
