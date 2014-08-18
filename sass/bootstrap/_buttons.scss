@@ -76,11 +76,6 @@ button,
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border, $btn-primary-contrast);
 
-  &:hover,
-  &:active {
-    color: $link-color;
-  }
-
   &.btn.btn-contrast,
   &.btn-contrast{
     border-color: #fff;

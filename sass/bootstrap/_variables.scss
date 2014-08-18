@@ -5,7 +5,6 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 // Variables
 // --------------------------------------------------
-@import url("./din-family.css");
 
 @mixin calc($property, $expression) {
   #{$property}: -moz-calc(#{$expression});
@@ -27,7 +26,7 @@ $gray:                   lighten(#000, 33.5%) !default; // #555
 $gray-light:             lighten(#000, 60%) !default;   // #999
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
-$brand-primary: $decodedYellow;
+$brand-primary: $playtoRed;
 $brand-success: $green;
 $brand-warning: $orange;
 $brand-danger:  $red;
@@ -54,7 +53,7 @@ $text-color: $gray-darker;
 $link-color: $text-color;
 $link-hover-color: lighten($text-color, 25%);
 
-$btn-primary-color: $text-color;
+$btn-primary-color: $brand-primary;
 $navbar-default-bg: $brand-primary;
 $navbar-default-brand-color: $text-color;
 $navbar-default-brand-hover-color: $text-color;
@@ -148,7 +147,7 @@ $padding-base-vertical:     4px !default;
 $padding-base-horizontal:   12px !default;
 
 $padding-large-vertical:    10px !default;
-$padding-large-horizontal:  16px !default;
+$padding-large-horizontal:  20px !default;
 
 $padding-small-vertical:    3px !default;
 $padding-small-horizontal:  10px !default;
@@ -390,7 +389,7 @@ $navbar-default-link-color:                #777 !default;
 $navbar-default-link-hover-color:          #333 !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         #555 !default;
-$navbar-default-link-active-bg:            lighten($decodedYellow, 30%);
+$navbar-default-link-active-bg:            lighten($playtoRed, 30%);
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 

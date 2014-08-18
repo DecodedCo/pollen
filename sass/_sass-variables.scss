@@ -20,6 +20,8 @@ $decodedGrey: rgb(150,150,150);
 $darkYellow: rgba(201,181,0,1);
 $decodedLightGrey: rgb(245,245,245);
 
+$playtoRed: #e0534c;
+
 $white: #ffffff;
 
 $linkColor: rgb(0,0,0);
@@ -61,7 +63,7 @@ $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
 /* Map Colors for Bootstrap */
 
-$brand-primary: $decodedYellow;
+$brand-primary: $playtoRed;
 $brand-success: $green;
 $brand-warning: $orange;
 $brand-danger:  $red;
@@ -75,8 +77,8 @@ Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights
 
 */
 
-$defaultStack: 'DIN Next',Helvetica,Arial, sans-serif;
-$boldStack: 'DIN Next-500','DIN Next',Helvetica,Arial, sans-serif;
+$defaultStack: 'Dosis', sans-serif;
+$boldStack: 'Dosis', sans-serif;
 $lineHeight: (1.45)em;
 $baseSize: 0.5em;
 $spacingSize: 1.5em;
@@ -117,9 +119,9 @@ $break-xlarge: 960px;
   }
 }
 
-    /* ==========================================================================
-       Various
-       ========================================================================== */
+/* ==========================================================================
+   Various
+   ========================================================================== */
 
 $borderRadius: 0.25em;
 $accent-stroke-width: 2px;

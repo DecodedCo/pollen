@@ -90,8 +90,8 @@ h6, .h6, .zeta {
   }
 }
 
-h1, .h1, .alpha { 
-  font-size: $font-size-h1; 
+h1, .h1, .alpha {
+  font-size: $font-size-h1;
   //CUSTOM font weight
   font-weight: 300;
 }
@@ -124,14 +124,14 @@ h2 + h3 {
     font-weight: 200;
     display: block;
     line-height: #{$gamma}em;
-    color: $decodedGrey;
-    text-transform: uppercase;
+    color: #000;
+    //text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: -($line-height-computed / 2);
 }
 
-h4, .h4, .delta { 
-  font-size: $font-size-h4; 
+h4, .h4, .delta {
+  font-size: $font-size-h4;
   // CUSTOM text transform
   text-transform: uppercase;
 }
@@ -163,15 +163,15 @@ h6, .h6, .zeta { font-size: $font-size-h6; }
 .lede {
   color: $decodedGrey;
   font-weight: 300;
-  font-size: 1.25em; 
+  font-size: 1.25em;
   line-height: 1.2;
-  margin: 0.6667em 0 1em; 
+  margin: 0.6667em 0 1em;
 }
 .caption {
   color: $decodedGrey;
-  font-size: 0.75em; 
-  line-height: 1.25; 
-  margin: 0.6667em 0; 
+  font-size: 0.75em;
+  line-height: 1.25;
+  margin: 0.6667em 0;
 }
 
 
