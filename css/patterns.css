@@ -1,1 +1,659 @@
-.circular,.img-circle{border-radius:100%;}.framed{box-shadow:0 2px 2px whitesmoke;border:1px solid #ccc;padding:0.25em;display:inline-block;}.framed.circular img{border-radius:100%;}.pull-left{float:left;}img.pull-left{margin:0 1em 0.5em 0;}.pull-right{float:right;}img.pull-right{margin:0 0 0.5em 1em;}[class*="module"]{border:1px solid whitesmoke;border-top:1em solid #fef800;padding:2%;display:block;}[class*="module"]:before,[class*="module"]:after{content:" ";display:table;}[class*="module"]:after{clear:both;}[class*="module"]>*:last-child{margin-bottom:0;}[class*="module"]>h1,[class*="module"]>h2,[class*="module"]>h3{font-size:1.217em;}[class*="module"]>h1,[class*="module"]>h2,[class*="module"]>h3,[class*="module"]>h4,[class*="module"]>h5,[class*="module"]>h6{margin-top:0;}[class*="module"].highlight,[class*="module"].mark{border:0;}.highlight{background-color:#fef800;}.mark{background-color:rgba(254, 248, 0, 0.4);}[class$="notice"]{background-color:whitesmoke;border:0;border-top:0.25em solid #969696;}.success-notice{background-color:#f0f6e9;border-top-color:#b3d98c;}.failure-notice{background-color:#fcecec;border-top-color:#dd6969;}.details details{margin-left:1.5em;}.details summary{color:#969696;font-family:'DIN Next-500','DIN Next',Helvetica,Arial,sans-serif;display:inline;}.details summary:hover{color:#1b1b1b;}.details summary:active{color:#1b1b1b;}.details summary::-webkit-details-marker{margin-left:-1em;}.tip{position:relative;}.tip:hover:after{content:attr(data-tip);color:#fff;font-size:0.75em;line-height:1.3334em;text-align:left;background-color:#666;border-radius:0.3334em;padding:0.6667em;width:16.5em;opacity:0.9;display:block;position:absolute;left:0;bottom:2em;z-index:98;}.tip:hover:before{content:"";border:solid;border-color:#666 transparent;border-width:0.5em 0.5em 0 0.5em;opacity:0.9;display:block;left:1em;bottom:1em;position:absolute;z-index:99;}.articles{overflow:hidden;}.articles>li>a{display:block;border-bottom:none;}.articles>li>a:hover{background-color:rgba(245, 245, 245, 0.1);border-bottom:none;}.articles>li>a:active{background-color:rgba(245, 245, 245, 0.05);border-bottom:none;}.articles li{list-style:none;margin:0 0 1em 0;}.articles .h{margin-top:0;}.articles p{color:#444;}.articles .caption{color:#888;margin-top:0.6667em;}.articles article img{margin-bottom:0;width:25%;}.code{font-family:'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace;font-size:0.75em;line-height:1.6667;}ol.code{color:#888;margin:1.3334em 0 1.3334em 3em;line-height:2;}ol.code li{list-style:decimal-leading-zero;background:#f6f6f6;margin:0 0 -1px 0;border-top:1px solid #fff;padding:0 0.5em;}ol.code li.tab1{padding-left:4ex;}ol.code li.tab2{padding-left:8ex;}ol.code li.tab3{padding-left:12ex;}ol.code li.tab4{padding-left:16ex;}ol.code li.tab5{padding-left:20ex;}dl.metadata{font-size:0.75em;line-height:1.3334;overflow:hidden;}dl.metadata dt{font-weight:400;padding-top:0.5em;}dl.metadata dd{color:#888;margin-left:0;border-bottom:1px solid whitesmoke;padding-bottom:0.5em;}@media screen and (min-width: 40em){dl.metadata dt{padding:0.5em 0;width:25%;float:left;clear:left;display:block;}dl.metadata dd{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;margin-left:-25%;padding:0.5em 0 0.5em 25%;width:75%;float:right;}}.progress li{list-style:none;line-height:2;background-color:#f6f6f6;margin:0 1.25em 0.5em 0;padding:0.25em 0.25em 0.25em 0.5em;position:relative;display:inline-block;}.progress li:before{content:"";font-size:1em;font-family:'DIN Next-500','DIN Next',Helvetica,Arial,sans-serif;border:solid;border-color:#f6f6f6 transparent;border-width:1.25em 0 1.25em 1.25em;display:block;position:absolute;top:0;left:-1.25em;}.progress li:first-child{padding-left:0.75em;}.progress li:first-child:before{display:none;}.progress li:after{content:"";font-size:1em;border:solid;border-color:transparent #f6f6f6;border-width:1.25em 0 1.25em 1.25em;display:block;position:absolute;right:-1.25em;top:0;}.progress li.completed{background-color:whitesmoke;}.progress li.completed:hover{background-color:whitesmoke;}.progress li.completed:before{border-color:whitesmoke transparent;}.progress li.completed:hover:before{border-color:whitesmoke transparent;}.progress li.completed:after{border-color:transparent whitesmoke;}.progress li.completed:hover:after{border-color:transparent whitesmoke;}.progress li.is-active{font-family:'DIN Next-500','DIN Next',Helvetica,Arial,sans-serif;background-color:#fef800;}.progress li.is-active:before{border-color:#fef800 transparent;}.progress li.is-active:after{border-color:transparent #fef800;}.progress li a,.progress li a:hover{border:0;display:block;}.stats{overflow:hidden;}.stats li{list-style:none;margin:0 0.75em 0 0;padding:0 0.75em 0 0;border-right:1px solid whitesmoke;float:left;}ul.stats li:last-child{margin:0;padding:0;border:none;}.stats a{font-family:'DIN Next-500','DIN Next',Helvetica,Arial,sans-serif;font-size:1.125em;line-height:1.3334;border:0 none;display:block;float:left;}.stats span{font-weight:400;font-size:0.6667em;line-height:1.3334;display:block;}.tags li{list-style:none;margin:0 0.3334em 0 0;display:inline;white-space:nowrap;}.tags [data-rank="6"]{font-size:1.25em;line-height:1;}.tags [data-rank="5"]{font-size:1.125em;line-height:1.1111;}.tags [data-rank="4"]{font-size:1em;line-height:1.25;}.tags [data-rank="3"]{font-size:0.875em;line-height:1.4286;}.tags [data-rank="2"]{font-size:0.75em;line-height:1.6667;}.tags [data-rank="1"]{font-size:0.6875em;line-height:1.8181;}
+    /* ===========================================================
+Pollen - Decoded Styles // by Jonas Haefele 2014
+============================================================ */
+/*
+Colors
+==========================================================================
+
+Use color variables where ever possible.
+
+*/
+/*
+Secondary Colors
+----------------*/
+/*
+Bootstrap Color Variables
+--------------------------
+*/
+/* Grey Values for Bootstrap */
+/* Map Colors for Bootstrap */
+/*
+Fonts
+==========================================================================
+
+Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
+
+*/
+/*
+Breakpoints
+==========================================================================
+
+## @respond-to to screen size
+
+```
+  @include respond-to(small-screens) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens) { float: none; }
+```
+*/
+/* ==========================================================================
+   Various
+   ========================================================================== */
+/* 
+Images
+========================================================================== 
+
+## Circular Image
+```
+<img class="circular" src="http://lorempixel.com/136/136/people/1" alt="" style="width:136px; height:136px;" />
+```
+
+## Framed Image
+```
+<img class="framed" src="http://lorempixel.com/180/136/nature/1" alt="" style="width:136px; height:136px;" />
+```
+
+## Framed Circular Image
+```
+<span class="framed circular">
+	<img src="http://lorempixel.com/136/136/people/7" alt="" style="width:136px; height:136px;" />
+</span>
+```
+
+*/
+.circular, .img-circle {
+  /* .img-circle for backwards compatibility */
+  border-radius: 100%; }
+
+.framed {
+  box-shadow: 0 2px 2px whitesmoke;
+  border: 1px solid #ccc;
+  padding: 0.25em;
+  display: inline-block; }
+
+.framed.circular img {
+  border-radius: 100%; }
+
+/* 
+Layout
+==========================================================================
+
+## Align Block level Elements like images 
+
+### Pull left 
+```
+<p><img class="pull-left" src="http://lorempixel.com/180/136/nature/2" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+```
+*/
+.pull-left {
+  float: left; }
+
+img.pull-left {
+  margin: 0 1em 0.5em 0;
+  /* 0 16px 8px 0 */ }
+
+/*
+### Pull right
+```
+<p><img class="pull-right" src="http://lorempixel.com/180/136/nature/3" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+```
+*/
+.pull-right {
+  float: right; }
+
+img.pull-right {
+  margin: 0 0 0.5em 1em;
+  /* 0 0 8px 16px */ }
+
+/* 
+Modules 
+============================================================ 
+```
+<div class="module">
+	<h2>This is an area of content.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.module-->
+```
+*/
+[class*="module"] {
+  border: 1px solid whitesmoke;
+  border-top: 1em solid #fef800;
+  padding: 2%;
+  display: block; }
+  [class*="module"]:before, [class*="module"]:after {
+    content: " ";
+    display: table; }
+  [class*="module"]:after {
+    clear: both; }
+  [class*="module"] > *:last-child {
+    margin-bottom: 0; }
+  [class*="module"] > h1, [class*="module"] > h2, [class*="module"] > h3 {
+    font-size: 1.217em; }
+  [class*="module"] > h1, [class*="module"] > h2, [class*="module"] > h3, [class*="module"] > h4, [class*="module"] > h5, [class*="module"] > h6 {
+    margin-top: 0; }
+  [class*="module"].highlight, [class*="module"].mark {
+    border: 0; }
+
+/* 
+## Highlight
+```
+<div class="module highlight">
+	<h2 class="h">This is a highlighted area of content.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.module-->
+```
+*/
+.highlight {
+  background-color: #fef800; }
+
+/*
+## Mark
+```
+<div class="module mark">
+	<h2 class="h">This is a marked area of content.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.module-->
+```
+*/
+.mark {
+  background-color: rgba(254, 248, 0, 0.4); }
+
+/* 
+Notification 
+============================================================ 
+```
+<div class="module notice">
+	<h2 class="h">This is a general notification.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.notice-->
+```
+*/
+[class$="notice"] {
+  background-color: whitesmoke;
+  border: 0;
+  border-top: 0.25em solid #969696;
+  /* 4px */ }
+
+/*
+## Success Notification
+```
+<div class="module success-notice">
+	<h2 class="h">This is a notification of a successful action or event.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.success-notice-->
+```
+*/
+.success-notice {
+  background-color: #f0f6e9;
+  border-top-color: #b3d98c; }
+
+/*
+## Failure Notice
+```
+<div class="module failure-notice">
+	<h2 class="h">This is a notification of a failed action or event.</h2>
+	<p>Please complete the following required fields:</p>
+	<ul>
+		<li>Name</li>
+		<li>Date of birth</li>
+	</ul>
+</div><!--/.failure-notice-->
+```
+*/
+.failure-notice {
+  background-color: #fcecec;
+  border-top-color: #dd6969; }
+
+/* 
+Details 
+============================================================ 
+```
+<div class="details module">
+	<details open>
+		<summary>How do I know which bone to choose?</summary>
+		<p>Whether you want to give your dog a nylon bone, a real bone, or a rawhide bone, choose a bone that matches your dog&#8217;s chewing rate and chewing habits. You may also wish to consider your dog's size and choose a bone that best fits his mouth and teeth.</p>
+	</details>
+	<details>
+		<summary>How do bones improve dental health?</summary>
+		<p>When your dog chews on bones, the chewing action scrapes away plaque, controls tartar build up, and helps stimulate gums. This diminishes bad breath, keeps teeth whiter, and reduces the risk of potentially serious dental problems.</p>
+	</details>
+	<details>
+		<summary>Are bones appropriate for older dogs?</summary>
+		<p>Provided that your older dog has healthy teeth, bones are extremely appropriate. Bones provide entertainment and mental stimulation that can be very beneficial to older dogs &#8211; especially those who are not extremely active.</p>
+	</details>
+</div><!--/.faq-->
+```
+*/
+.details details {
+  margin-left: 1.5em; }
+
+.details summary {
+  color: #969696;
+  font-family: "Dosis", sans-serif;
+  display: inline; }
+
+.details summary:hover {
+  color: #1b1b1b; }
+
+.details summary:active {
+  color: #1b1b1b; }
+
+.details summary::-webkit-details-marker {
+  margin-left: -1em; }
+
+/* 
+Tooltip
+========================================================================== 
+```
+<a href="#" class="tip" data-tip="Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a diam lectus sed sit amet ipsum mauris.">Hover to reveal a tooltip</a>
+```
+*/
+.tip {
+  position: relative; }
+
+.tip:hover:after {
+  content: attr(data-tip);
+  color: #fff;
+  font-size: 0.75em;
+  line-height: 1.3334em;
+  text-align: left;
+  background-color: #666;
+  border-radius: 0.3334em;
+  padding: 0.6667em;
+  width: 16.5em;
+  opacity: 0.9;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 2em;
+  z-index: 98; }
+
+.tip:hover:before {
+  content: "";
+  border: solid;
+  border-color: #666 transparent;
+  border-width: 0.5em 0.5em 0 0.5em;
+  opacity: 0.9;
+  display: block;
+  left: 1em;
+  bottom: 1em;
+  position: absolute;
+  z-index: 99; }
+
+/* 
+List-style layout patterns
+============================================================ */
+/*
+Articles 
+============================================================ 
+
+```
+<ol class="articles">
+	<li><a href="#">
+		<article class="module">
+			<h1 class="h">Defiant North Korea in rocket success</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T19:10-00:00">12 December 2012</time></p>
+			<p>North Korea successfully launches a long-range rocket to put a satellite into space, as neighbours accuse it of a disguised missile test.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<h1 class="h">Big decline in UK unemployment</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T18:10-00:00">12 December 2012</time></p>
+			<p>The number of people out of work fell by 82,000 between August and October, to 2.51 million, official figures show.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<h1 class="h">Sitar maestro Ravi Shankar dies</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T17:10-00:00">12 December 2012</time></p>
+			<p>Sitar player Ravi Shankar, who popularised Indian music around the world, dies in hospital in the United States at the age of 92.</p>
+		</article>
+	</a></li>
+</ol><!--/.articles-->
+```
+
+## Articles with images
+
+```
+<ol class="articles">
+	<li><a href="#">
+		<article class="module">
+			<img class="pull-left" src="http://lorempixel.com/240/180/city/4" alt=""/>
+			<h1 class="h">Defiant North Korea in rocket success</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T19:10-00:00">12 December 2012</time></p>
+			<p>North Korea successfully launches a long-range rocket to put a satellite into space, as neighbours accuse it of a disguised missile test.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<img class="pull-left" src="http://lorempixel.com/240/180/city/5" alt=""/>
+			<h1 class="h">Big decline in UK unemployment</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T18:10-00:00">12 December 2012</time></p>
+			<p>The number of people out of work fell by 82,000 between August and October, to 2.51 million, official figures show.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<img class="pull-left" src="http://lorempixel.com/240/180/city/6" alt=""/>
+			<h1 class="h">Sitar maestro Ravi Shankar dies</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T17:10-00:00">12 December 2012</time></p>
+			<p>Sitar player Ravi Shankar, who popularised Indian music around the world, dies in hospital in the United States at the age of 92.</p>
+		</article>
+	</a></li>
+</ol><!--/.articles-->
+```
+*/
+.articles {
+  overflow: hidden; }
+
+.articles > li > a {
+  display: block;
+  border-bottom: none; }
+  .articles > li > a:hover {
+    background-color: rgba(245, 245, 245, 0.1);
+    border-bottom: none; }
+  .articles > li > a:active {
+    background-color: rgba(245, 245, 245, 0.05);
+    border-bottom: none; }
+
+.articles li {
+  list-style: none;
+  margin: 0 0 1em 0; }
+
+.articles .h {
+  margin-top: 0; }
+
+.articles p {
+  color: #444; }
+
+.articles .caption {
+  color: #888;
+  margin-top: 0.6667em; }
+
+.articles article img {
+  margin-bottom: 0;
+  width: 25%; }
+
+/* 
+Code block 
+============================================================ 
+```
+<ol class="code">
+	<li><code>&#60;?php</code></li>
+	<li class="tab1"><code>echo 'Hello World!'; <span class="comment">// print 'Hello World'</span></code></li>
+	<li><code>?&#62;</code></li>
+</ol><!--/.code-->
+```
+*/
+.code {
+  font-family: 'DejaVu Sans Mono',Inconsolata,Consolas,'Lucida Console',monospace;
+  font-size: 0.75em;
+  line-height: 1.6667; }
+
+ol.code {
+  color: #888;
+  margin: 1.3334em 0 1.3334em 3em;
+  line-height: 2; }
+
+ol.code li {
+  list-style: decimal-leading-zero;
+  background: #f6f6f6;
+  margin: 0 0 -1px 0;
+  border-top: 1px solid #fff;
+  padding: 0 0.5em; }
+
+ol.code li.tab1 {
+  padding-left: 4ex; }
+
+ol.code li.tab2 {
+  padding-left: 8ex; }
+
+ol.code li.tab3 {
+  padding-left: 12ex; }
+
+ol.code li.tab4 {
+  padding-left: 16ex; }
+
+ol.code li.tab5 {
+  padding-left: 20ex; }
+
+/* 
+Metadata 
+============================================================ 
+```
+<dl class="metadata">
+	<dt>Published</dt>
+	<dd><time datetime="1963-03-27T12:00Z">27 March 1963</time></dd>
+	<dt>Author</dt>
+	<dd>Richard Beeching</dd>
+	<dt>Policy Area</dt>
+	<dd>Transport</dd>
+</dl><!--/.metadata-->
+```
+*/
+dl.metadata {
+  font-size: 0.75em;
+  line-height: 1.3334;
+  overflow: hidden; }
+
+dl.metadata dt {
+  font-weight: 400;
+  padding-top: 0.5em; }
+
+dl.metadata dd {
+  color: #888;
+  margin-left: 0;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 0.5em; }
+
+@media screen and (min-width: 40em) {
+  dl.metadata dt {
+    padding: 0.5em 0;
+    width: 25%;
+    float: left;
+    clear: left;
+    display: block; }
+
+  dl.metadata dd {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-left: -25%;
+    padding: 0.5em 0 0.5em 25%;
+    width: 75%;
+    float: right; } }
+/* 
+Progress indicator 
+============================================================ 
+```
+<ol class="progress">
+	<li class="is-active">Lorem dolor</li>
+	<li>Consectetur</li>
+	<li>Adipisicin</li>
+	<li>Eiusmod</li>
+</ol><!--/.progress-->
+
+<ol class="progress">
+	<li class="completed"><a href="#">Lorem dolor</a></li>
+	<li class="is-active">Consectetur</li>
+	<li>Adipisicin</li>
+	<li>Eiusmod</li>
+</ol><!--/.progress-->
+
+<ol class="progress">
+	<li class="completed"><a href="#">Lorem dolor</a></li>
+	<li class="completed"><a href="#">Consectetur</a></li>
+	<li class="completed"><a href="#">Adipisicin</a></li>
+	<li class="is-active">Eiusmod</li>
+</ol><!--/.progress-->
+```
+*/
+.progress li {
+  list-style: none;
+  line-height: 2;
+  background-color: #f6f6f6;
+  margin: 0 1.25em 0.5em 0;
+  padding: 0.25em 0.25em 0.25em 0.5em;
+  position: relative;
+  display: inline-block; }
+
+.progress li:before {
+  content: "";
+  font-size: 1em;
+  font-family: "Dosis", sans-serif;
+  border: solid;
+  border-color: #f6f6f6 transparent;
+  border-width: 1.25em 0 1.25em 1.25em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -1.25em; }
+
+.progress li:first-child {
+  padding-left: 0.75em; }
+
+.progress li:first-child:before {
+  display: none; }
+
+.progress li:after {
+  content: "";
+  font-size: 1em;
+  border: solid;
+  border-color: transparent #f6f6f6;
+  border-width: 1.25em 0 1.25em 1.25em;
+  display: block;
+  position: absolute;
+  right: -1.25em;
+  top: 0; }
+
+.progress li.completed {
+  background-color: whitesmoke; }
+
+.progress li.completed:hover {
+  background-color: whitesmoke; }
+
+.progress li.completed:before {
+  border-color: whitesmoke transparent; }
+
+.progress li.completed:hover:before {
+  border-color: whitesmoke transparent; }
+
+.progress li.completed:after {
+  border-color: transparent whitesmoke; }
+
+.progress li.completed:hover:after {
+  border-color: transparent whitesmoke; }
+
+.progress li.is-active {
+  font-family: "Dosis", sans-serif;
+  background-color: #fef800; }
+
+.progress li.is-active:before {
+  border-color: #fef800 transparent; }
+
+.progress li.is-active:after {
+  border-color: transparent #fef800; }
+
+.progress li a,
+.progress li a:hover {
+  border: 0;
+  display: block; }
+
+/* 
+Stats 
+============================================================ 
+```
+<ul class="stats">
+	<li><a href="#">1,234 <span>lorem</span></a></li>
+	<li><a href="#">567 <span>ipsum</span></a></li>
+	<li><a href="#">23,456 <span>dolor</span></a></li>
+</ul><!--/.stats-->
+```
+*/
+.stats {
+  overflow: hidden; }
+
+.stats li {
+  list-style: none;
+  margin: 0 0.75em 0 0;
+  padding: 0 0.75em 0 0;
+  border-right: 1px solid whitesmoke;
+  float: left; }
+
+ul.stats li:last-child {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.stats a {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.3334;
+  border: 0 none;
+  display: block;
+  float: left; }
+
+.stats span {
+  font-weight: 400;
+  font-size: 0.6667em;
+  line-height: 1.3334;
+  display: block; }
+
+/* 
+Tag cloud 
+============================================================ 
+```
+<ol class="tags">
+	<li><a href="#" rel="tag" data-rank="1">Clavicle</a></li>
+	<li><a href="#" rel="tag" data-rank="4">Ethmoid</a></li>
+	<li><a href="#" rel="tag" data-rank="6">Frontal</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Incus</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Lacrimal</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Malleus</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Mandible</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Maxilla</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Palatine</a></li>
+	<li><a href="#" rel="tag" data-rank="5">Parietal</a></li>
+	<li><a href="#" rel="tag" data-rank="4">Occipital</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Ribs</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Scapula</a></li>
+	<li><a href="#" rel="tag" data-rank="4">Sphenoid</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Stapes</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Sternum</a></li>
+	<li><a href="#" rel="tag" data-rank="5">Temporal</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Vomer</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Vomer</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Zygomatic</a></li>
+</ol><!--/.tags-->
+```
+*/
+.tags li {
+  list-style: none;
+  margin: 0 0.3334em 0 0;
+  display: inline;
+  white-space: nowrap; }
+
+.tags [data-rank="6"] {
+  font-size: 1.2500em;
+  line-height: 1.0000; }
+
+.tags [data-rank="5"] {
+  font-size: 1.1250em;
+  line-height: 1.1111; }
+
+.tags [data-rank="4"] {
+  font-size: 1.0000em;
+  line-height: 1.2500; }
+
+.tags [data-rank="3"] {
+  font-size: 0.8750em;
+  line-height: 1.4286; }
+
+.tags [data-rank="2"] {
+  font-size: 0.7500em;
+  line-height: 1.6667; }
+
+.tags [data-rank="1"] {
+  font-size: 0.6875em;
+  line-height: 1.8181; }
