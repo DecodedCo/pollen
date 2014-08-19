@@ -5199,11 +5199,11 @@ The Decoded Topbar sticks to the top of the page
     vertical-align: top; }
     .global-nav li.navbar-tab a, .global-nav li.navbar-tab a:hover {
       text-transform: none;
-      color: #1b1b1b;
+      color: white;
       background: none;
       transition: background-color 0.5s; }
     .global-nav li.navbar-tab a:hover {
-      background-color: #fffd98; }
+      background-color: rgba(255, 255, 255, 0.8); }
     @media (max-width: 768px) {
       .global-nav li.navbar-tab {
         width: 50%;

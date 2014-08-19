@@ -33,13 +33,13 @@ The Decoded Topbar sticks to the top of the page
 
     a, a:hover {
       text-transform: none;
-      color: $textColor;
+      color: $white;
       background: none;
       transition: background-color 0.5s;
     }
 
     a:hover {
-      background-color: lighten($decodedYellow, 30%);
+      background-color: rgba($white, 0.8);
     }
 
     @media (max-width: $grid-float-breakpoint) {
