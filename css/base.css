@@ -3522,14 +3522,14 @@ input[type="button"].btn-block {
   background-color: #e0534c;
   border-color: #db3830; }
   .navbar-default .navbar-brand {
-    color: #222222; }
+    color: white; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #222222;
+      color: rgba(255, 255, 255, 0.8);
       background-color: transparent; }
   .navbar-default .navbar-text {
     color: #777777; }
   .navbar-default .navbar-nav > li > a {
-    color: #222222; }
+    color: white; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #333333; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -3552,7 +3552,7 @@ input[type="button"].btn-block {
     color: #555555; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: #222222; }
+      color: white; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333333;
         background-color: transparent; }
@@ -3563,7 +3563,7 @@ input[type="button"].btn-block {
       color: #cccccc;
       background-color: transparent; } }
   .navbar-default .navbar-link {
-    color: #222222; }
+    color: white; }
     .navbar-default .navbar-link:hover {
       color: #333333; }
 
@@ -5404,6 +5404,7 @@ a.bg-purple:hover {
 
 /* little time savers */
 /* material design - ripple effect */
+/* http://codepen.io/fronterweb/pen/jcwgx */
 [material] {
   position: relative;
   overflow: hidden;

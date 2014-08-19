@@ -1,3 +1,6 @@
+/* material design - ripple effect */
+/* http://codepen.io/fronterweb/pen/jcwgx */
+
 /**
  * Helper function, that allows to attach multiple events to selected objects
  * @param {[object]}   el       [selected element or elements]

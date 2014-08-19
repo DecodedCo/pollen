@@ -54,11 +54,12 @@ $link-color: $text-color;
 $link-hover-color: lighten($text-color, 25%);
 
 $btn-primary-color: $brand-primary;
-$navbar-default-bg: $brand-primary;
-$navbar-default-brand-color: $text-color;
-$navbar-default-brand-hover-color: $text-color;
 
-$navbar-default-link-color: $link-color;
+$navbar-default-bg: $brand-primary;
+$navbar-default-brand-color: $white;
+$navbar-default-brand-hover-color: rgba($white, 0.8);
+
+$navbar-default-link-color: $white;
 
 $nav-pills-active-link-hover-color: $text-color;
 
