@@ -212,7 +212,7 @@
 // Contextual variations
 // CUSTOM colors
 .panel-default {
-  @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $brand-primary);
+  @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, rgba($brand-contrast, 0.5));
 }
 .panel-primary, .panel-yellow {
   @include panel-variant($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);

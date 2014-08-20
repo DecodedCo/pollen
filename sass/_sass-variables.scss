@@ -21,6 +21,7 @@ $darkYellow: rgba(201,181,0,1);
 $decodedLightGrey: rgb(245,245,245);
 
 $playtoRed: #e0534c;
+$playtoGreen: #ccc212;
 
 $white: #ffffff;
 
@@ -64,6 +65,7 @@ $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 /* Map Colors for Bootstrap */
 
 $brand-primary: $playtoRed;
+$brand-contrast: $playtoGreen;
 $brand-success: $green;
 $brand-warning: $orange;
 $brand-danger:  $red;

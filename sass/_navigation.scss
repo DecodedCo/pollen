@@ -40,7 +40,7 @@ The Decoded Topbar sticks to the top of the page
     }
 
     a:hover {
-      background-color: rgba($white, 0.8);
+      background-color: rgba($white, 0.1);
     }
 
     @media (max-width: $grid-float-breakpoint) {
@@ -48,10 +48,12 @@ The Decoded Topbar sticks to the top of the page
       display: inline-block;
       margin-right: -3px;
     }
-  }
-  .logo {
-    float: right;
-    margin-right: $spacingSize/2;
+    .logo {
+      float: left;
+      margin-left: $spacingSize/2;
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
   }
 
   .navbar-collapse {

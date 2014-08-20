@@ -104,17 +104,17 @@ h2.sub-heading, .h2.sub-heading {
   line-height: 1.4;
   color: $decodedGrey;
   margin-top: 0;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
-  &:after {
-    content: "";
-    display: block;
-    width: 3em;
-    height: 0.15em;
-    background: $brand-primary;
-    margin: .25em 0em 0em;
-    border-radius: 5px;
-  }
+  // &:after {
+  //   content: "";
+  //   display: block;
+  //   width: 3em;
+  //   height: 0.15em;
+  //   background: $brand-primary;
+  //   margin: .25em 0em 0em;
+  //   border-radius: 5px;
+  // }
 }
 
 h3, .h3, .gamma { font-size: $font-size-h3; }
