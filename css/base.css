@@ -498,7 +498,7 @@ h1, .headline, h2, h3, h4, h5, h6,
   .h4 .small, .h5 small,
   .h5 .small, .h6 small,
   .h6 .small {
-    font-weight: normal;
+    font-weight: 300;
     line-height: 1;
     color: whitesmoke; }
 
@@ -1988,7 +1988,7 @@ input[type="date"] {
   .radio label,
   .checkbox label {
     display: inline;
-    font-weight: normal;
+    font-weight: 300;
     cursor: pointer; }
 
 .radio input[type="radio"],
@@ -2008,7 +2008,7 @@ input[type="date"] {
   padding-left: 20px;
   margin-bottom: 0;
   vertical-align: middle;
-  font-weight: normal;
+  font-weight: 300;
   cursor: pointer; }
 
 .radio-inline + .radio-inline,
@@ -2846,7 +2846,7 @@ input[type="button"].btn-block {
     display: block;
     padding: 3px 20px;
     clear: both;
-    font-weight: normal;
+    font-weight: 300;
     line-height: 1.42857;
     color: #222222;
     white-space: nowrap; }
@@ -3149,7 +3149,7 @@ input[type="button"].btn-block {
 .input-group-addon {
   padding: 4px 12px;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1;
   color: #222222;
   text-align: center;
@@ -4822,7 +4822,7 @@ button.close {
   margin: 0;
   padding: 8px 14px;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 18px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;

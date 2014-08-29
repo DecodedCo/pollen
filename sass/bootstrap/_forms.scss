@@ -184,7 +184,7 @@ input[type="date"] {
   padding-left: 20px;
   label {
     display: inline;
-    font-weight: normal;
+    font-weight: 300;
     cursor: pointer;
   }
 }
@@ -207,7 +207,7 @@ input[type="date"] {
   padding-left: 20px;
   margin-bottom: 0;
   vertical-align: middle;
-  font-weight: normal;
+  font-weight: 300;
   cursor: pointer;
 }
 .radio-inline + .radio-inline,
