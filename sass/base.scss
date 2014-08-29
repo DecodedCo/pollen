@@ -4,6 +4,7 @@ Pollen - Decoded Styles // by Jonas Haefele 2014
 
 @charset "UTF-8";
 
+@import 'dosis';            /* webfonts */
 @import 'sass-variables';	  /* colors, modular scale, grid settings... */
 @import 'bootstrap/bootstrap';/* bootstrap */
 @import 'navigation';		  /* global nav styles */
