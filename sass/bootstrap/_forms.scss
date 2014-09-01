@@ -181,7 +181,7 @@ input[type="date"] {
   min-height: $line-height-computed; // clear the floating input if there is no label text
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 30px;
   label {
     display: inline;
     font-weight: 300;
@@ -193,12 +193,13 @@ input[type="date"] {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   float: left;
-  margin-left: -20px;
+  margin-left: -30px;
+  margin-right: 0;
 }
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
-}
+// .radio + .radio,
+// .checkbox + .checkbox {
+//   margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
+// }
 
 // Radios and checkboxes on same line
 .radio-inline,
