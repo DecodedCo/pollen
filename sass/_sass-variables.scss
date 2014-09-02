@@ -78,7 +78,7 @@ Fonts
 Use `$defaultStack` for normal font-weight and `$boldStack`for bold font-weights.
 
 */
-
+$font-path: '../fonts' !default;
 $defaultStack: 'Dosis', sans-serif;
 $boldStack: 'Dosis', sans-serif;
 $lineHeight: (1.45)em;
