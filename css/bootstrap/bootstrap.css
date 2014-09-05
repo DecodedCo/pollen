@@ -55,7 +55,9 @@ sass/bootstrap/bootstrap.scss:2
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
 */
+
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$playtoRed\".\A         on line 29 of sass/bootstrap/_variables.scss\A         from line 2 of sass/bootstrap/bootstrap.scss\A \A 24: @import \"navs\";\A 25: @import \"navbar\";\A 26: @import \"breadcrumbs\";\A 27: @import \"pagination\";\A 28: @import \"pager\";\A 29: @import \"labels\";\A 30: @import \"badges\";\A 31: @import \"jumbotron\";\A 32: @import \"thumbnails\";\A 33: @import \"alerts\";\A 34: @import \"progress-bars\";"; }
+  content: "Syntax error: Undefined variable: \"$playtoRed\".\A         on line 29 of sass/bootstrap/_variables.scss\A         from line 2 of sass/bootstrap/bootstrap.scss\A \A 24: @import \"navs\";\A 25: @import \"navbar\";\A 26: @import \"breadcrumbs\";\A 27: @import \"pagination\";\A 28: @import \"pager\";\A 29: @import \"labels\";\A 30: @import \"badges\";\A 31: @import \"jumbotron\";\A 32: @import \"thumbnails\";\A 33: @import \"alerts\";\A 34: @import \"progress-bars\";";
+}
