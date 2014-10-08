@@ -36,7 +36,6 @@ button,
     @include tab-focus();
   }
 
-  &:hover,
   &:focus {
     background-color: $decodedLightGrey;
     text-decoration: none;
@@ -62,7 +61,6 @@ button,
   &.btn-contrast{
     background-color: rgba(255,255,255,0.5);
 
-    &:hover,
     &:active {
       border-color: #fff;
     }
@@ -76,7 +74,6 @@ button,
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border, $btn-primary-contrast);
 
-  &:hover,
   &:active {
     color: $link-color;
   }
@@ -86,7 +83,6 @@ button,
     border-color: #fff;
     background-color: lighten($decodedYellow, 30%);
 
-    &:hover,
     &:active {
       background-color: #FFF;
     }
@@ -129,12 +125,10 @@ button,
     @include box-shadow(none);
   }
   &,
-  &:hover,
   &:focus,
   &:active {
     border-bottom: 1px solid $link-hover-color;
   }
-  &:hover,
   &:focus {
     color: $link-hover-color;
     text-decoration: none;
@@ -142,7 +136,6 @@ button,
   }
   &[disabled],
   fieldset[disabled] & {
-    &:hover,
     &:focus {
       color: $btn-link-disabled-color;
       text-decoration: none;
@@ -156,7 +149,6 @@ button,
     border-bottom: 1px solid $link-hover-color;
     padding: 0 5px;
 
-    &:hover,
     &:active {
       background-color: #FFF;
     }
