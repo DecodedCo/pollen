@@ -19,6 +19,8 @@ Lovingly crafted by Paul Robert Lloyd (<http://paulrobertlloyd.com/>).
 
 This work is available under the MIT license: <http://paulrobertlloyd.mit-license.org/>
 
+You *must* license the DIN family of fonts before use, and please update links to your own CDN copy.
+
 ### Referenced Works
 
 * Style guide based on the Mezzoblue Markup Guide <http://www.mezzoblue.com/downloads/markupguide/>  
