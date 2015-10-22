@@ -26,7 +26,7 @@ $gray:                   lighten(#000, 33.5%) !default; // #555
 $gray-light:             lighten(#000, 60%) !default;   // #999
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
-$brand-primary: $playtoRed;
+$brand-primary: $decodedYellow;
 $brand-success: $green;
 $brand-warning: $orange;
 $brand-danger:  $red;
@@ -52,8 +52,6 @@ $text-color: $gray-darker;
 
 $link-color: $text-color;
 $link-hover-color: lighten($text-color, 25%);
-
-$btn-primary-color: $brand-primary;
 
 $navbar-default-bg: $brand-primary;
 $navbar-default-brand-color: $white;
@@ -204,7 +202,7 @@ $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             $borderColor;
 
-$btn-primary-color:              #fff !default;
+$btn-primary-color:              $gray-light !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg;
 $btn-primary-contrast:          #fff;
@@ -381,8 +379,8 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       100%;
 
-$navbar-default-color:             $white;
-$navbar-default-bg:                $playtoRed;
+$navbar-default-color:             $black;
+$navbar-default-bg:                $decodedYellow;
 $navbar-default-border:            transparent;
 
 // Navbar links
@@ -390,7 +388,7 @@ $navbar-default-link-color:                $white;
 $navbar-default-link-hover-color:          rgba($white, 0.8);
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         $white;
-$navbar-default-link-active-bg:            lighten($playtoRed, 30%);
+$navbar-default-link-active-bg:            lighten($decodedYellow, 30%);
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
@@ -400,14 +398,14 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           lighten($playtoRed, 30%);
-$navbar-default-toggle-icon-bar-bg:        $playtoRed;
+$navbar-default-toggle-hover-bg:           lighten($decodedYellow, 30%);
+$navbar-default-toggle-icon-bar-bg:        $decodedYellow;
 $navbar-default-toggle-border-color:       transparent;
 
 
 // Inverted navbar
 // Reset inverted navbar basics
-$navbar-inverse-color:                      $gray-light !default;
+$navbar-inverse-color:                      $black !default;
 $navbar-inverse-bg:                         #222 !default;
 $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
 

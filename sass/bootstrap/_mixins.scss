@@ -538,9 +538,10 @@ $contrasted-lightness-threshold: 30% !default;
   &:hover,
   &:focus,
   &:active,
+  &.scheiner,
   &.active {
     // CUSTOM not just $color
-    color: contrast-color($background, $white, $link-color, 40%);
+    color: contrast-color($background, $black, $link-color, 40%);
     // CUSTOM - no color darken
     background-color: $background;
         border-color: $background;

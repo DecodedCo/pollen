@@ -74,16 +74,17 @@ button,
 // --------------------------------------------------
 
 .btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border, $btn-primary-contrast);
+  @include button-variant(#330000, $btn-primary-bg, #330000, #000000);
 
   &.btn.btn-contrast,
   &.btn-contrast{
-    color: #fff;
+    color: #000;
     background-color: rgba(255,255,255,0.1);
 
     &:hover,
     &:active {
       background-color: #FFF;
+      color: #000;
     }
   }
 }
